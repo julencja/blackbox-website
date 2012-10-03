@@ -286,7 +286,16 @@ section {
 }
 
 .c-slide h2 {
-    font-size: 2.2em;
+    font-size: 2.2em;    
+}
+
+.c-slide h3 {
+    font-size: 2em;
+    margin: 1.5em 0 0 0;
+    padding: 1em 0;
+    float: left;
+    width: 100%;
+    border-top: solid 1px rgba(10,26,39,0.3);
 }
 
 .c-slide p {
@@ -342,6 +351,22 @@ section {
     color: rgba(10,26,39,0.5);
     opacity: 0.6;
 }
+
+.c-slide figure h5,
+.c-slide figure h6 {
+    font-size: .75em;
+    line-height: 1.2;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.c-slide figure h6 small {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: .6em;
+}
+
 .c-slide a.follow-me {
     background: url(../img/mini-twitter.png) no-repeat center left;
 }
@@ -387,6 +412,7 @@ section {
     display: block;
     float: left;
 }
+
 .span2 {
     width: 80%;
     margin: 0 0% 0 0;
@@ -402,6 +428,11 @@ section {
     margin: 0 5% 0 0;
 }   
 
+.span6 {
+    width: 12.5%;
+    margin: 0 5% 0 0;    
+}
+
 .grid img {
     width: 100%;
     border-radius: 5px;
@@ -409,7 +440,9 @@ section {
 
 .row {
     width: 100%;
+    margin-bottom: 5%;
     clear: both;
+    float: left;
 }
 .row .grid:last-child {
     margin-right: 0 !important;
@@ -639,12 +672,16 @@ footer {
     background-color: rgba(10,26,39,0.8);
     color:#fbfdff;
     text-shadow: 1px 1px 1px #000;
-    padding: 2em 0;
+    padding: 0em 0;
 }
 
+footer .inner {
+    padding: 0 !important;
+    margin-top: 2em !important;
+}
 
 footer .row {
-    width: 65%;
+    width: 100%;
     margin: 0 auto;
 }
 
