@@ -15,20 +15,31 @@ $(document).ready(function () {
     $('#close-modal').click(function() { 
         $('#overlay').fadeOut('fast');
         });
+    $('#scroll1').mouseover(function() {
+        $('this').animate({
+        line-height: "100%";
+            }, 100);
+        });
+    $('#scroll1').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#how-we-work-title").offset().top
+                     }, 1000);                     
+        });
 });
     </script>
 </head>
 
 <body>
-<a href="#" class="scroll-down"></a>    
+   
 <nav>
     <div class="inner">
         <a class="logo" href="/">blackbox</a>
-        <a href="/entrepreneurs/">For Entrepreneurs</a>
-        <a href="/investors/">For Investors</a>
-        <a href="/network/">Network</a>        
+        <a href="/mansion/">Mansion</a>        
+        <a href="/programs/">Programs</a>
+        <a href="/media/">Media</a>
+        <a href="/network/">Partners</a>        
         <a href="/companies"/>Portfolio</a>    
-
+        <a hre
     </div>
 </nav>
 

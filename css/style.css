@@ -142,25 +142,29 @@ nav a {
 }
 
 a.scroll-down {
-    position: absolute;
     display: block;
-    width: 3em;
-    height: 1em;
-    background: url(../img/arrow.png) no-repeat center center rgba(220,223,225,0.3);
-    color: #fff;
-    padding: 1em 0 1.5em 0;
+    width: 1em;
+    position: relative;
+    left: 50%;
+    line-height: 80% !important;
+    margin: 0em 0 8em -.8em;
+    font: 4em 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background-color: rgba(159,227,255,1);
+    color: rgba(10,26,39,0.9);
+    padding: 0em .3em 0.25em .3em;
     text-align: center;
     border: none;
-    top: 0;
-    left: 100%;
-    margin-left: -3em;
-    z-index: 100;
+    border-top: solid 1px rgba(10,26,39,0.5);
+    box-shadow: 0 0 3px #14171b;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    text-shadow: 0 1px 0 rgba(220,223,225,1);
+
 }
 
 a.scroll-down:hover {
-    background-color: rgba(220,223,225,0.5);
+    background-color: rgba(159,227,255,.7);
+/*    line-height: 100% !important;*/
 }
 
 nav a:before{
@@ -219,6 +223,7 @@ section {
 }
 
 .b-slide {
+    padding: 3em 0;
     background: #9fe3ff;
     box-shadow: 0 0px 10px #14171b;
     position: relative;
@@ -302,16 +307,10 @@ section {
     line-height: 1.5em;
 }
 
-.c-slide aside {
-    width: 100%;
-    float: left;
-    clear: both;
-    border-top: solid 1px rgba(10,26,39,0.5);
-    border-bottom: solid 1px rgba(10,26,39,0.5);
-    text-align: center;
-    padding: 1em 0;
-    line-height: 1.5em;
-    margin: 2em 0;
+.c-slide h1 span {
+    color: rgba(10,26,39,0.5);
+    font-size: .8em;
+    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
 .c-slide a{
@@ -344,7 +343,7 @@ section {
 .c-slide figure small a {
     display: block;
     font-size: 1em;
-    padding: 0 0 0 22px;
+    padding: 0 0 0 2em;
 }
 
 .c-slide figure small a:hover {
@@ -367,6 +366,7 @@ section {
     font-size: .6em;
 }
 
+
 .c-slide a.follow-me {
     background: url(../img/mini-twitter.png) no-repeat center left;
 }
@@ -376,10 +376,16 @@ section {
 }
 
 .c-slide blockquote {
-    background:url(../img/blockquote.png) no-repeat bottom right;
-    float: right;
-    width: 55%;
-    padding-right: 10%;
+    display: block;
+    float: left;
+    margin: 3em 0;
+    padding: 0 0 2em 2em;
+    background:url(../img/blockquote1.png) no-repeat bottom right;
+    font-size: .9em;
+    font-style: italic;
+    color: rgba(10,26,39,0.5);
+    border-left: solid 3px rgba(10,26,39,0.1);
+
 }
 
 .c-slide .btn {
@@ -394,7 +400,7 @@ section {
 
 .c-slide .btn:hover {
     box-shadow: 0 0 2px rgba(10,26,39,0.4);
-        background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.9);
 }
 .big-link {
     display: block;
@@ -422,6 +428,7 @@ section {
     width: 100%;
     margin: 0 0% 0 0;
 }
+
 
 .span4 {
     width: 47.5%;
@@ -467,6 +474,11 @@ section {
 figure.span2 {
     width: 47.5%;
 }
+
+.span3 figure {
+    width: 100%;
+}
+
 figure.span4 {
     width: 21.25%;
 }
@@ -498,9 +510,7 @@ figure.span4 {
 }
 
 /*------Specific slide---------*/
-#welcome h1{
-    font-size: 1em;
-}
+
 
 
 strong.logo {
@@ -511,6 +521,9 @@ strong.logo {
    font-size: 1.2em;
 }
 
+#last {
+    box-shadow: 0 0px 1px #14171b;
+}
 /* --------------------------------------------------------------------------- Media min-width: 600px */
 
 @media (min-width: 600px) {
@@ -526,6 +539,11 @@ strong.logo {
 .span3 {
     width: 30%;
     margin: 0 5% 0 0;
+}
+
+.span3x2 {
+    width: 60%;
+    float: right;    
 }
 
 .span4 {
@@ -574,27 +592,7 @@ nav .logo {
     padding-left: 0;
 }
 
- a.scroll-down {
-    position: fixed;
-    display: block;
-    width: 3em;
-    height: 1em;
-    background: url(../img/arrow.png) no-repeat center bottom rgba(220,223,225,0.3);
-    color: #fff;
-    font-size: 2em;
-    padding: 1em 0 .5em 0;
-    text-align: center;
-    border: none;
-    top: 0;
-    left: 82.5%;
-    margin-left: -3em;
-    z-index: 100;
-    border-radius: 5px;
-}
 
- a.scroll-down:hover {
-    background-color: rgba(220,223,225,0.8);
- }
 /*---------------------------------Sections*/
 
 .a-slide {
@@ -711,47 +709,12 @@ footer a:hover {
 }
 
 
-
+/*--------------------Slide specific----------------*/
 
 #welcome .inner{
-    padding: 0 !important;
-    color: #14171b;
-	margin: 16em auto 10em ;    
-}
-
-#welcome h1 {
-    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    font-weight: normal;
-}
-
-#welcome h1 span{
-    display: inline-block;
-    font-size: 2em;
-    margin: .1em 0 0 0 ;
-    padding: .2em .9em;
-    color: #fff;
-    border-radius: 3px;
-}
-
-#welcome #attention-box {
-    background: #9fe3ff;
-    display: inline-block;
-    color: rgba(10,26,39,0.8);
-    font-size: 2.2em;
-    padding: .7em 0;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    width: 100%;
-    font-family: 'Droid Serif', serif;  
-    box-shadow: 0 0px 3px #14171b;
-    text-shadow: 1px 1px 0 #d9f3fd;
-    text-align: center;
-}
-
-#welcome #attention-box:hover {
-    background: rgba(159,227,255,.9);
-    color: #fff;
-    text-shadow: -1px -1px 0 #71d1f8;
+	margin: 16em auto 0 ;  /*Bottom Margin min 10em on scroll-down element HAS to be added*/	
+    box-shadow: 0 0px 1px #14171b;
+    z-index: 1000000;
 }
 
 #who-we-work-with-title .inner,
