@@ -15,32 +15,40 @@ $(document).ready(function () {
     $('#close-modal').click(function() { 
         $('#overlay').fadeOut('fast');
         });
-    $('#scroll1').mouseover(function() {
-        $('this').animate({
-        line-height: "100%";
-            }, 100);
-        });
-    $('#scroll1').click(function(){
+    $('#scroll-down').click(function(){
          $('html, body').animate({                     
                     scrollTop: $("#how-we-work-title").offset().top
                      }, 1000);                     
         });
 });
     </script>
+
+    
 </head>
 
 <body>
-   
+    <!--FBML-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=329792920375738";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!--/FBML-->
+    
 <nav>
-    <div class="inner">
         <a class="logo" href="/">blackbox</a>
-        <a href="/mansion/">Mansion</a>        
+    <div class="inner">      
         <a href="/programs/">Programs</a>
         <a href="/media/">Media</a>
         <a href="/network/">Partners</a>        
         <a href="/companies"/>Portfolio</a>    
-        <a hre
+        <a href="/mansion/">Mansion</a>          
     </div>
+        <a class="social"><div class="fb-like" data-href="http://facebook.com/blackbox.vc" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-colorscheme="light"></div></a>
+        <a class="social"><img src="img/mini-twitter-w.png"></a>        
 </nav>
 
 <div id="container">
