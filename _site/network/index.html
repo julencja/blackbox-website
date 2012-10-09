@@ -9,6 +9,9 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script>
 $(document).ready(function () {
+    $(window).scroll(function () { 
+        $("#subwelcome").css("position", "static"); 
+        });
     $('#mailing-list-form').click(function() {
         $('#overlay').fadeIn('fast');
         });
@@ -48,7 +51,7 @@ $(document).ready(function () {
         <a href="/mansion/">Mansion</a>          
     </div>
         <a class="social"><div class="fb-like" data-href="http://facebook.com/blackbox.vc" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-colorscheme="light"></div></a>
-        <a class="social"><img src="img/mini-twitter-w.png"></a>        
+        <a href="https://twitter.com/blackboxvc" target="_blank" class="social"><img src="img/mini-twitter-w.png"></a>        
 </nav>
 
 <div id="container">
@@ -286,46 +289,39 @@ $(document).ready(function () {
 </section>
 
 
-    <section id="social" class="a-slide">
-        <div class="overlay">
-            <div class="inner">
-                <a class="social mailing" id="mailing-list-form" href="#">Join the Mailing List</a>
-                <a class="social like" href="https://www.facebook.com/blackbox.vc" target="_blank">Like us on Facebook</a>
-                <a class="social twitter" href="https://twitter.com/blackboxvc" target="_blank">Follow us on Twitter</a>
-            </div><!--inner-->
 
-            <footer>
-                <div class="inner">
-                <div class="row">
-                    <div class="grid span3">
-                        <h4>About us</h4>
-                        <ul>
-                            <li><a href="/about/">Team</a></li>
-                            <li><a href="/about/media.html">Press</a></li>
-                            <li><a href="/events/">Events</a></li>
-                        </ul>
-                    </div>
-                    <div class="grid span3">
-                        <h4>For Entrepreneurs</h4>
-                        <ul>
-                            <li><a href="/mansion/">Blackbox Residence</a></li>
-                            <li><a href="/connect/">Blackbox Connect</a></li>
-                            <li><a href="/accelerate/">Blackbox Accelerate</a></li>
-                        </ul>
-                    </div>
-                    <div class="grid span3">
-                        <h4>For Investors</h4>
-                        <ul>
-                            <li><a href="/companies/">Portfolio</a></li>
-                            <li><a href="/investors/">Investment Opportunities</a></li>
-                        </ul>
-                    </div>
-               </div>
-               <p>&copy; Blackbox Accelerator 2011-2012</p>                
-               </div>
-            </footer>
-        </div><!--overlay-->
-    </section>
+
+    <footer>
+        <div class="inner">
+        <div class="row">
+            <div class="grid span3">
+                <h4>About us</h4>
+                <ul>
+                    <li><a href="/about/">Team</a></li>
+                    <li><a href="/about/media.html">Press</a></li>
+                    <li><a href="/events/">Events</a></li>
+                </ul>
+            </div>
+            <div class="grid span3">
+                <h4>For Entrepreneurs</h4>
+                <ul>
+                    <li><a href="/mansion/">Blackbox Residence</a></li>
+                    <li><a href="/connect/">Blackbox Connect</a></li>
+                    <li><a href="/accelerate/">Blackbox Accelerate</a></li>
+                </ul>
+            </div>
+            <div class="grid span3">
+                <h4>For Investors</h4>
+                <ul>
+                    <li><a href="/companies/">Portfolio</a></li>
+                    <li><a href="/investors/">Investment Opportunities</a></li>
+                </ul>
+            </div>
+       </div>
+       <p>&copy; Blackbox Accelerator 2011-2012</p>                
+       </div>
+    </footer>
+    
 </div> <!--#container-->
 
 <div id="overlay">

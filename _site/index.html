@@ -9,6 +9,9 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script>
 $(document).ready(function () {
+    $(window).scroll(function () { 
+        $("#subwelcome").css("position", "static"); 
+        });
     $('#mailing-list-form').click(function() {
         $('#overlay').fadeIn('fast');
         });
@@ -48,33 +51,35 @@ $(document).ready(function () {
         <a href="/mansion/">Mansion</a>          
     </div>
         <a class="social"><div class="fb-like" data-href="http://facebook.com/blackbox.vc" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-colorscheme="light"></div></a>
-        <a class="social"><img src="img/mini-twitter-w.png"></a>        
+        <a href="https://twitter.com/blackboxvc" target="_blank" class="social"><img src="img/mini-twitter-w.png"></a>        
 </nav>
 
 <div id="container">
 
     <section id="welcome" class="a-slide">
         <div class="overlay">
+            <div class="floater"></div>
             <div class="inner">
-                <h1>If you are an ambitious founder,<br>
-                want to solve a meaningful problem,<br>
-                and build a global company with Silicon Valley resources...<br>
+                <h1>
                 <span class="logo">blackbox</span><br>
-                <a href="#" id="scroll-down">learn more</a>
+                Where ambitious founders<br>
+                solve meaningful problems<br>
+                and build global companies<br> with Silicon Valley resources.<br>
+                <a href="#" id="scroll-down">learn more &raquo;</a>
                 </h1>
             </div>
 
-            <div class="sub">
+            <div class="sub" id="subwelcome">
                 <div class="row">
-                <div class="l">
-                    <p>&ldquo;Technology alone is not enough.<br> It's technology married with liberal arts, married with the humanities,<br> that yields us the results that makes our hearts sing.&rdquo; <br> &ndash; Steve Jobs</p>
-                </div>
-                <div class="r">
-                    <h2><a href="">Blackbox Connect // Investors<br>
-                    Apply now &raquo;</a></h2>
-                </div>            
+                    <div class="l">
+                        <p>&ldquo;Technology alone is not enough.<br> It's technology married with liberal arts, married with the humanities,<br> that yields us the results that makes our hearts sing.&rdquo; <br> &ndash; Steve Jobs</p>
+                    </div>
+                    <div class="r">
+                        <h2><a href="">Blackbox Connect // Investors</a></h2>
+                        <h3><a href="#">Apply now &raquo;</a></h3>
+                    </div>            
                 </div>                           
-        </div>
+            </div>
         </div>
     </section>
     
@@ -92,72 +97,31 @@ $(document).ready(function () {
         <div class="inner">
             <div class="row">
                 <div class="grid span3">
-                    <h2><a href="/programs/#residence">Blackbox Residence</a></h2>    
+                    <h2><a href="/programs/#residence">Blackbox<br>Residence</a></h2>    
 
                     <p>If you are an entrepreneur visiting Silicon Valley, Blackbox Mansion is the best place for you to stay and make your first connections.</p>
-                    <p>Residence is exclusive to entrepreneurs. Priority is given to people referred by our Referral Partners or Blackbox Ambassadors.</p>
-                    <p><a href="/programs/#residence">Learn more &raquo;</a></p>                                        
+                    <p>Residence is exclusive to entrepreneurs. Priority is given to people referred by our Partners.</p>
+                    <p><a href="/programs/#residence" class="mid-link">Learn more &raquo;</a></p>                                        
 
                 </div>
 
                 <div class="grid span3">
-                    <h2><a href="/programs/#connect">Blackbox Connect</a></h2>
+                    <h2><a href="/programs/#connect">Blackbox<br>Connect</a></h2>
                     <p>For 2 weeks 12 international founders who want to dive into Silicon Valley's ecosystem stay together in the Blackbox Mansion where they learn from, and connect with, a curated network of thought leaders, investors and successful entrepreneurs.</p>
 
-                    <p><a href="/programs/#connect">Learn more &raquo; </a></p>                    
+                    <p><a href="/programs/#connect" class="mid-link">Learn more &raquo; </a></p>                    
                 </div>
                 
                 <div class="grid span3">
-                    <h2><a href="/programs/accelerate">Blackbox Accelerate</a></h2>
+                    <h2><a href="/programs/accelerate">Blackbox<br>Accelerate</a></h2>
                     <p>If we both believe we can help you, we commit to accelerate your growth for no less than 1 year.</p>
                     <p>With the value that we provide we earn small equity in your company and <em>align our interests long term</em>.</p>
 
-                    <p><a href="/programs/accelerate">Learn more &raquo;</a></p>
+                    <p><a href="/programs/accelerate" class="mid-link">Learn more &raquo;</a></p>
                 </div>
             </div><!--.row-->
         </div><!--.inner-->
     </section>
-
-    <section id="why-are-we-doing-this-title" class="a-slide">
-        <div class="overlay">
-            <div class="inner">
-                <h1><em>Why</em> are we doing this?</h1>
-            </div>
-        </div>
-    </section>
-
-    <section id="who-we-are" class="c-slide">
-        <div class="inner">
-            <div class="row">
-                <div class="grid span3">
-                <figure> 
-                    <img src="img/fadi.jpg" alt="Fadi Bishara" width="100%">
-                    <small>
-                        <a href="" class="follow-me">Follow @fbishara&raquo;</a>
-                        <a href="" class="linkedin">LinkedIn Profile&raquo;</a>
-                    </small>
-                </figure>                
-                    <!--blockquote>
-                        <p>Entrepreneurship is all about self-leadership.</p> 
-                        <p>Success of a founder is not a matter of funding, or skills, or diplomas &mdash; it's all about how well he knows himself and expresses himself to the world in a way that creates value.</p>
-                        <p>The ones who succeed are the ones who are clear about <em>who they are and what drives them</em>. The ones who cure their own pains with extremely strong motivation.</p>
-                        <p>If you're a purposeful driven individual who wants to use or invest in technology to improve lives, <em>I want to hear from you</em>.</p>
-                    </blockquote-->                    
-                </div>
-
-                <div class="grid span3x2">
-                    <h1>Fadi Bishara  <span>Blackbox Founder</span></h1>
-                    <p>Fadi has been working with technology entrepreneurs in Silicon Valley since 1996, recruiting and building <em>core teams</em> for <em>over 100 early stage startups</em>, such us Lala (Apple), Tapulous (Disney), Zynga (IPO), Splunk (IPO), Inktomi (Yahoo!), Bebo (AOL), Apture (Google), PeakStream (Google), LiveJournal, VideoEgg, Blurb, Change.org, and many others.</p>
-                    <p>With over 20 years of experience as a the CEO of TechVenture, Inc., Fadi has a deep understanding of real daily problems of an early stage startup.</p>
-                    <p>He's the author of the <em>Ergonomic Hiring</em> method and a sought after speaker, appearing at conferences and universities such as Stanford, UCLA, Moscow Institute of Physics and Technology, Open University Skolkovo Foundation, St. Petersburg National Research University, Singularity University and the Presidio Graduate School of Management. He served two years as an Executive Committee Co-Chair of the MIT/Stanford Venture Lab and is currently an Advisory Board Member there.</p>
-                    <p>Fadi started Blackbox in 2010, with a vision to build a global ecosystem to <em>nurture ambitious change makers and innovators</em> no matter where they live or work.</p>
-                    <p class="big-link"><a href="/about/">Meet the team &raquo;</a></p>                    
-                </div>                
-            </div>
-        <div class="inner"><!--.inner-->
-    </section>    
-    
-
 
     <section id="who-we-work-with-title" class="a-slide">
         <div class="overlay">
@@ -176,23 +140,23 @@ $(document).ready(function () {
             <p>Instead, we want you to show us what it is <em>you want to cure</em> that pains you, 
             and why you are the best person to implement the cure.
             </p>
-            <p>Like these guys:</p>
+            <p>Like these guys, founders of some of the companies accelerated by Blackbox:</p>
             <div class="row">
                 <figure class="grid span4"><a href="/companies/#fido">
-                    <img src="img/michael_wroczynski.jpg">
-                    <figcaption>Michael Wroczynski</figcaption></a>
+                    <img src="img/michael_wroczynski.jpg"></a>
+                    <figcaption>Michael Wroczynski | Poland</figcaption> 
                 </figure>               
                 <figure class="grid span4"><a href="/companies/#empreware">                        
-                    <img src="img/agustin_badano.jpg">
-                    <figcaption>Agustin Badano</figcaption></a>
+                    <img src="img/agustin_badano.jpg"></a>
+                    <figcaption>Agustin Badano | Argentina</figcaption>
                 </figure>
                 <figure class="grid span4"><a href="/companies/#mdot">                        
-                    <img src="img/dominik_balogh.jpg">                        
-                    <figcaption>Dominik Balogh</figcaption></a>
+                   <img src="img/dominik_balogh.jpg">     </a>                   
+                    <figcaption>Dominik Balogh | Slovakia</figcaption>
                 </figure>
                 <figure class="grid span4"><a href="#">                        
-                    <img src="img/girts_laudaks.jpg">
-                    <figcaption>Girts Laudaks</figcaption></a>
+                    <img src="img/girts_laudaks.jpg"></a>
+                    <figcaption>Girts Laudaks | Latvia</figcaption>
                 </figure>            
             </div><!--row-->         
             <p class="big-link"><a href="">Meet our companies &raquo;</a></p>            
@@ -200,50 +164,105 @@ $(document).ready(function () {
     </section>
 
 
-
-
-
-
-    <section id="social" class="a-slide">
+    <section id="why-are-we-doing-this-title" class="a-slide">
         <div class="overlay">
             <div class="inner">
-                <a class="social mailing" id="mailing-list-form" href="#">Join the Mailing List</a>
-                <a class="social like" href="https://www.facebook.com/blackbox.vc" target="_blank">Like us on Facebook</a>
-                <a class="social twitter" href="https://twitter.com/blackboxvc" target="_blank">Follow us on Twitter</a>
-            </div><!--inner-->
-
-            <footer>
-                <div class="inner">
-                <div class="row">
-                    <div class="grid span3">
-                        <h4>About us</h4>
-                        <ul>
-                            <li><a href="/about/">Team</a></li>
-                            <li><a href="/about/media.html">Press</a></li>
-                            <li><a href="/events/">Events</a></li>
-                        </ul>
-                    </div>
-                    <div class="grid span3">
-                        <h4>For Entrepreneurs</h4>
-                        <ul>
-                            <li><a href="/mansion/">Blackbox Residence</a></li>
-                            <li><a href="/connect/">Blackbox Connect</a></li>
-                            <li><a href="/accelerate/">Blackbox Accelerate</a></li>
-                        </ul>
-                    </div>
-                    <div class="grid span3">
-                        <h4>For Investors</h4>
-                        <ul>
-                            <li><a href="/companies/">Portfolio</a></li>
-                            <li><a href="/investors/">Investment Opportunities</a></li>
-                        </ul>
-                    </div>
-               </div>
-               <p>&copy; Blackbox Accelerator 2011-2012</p>                
-               </div>
-            </footer>
-        </div><!--overlay-->
+                <h1><em>Why</em> are we doing this?</h1>
+            </div>
+        </div>
     </section>
+
+    <section id="who-we-are" class="c-slide">
+        <div class="inner">
+            <div class="row">
+                <div class="grid span3">
+                    <figure> 
+                        <img src="img/fadi.jpg" alt="Fadi Bishara" width="100%">
+                        <small>
+                            <a href="" class="follow-me">Follow @fbishara &raquo;</a>
+                            <a href="" class="linkedin">LinkedIn Profile &raquo;</a>
+                        </small>
+                    </figure>                
+                </div>
+
+                <div class="grid span3x2">
+                    <h2>Fadi Bishara  <span>Blackbox Founder</span></h2>
+                    <p>Fadi has been working with technology entrepreneurs in Silicon Valley since 1996, recruiting and building <em>core teams</em> for <em>over 100 early stage startups</em>, such us Lala (Apple), Tapulous (Disney), Zynga (IPO), Splunk (IPO), Inktomi (Yahoo!), Bebo (AOL), Apture (Google), PeakStream (Google), LiveJournal, VideoEgg, Blurb, Change.org, and many others.</p>
+                    <p>With over 20 years of experience as a the CEO of TechVenture, Inc., Fadi has a deep understanding of real daily problems of an early stage startup.</p>
+                    <!--p>He's the author of the <em>Ergonomic Hiring</em> method and a sought after speaker, appearing at conferences and universities such as Stanford, UCLA, Moscow Institute of Physics and Technology, Open University Skolkovo Foundation, St. Petersburg National Research University, Singularity University and the Presidio Graduate School of Management. He served two years as an Executive Committee Co-Chair of the MIT/Stanford Venture Lab and is currently an Advisory Board Member there.</p-->
+                    <p>Fadi started Blackbox in 2010, with a vision to build a global ecosystem to <em>nurture ambitious change makers and innovators</em> no matter where they live or work.</p>
+                    <p class="big-link"><a href="/about/">Meet the team &raquo;</a></p>                    
+                </div>                
+            </div>
+        <div class="inner"><!--.inner-->
+    </section>    
+
+    <section id="last" class="a-slide">
+        <div class="overlay">
+            <div class="inner">
+                <h1><em>Get involved!</em></h1>
+            </div>
+        </div>
+    </section>
+    
+    <section id="calls-to-action" class="a-slide">
+            <div class="inner">
+                <a class="box" href="" target="">
+                    <h2>Apply now &raquo;</h2>                
+                    <h3>Blackbox Connect<br>//&nbsp;Jan 2013</h3>
+                </a>
+                <a class="box-mid" href="" target="">
+                    <h2>Apply now &raquo;</h2>
+                    <h3>Blackbox Connect Investors<br>//&nbsp;Dec 2012</h3>                    
+                </a>
+                <a class="box" id="mailing-list-form" href="#">
+                    <h2>Stay in touch &raquo;</h2>
+                    <h3>Sign up for the mailing list to get invitations to our events</h3>
+                </a>
+            </div><!--inner-->
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="inner">
+        <div class="row">
+            <div class="grid span3">
+                <h4>About us</h4>
+                <ul>
+                    <li><a href="/about/">Team</a></li>
+                    <li><a href="/about/media.html">Press</a></li>
+                    <li><a href="/events/">Events</a></li>
+                </ul>
+            </div>
+            <div class="grid span3">
+                <h4>For Entrepreneurs</h4>
+                <ul>
+                    <li><a href="/mansion/">Blackbox Residence</a></li>
+                    <li><a href="/connect/">Blackbox Connect</a></li>
+                    <li><a href="/accelerate/">Blackbox Accelerate</a></li>
+                </ul>
+            </div>
+            <div class="grid span3">
+                <h4>For Investors</h4>
+                <ul>
+                    <li><a href="/companies/">Portfolio</a></li>
+                    <li><a href="/investors/">Investment Opportunities</a></li>
+                </ul>
+            </div>
+       </div>
+       <p>&copy; Blackbox Accelerator 2011-2012</p>                
+       </div>
+    </footer>
+    
 </div> <!--#container-->
 
 <div id="overlay">

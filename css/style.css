@@ -59,7 +59,7 @@ h1 {
     }
 
 p {
-    margin: 0 0 1em 0;
+    margin: 0 0 1.5em 0;
 }
 
 em {
@@ -241,12 +241,13 @@ section {
 .a-slide h1 {
     font-family: Gill Sans, sans-serif;
     font-size: 2em;
+    text-align: center;
 }
 
 .a-slide h1 em {
     font-weight: normal;
     text-transform: uppercase;
-        color: #3dbff4 !important;
+    color: #3dbff4 !important;
 }
 
 .b-slide .inner {
@@ -260,8 +261,9 @@ section {
 
 
 .c-slide .inner {
-    line-height: 1.8em;
+    line-height: 1.5em;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    padding: 3em 0;
 }
 
 .c-slide h1,
@@ -269,15 +271,16 @@ section {
 .c-slide h3{
     font-family: Gill Sans, sans-serif;
     line-height: 1.2;
-    margin: 1em 0;
+    margin: 0 0 1em 0;
 }
 
 .c-slide h1 {
-    font-size: 2.5em;    
+    font-size: 2.8em;    
 }
 
 .c-slide h2 {
     font-size: 2.5em;    
+
 }
 
 .c-slide h2 a {
@@ -293,10 +296,10 @@ section {
 }
 
 .c-slide p {
-    line-height: 1.5em;
+    line-height: 1.5;
 }
 
-.c-slide h1 span {
+.c-slide h2 span {
     color: rgba(10,26,39,0.5);
     font-size: .6em;
     text-transform: uppercase;
@@ -402,6 +405,11 @@ section {
     line-height: 1.2;
 }
 
+.mid-link {
+
+    font-size: 1.5em;    
+}
+
 span.right{
 float: right;
 }
@@ -457,7 +465,7 @@ float: right;
 .row figure figcaption{
     font-size: .8em;
     text-align: center;
-    margin-top: -10px;
+    margin-top: 0px;
     font-family: Gill Sans, sans-serif;    
 }
 
@@ -503,6 +511,10 @@ figure.span4 {
     background-image:url(../img/bg-scoble-iphones.jpg);
 }
 
+#last {
+    background-image:url(../img/bg-casual-house.jpg);
+}
+
 /*------Specific slide---------*/
 
 
@@ -511,6 +523,7 @@ figure.span4 {
 #last {
     box-shadow: 0 0px 1px #14171b;
 }
+
 /* --------------------------------------------------------------------------- Media min-width: 600px */
 
 @media (min-width: 600px) {
@@ -554,7 +567,7 @@ nav .inner {
 nav a {
     display: block;
     float: left;
-    padding: .8em 2em .5em 2em;
+    padding: .8em 2% .5em 2%;
     margin: 0 0 0 0;
     border-left: solid 1px rgba(10,26,39,1);
     border-right: solid 1px rgba(10,26,39,1);
@@ -633,7 +646,7 @@ nav .social {
 }
 
 .a-slide h1 {
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .b-slide p {
@@ -657,7 +670,7 @@ strong.logo {
 footer {
     float: left;
     width: 100%;
-    background-color: rgba(10,26,39,0.8);
+    background-color: rgba(10,26,39,1);
     color:#fbfdff;
     text-shadow: 1px 1px 1px #000;
     padding: 0em 0;
@@ -701,13 +714,28 @@ footer a:hover {
 
 /*--------------------Slide specific----------------*/
 /*----------Welcome Slide*-----------*/
+
+.floater	 {
+    display: block;
+    float:left; 
+    height:100%; 
+    margin-bottom:-250px;
+}
+
+    
+#welcome {
+
+
+}
+
 #welcome .inner{
     background: transparent url(../img/logo-hex.png) no-repeat top center;
     width: 300px;/*500px*/
     height: 300px;/*500px*/
     text-align: center;
     padding: 100px 50px 0 50px;
-    margin: 5em auto 4em !important;
+    margin: 4em auto;
+
 }
 
 #welcome .inner a:hover {
@@ -731,11 +759,13 @@ footer a:hover {
 #welcome .sub {
     background: #fff;
     box-shadow: 0 0 5px rgba(10,26,39,0.3);
-    margin: 1em 0 0 0;
     float: left;
     width: 100%;
     padding: 0 0;
     z-index: 1000000;
+    position: relative;
+    bottom: 0%;
+
 }
 
 #welcome .sub .row {
@@ -748,7 +778,7 @@ footer a:hover {
     float: left;
     text-align: right;
     font-size: 80%;
-    padding: 3em 0 0 0;   
+    padding: 3em 0 ;   
 }
 
 #welcome .sub .r {
@@ -760,52 +790,41 @@ footer a:hover {
 }
 
 #welcome .sub h2 {
-    font-size: 150%;
+    font-size: 180%;
     text-transform: uppercase;
+}
 
+#welcome .sub h3 {
+    font-size: 150%;
 }
 
 #welcome .sub h2,
 #welcome .sub h3{
-    margin-left: 2.5%;
+    margin: 0 0 1em 5%;
+    line-height: .5;
 }
 
-#welcome .sub h2 a {
+#welcome .sub a {
     color: #fff;
 }
 
-#welcome .sub h2 a:hover {
-    text-decoration: underline;
+#welcome .sub h3 a:hover {
+
+}
+
+#welcome .sub  a:hover {
+    color: rgba(10,26,39,0.8) !important;
 }
 
 #who-we-work-with-title .inner,
 #how-we-work-title .inner, 
 #why-are-we-doing-this-title .inner,
-#calls-to-action .inner{
+#last .inner{
     margin: 12em auto;
 }
 
 
-.hexagon {
-    background: url(../img/hexagon.png) no-repeat left top;
-    height: 80px;
-    width: 100px;
-    position: absolute;
-    z-index: -1;
-    display: none;
-    margin-left: -70px;
-    margin-top: 15px;
-    text-align: center;
-    padding-top: 35px;
-    font-size: 30px;
-    color: #fff;
-    text-shadow: none;
-    opacity: 0.3;
-}
 
-#how-we-work h2.push {
-/*    padding-left: 30px;*/
-}
 
 /*---------Why are we doing this*/
 
@@ -814,27 +833,58 @@ footer a:hover {
 }
 /*---------Calls to action*/
 #calls-to-action {
-    background-image:url(../img/bg-casual-house.jpg);
+    background-color: #fff;
+    background-image: url(../img/dot-pattern-alpha.png);
+    background-repeat: repeat;
+    -webkit-background-size: .25%;
+	-moz-background-size: .25%;
+	-o-background-size: .25%;
+	background-size: .25%;      
 }
 
 #calls-to-action .inner {
     background: none;
-    margin: 10em auto;
+    margin: 0em auto;
+    padding: 0;
+  
 }
 
 
 #calls-to-action a {
     display: block;
-    background-color: rgba(10,26,39,0.8);
-    box-shadow: 0 0 5px rgba(10,26,39,.6);
-    border: solid 1px rgba(10,26,39,0.95);    
-    color: #fbfdff;
-    padding: 0.4em 1em;
-    border-radius: 5px;
-    font-size: 1.5em;
-    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
-    margin-bottom: 10em;
+    background: #3dbff4;
+    width: 33%;
+    height: 10em;
+    float: left;
+    padding: 2em 0;
+    color: rgba(10,26,39,1);
 }
+
+
+#calls-to-action a h2,
+#calls-to-action a h3 {
+    display: block;
+    margin: 0em 10% 2em 10%;
+    float: left;
+}
+
+#calls-to-action a h2 {
+    text-transform: uppercase;
+    font-size: 150%;
+}
+
+#calls-to-action a h3 {
+    font-size: 120%;
+}
+#calls-to-action a.box-mid {
+    background-color: #fff;
+}
+
+#calls-to-action a:hover {
+    background: #fff;
+    color: #3dbff4;
+}
+
 
 /*---------Social*/
 
@@ -844,7 +894,7 @@ footer a:hover {
 }
 
 #social a.social {
-    padding: 0.2em 0 0.2em 3em;
+    padding: 0.2em 0 0.2em 4em;
     display: block;
     border: solid 1px rgba(255,255,255,0);
     background-color: rgba(255,255,255,0.7);
@@ -853,7 +903,6 @@ footer a:hover {
     font-size: 3em;
     margin: 0 0 .5em 0;
     border-radius: 5px;
-    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;      
     
 }
 
@@ -863,16 +912,17 @@ footer a:hover {
 }
 
 .twitter {
-    background: transparent url(../img/twitter.png) no-repeat .5em center;
+    background: transparent url(../img/twitter.png) no-repeat 1em center;
 }
 
 .like {
-    background: transparent url(../img/like.png) no-repeat .5em center;
+    background: transparent url(../img/like.png) no-repeat 1em center;
 }
 
 .mailing {
-    background: transparent url(../img/mailing.png) no-repeat .5em center;
+    background: transparent url(../img/mailing.png) no-repeat 1em center;
 }
 
 }
+
 
