@@ -266,20 +266,24 @@ section {
     padding: 3em 0;
 }
 
+.c-slide .row {
+    margin:1.5em 0 3em 0;
+}    
 .c-slide h1,
 .c-slide h2,
-.c-slide h3{
+.c-slide h3,
+.c-slide h4{
     font-family: Gill Sans, sans-serif;
     line-height: 1.2;
     margin: 0 0 1em 0;
 }
 
 .c-slide h1 {
-    font-size: 2.8em;    
+    font-size: 3em;    
 }
 
 .c-slide h2 {
-    font-size: 2.5em;    
+    font-size: 2.8em;    
 
 }
 
@@ -288,12 +292,16 @@ section {
 }
 .c-slide h3 {
     font-size: 2em;
-    margin: 1.5em 0 0 0;
-    padding: 1em 0;
-    float: left;
-    width: 100%;
-    border-top: solid 1px rgba(10,26,39,0.3);
 }
+
+.c-slide h4 {
+    font-size: 1em;
+    text-transform: uppercase;
+    border-bottom: solid 1px rgba(10,26,39,0.9);
+    margin-top: 2em;
+}
+
+
 
 .c-slide p {
     line-height: 1.5;
@@ -305,10 +313,11 @@ section {
     text-transform: uppercase;
 }
 
-.c-slide p a{
-    color: #3dbff4;
-}
 
+
+.c-slide a {
+    color: #1ca6df;
+}
 .c-slide a:hover {
     color: rgba(10,26,39,0.9);
 }
@@ -317,6 +326,11 @@ section {
     box-shadow: 0 0 2px rgba(10,26,39,0.9) inset;
 }
 
+.c-slide li {
+    list-style: square inside;
+    margin: .5em 0;   
+}
+    
 .c-slide figure {
     float: left;
     display: block;
@@ -449,7 +463,7 @@ float: right;
 
 .row {
     width: 100%;
-    margin-bottom: 5%;
+    margin-bottom: 3em;
     clear: both;
     float: left;
 }
@@ -515,6 +529,10 @@ figure.span4 {
     background-image:url(../img/bg-casual-house.jpg);
 }
 
+#programs {
+    background-image:url(../img/bg-programs.jpg);
+}
+
 /*------Specific slide---------*/
 
 
@@ -532,7 +550,7 @@ figure.span4 {
 /*Grid min 600*/
 
 .span2 {
-    width: 45%;
+    width: 47.5%;
     margin: 0 5% 0 0;
 }
 
@@ -542,8 +560,8 @@ figure.span4 {
 }
 
 .span3x2 {
-    width: 60%;
-    float: right;    
+    width: 65%;
+    margin: 0 5% 0 0;    
 }
 
 .span4 {
@@ -575,6 +593,9 @@ nav a {
     border-bottom: none;
 }
 
+nav a.active {
+    color: #3dbff4;
+}
 nav a:before{
     content: "";
 }
@@ -823,6 +844,9 @@ footer a:hover {
     margin: 12em auto;
 }
 
+.first .inner {
+    margin: 10em auto 6em;
+} 
 
 
 
