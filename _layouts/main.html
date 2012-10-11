@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
     <title>{{page.title}}</title>
-    <link href='http://fonts.googleapis.com/css?family=Arvo:700|Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+    <!--link href='http://fonts.googleapis.com/css?family=Arvo:700|Droid+Serif:400,700' rel='stylesheet' type='text/css'-->
     <link href="/css/style.css" rel="stylesheet" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script>
@@ -22,6 +22,15 @@ $(document).ready(function () {
          $('html, body').animate({                     
                     scrollTop: $("#how-we-work-title").offset().top
                      }, 1000);                     
+        });
+    $('.gallery figure').click(function (){
+        $('#active-photo-container').empty();
+        $(this).children().clone().removeClass('blurred').appendTo('#active-photo-container');
+        $('.gallery .thumb img').addClass('blurred');        
+        $('#active-photo-container').click(function(){
+            $(this).empty();            
+            $('.gallery .thumb img').removeClass('blurred');            
+            });
         });
 });
     </script>

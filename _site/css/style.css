@@ -71,6 +71,14 @@ a {
     color: #3dbff4;
 }
 
+sup {
+    position: relative;
+    top: 1.5em;
+    font-size: 50%;
+    vertical-align: top;
+
+}
+
 /* ------------------------------------------------------------------------- General - All Devices */
 body {
     color: #14171b;    
@@ -290,6 +298,8 @@ section {
 .c-slide h2 a {
     color: rgba(10,26,39,1);
 }
+
+
 .c-slide h3 {
     font-size: 2em;
 }
@@ -428,6 +438,47 @@ span.right{
 float: right;
 }
 
+/*---------------------Gallery-------*/
+.gallery {
+    float: left;
+}
+
+.gallery figure.thumb {
+    position: relative;
+
+}
+
+
+.gallery figure.thumb img {
+    width: 100%;
+    box-shadow: none !important;
+    margin: 0;    
+}
+
+.gallery figure.thumb4 {
+    width: 25%;
+}    
+
+.blurred {
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+}
+
+
+
+
+
+.gallery figure.active {
+    left: 50%;
+    position: absolute;
+    margin-left: -25%;
+    margin-top: -5%;
+    box-shadow:0 0 5px rgba(10,26,39,0.1);
+}
+
 
 /*---------------------Grid general--*/
 .grid {
@@ -533,6 +584,9 @@ figure.span4 {
     background-image:url(../img/bg-programs.jpg);
 }
 
+#mansion {
+    background-image:url(../img/bg-pool.jpg);
+}
 /*------Specific slide---------*/
 
 
@@ -667,7 +721,7 @@ nav .social {
 }
 
 .a-slide h1 {
-    font-size: 4em;
+    font-size: 3.5em;
 }
 
 .b-slide p {

@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
     <title>Blackbox.vc</title>
-    <link href='http://fonts.googleapis.com/css?family=Arvo:700|Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+    <!--link href='http://fonts.googleapis.com/css?family=Arvo:700|Droid+Serif:400,700' rel='stylesheet' type='text/css'-->
     <link href="/css/style.css" rel="stylesheet" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script>
@@ -22,6 +22,15 @@ $(document).ready(function () {
          $('html, body').animate({                     
                     scrollTop: $("#how-we-work-title").offset().top
                      }, 1000);                     
+        });
+    $('.gallery figure').click(function (){
+        $('#active-photo-container').empty();
+        $(this).children().clone().removeClass('blurred').appendTo('#active-photo-container');
+        $('.gallery .thumb img').addClass('blurred');        
+        $('#active-photo-container').click(function(){
+            $(this).empty();            
+            $('.gallery .thumb img').removeClass('blurred');            
+            });
         });
 });
     </script>
@@ -208,15 +217,15 @@ $(document).ready(function () {
     <section id="calls-to-action" class="a-slide">
             <div class="inner">
                 <a class="box" href="" target="">
-                    <h2>Apply now &raquo;</h2>                
+                    <h2>Apply now&nbsp;&raquo;</h2>                
                     <h3>Blackbox Connect<br>//&nbsp;Jan 2013</h3>
                 </a>
                 <a class="box-mid" href="" target="">
-                    <h2>Apply now &raquo;</h2>
+                    <h2>Apply now&nbsp;&raquo;</h2>
                     <h3>Blackbox Connect Investors<br>//&nbsp;Dec 2012</h3>                    
                 </a>
                 <a class="box" id="mailing-list-form" href="#">
-                    <h2>Stay in touch &raquo;</h2>
+                    <h2>Stay in touch&nbsp;&raquo;</h2>
                     <h3>Sign up for the mailing list to get invitations to our events</h3>
                 </a>
             </div><!--inner-->
