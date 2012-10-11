@@ -352,6 +352,10 @@ section {
     background: #fff;
 }
 
+.c-slide figure .small-logo{
+    margin: 0 0 2em 0;
+}
+
 .c-slide small {
     font-size: .9em;
     font-family: Gill Sans, sans-serif;    
@@ -455,7 +459,7 @@ float: right;
     margin: 0;    
 }
 
-.gallery figure.thumb4 {
+.gallery figure.thumb4 { /*used for galleries with 4 thumbnails in a row*/
     width: 25%;
 }    
 
@@ -466,9 +470,6 @@ float: right;
     -o-filter: blur(1px);
     -ms-filter: blur(1px);
 }
-
-
-
 
 
 .gallery figure.active {
@@ -586,6 +587,10 @@ figure.span4 {
 
 #mansion {
     background-image:url(../img/bg-pool.jpg);
+}
+
+#portfolio {
+    background-image:url(../img/bg-artem.jpg);
 }
 /*------Specific slide---------*/
 
