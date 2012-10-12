@@ -270,7 +270,7 @@ section {
 
 .c-slide .inner {
     line-height: 1.5em;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: Helvetica, serif;
     padding: 3em 0;
 }
 
@@ -317,13 +317,14 @@ section {
     line-height: 1.5;
 }
 
-.c-slide h2 span {
+.c-slide h2 span,
+.c-slide h3 span {
     color: rgba(10,26,39,0.5);
-    font-size: .6em;
+    font-size: 65%;
     text-transform: uppercase;
 }
 
-
+ 
 
 .c-slide a {
     color: #1ca6df;
@@ -352,9 +353,16 @@ section {
     background: #fff;
 }
 
-.c-slide figure .small-logo{
+.c-slide figure .small-logo-alpha{
     margin: 0 0 2em 0;
-}
+    background: transparent;
+    box-shadow: none;
+    }
+
+.c-slide figure a:hover .small-logo-alpha{
+    background: rgba(255,255,255,0.5);
+
+    }
 
 .c-slide small {
     font-size: .9em;
@@ -387,7 +395,16 @@ section {
     font-size: .6em;
 }
 
+.c-slide .bio {
+    font-size: 75%;
+}
 
+.c-slide .bio figure {
+    display: block;
+    float: left;
+    width: 25%;
+    margin: 0 2em 0 0;
+}
 .c-slide a.follow-me {
     background: url(../img/mini-twitter.png) no-repeat center left;
 }
@@ -591,6 +608,10 @@ figure.span4 {
 
 #portfolio {
     background-image:url(../img/bg-artem.jpg);
+}
+
+#about {
+    background-image: url(../img/bg-postits.jpg);
 }
 /*------Specific slide---------*/
 
