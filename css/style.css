@@ -353,15 +353,16 @@ section {
     background: #fff;
 }
 
-.c-slide figure .small-logo-alpha{
+.c-slide  .small-logo-alpha{
     margin: 0 0 2em 0;
     background: transparent;
     box-shadow: none;
+    padding:.3em;
     }
 
-.c-slide figure a:hover .small-logo-alpha{
+.c-slide  a:hover .small-logo-alpha{
     background: rgba(255,255,255,0.5);
-
+    box-shadow:none !important;
     }
 
 .c-slide small {
@@ -395,6 +396,23 @@ section {
     font-size: .6em;
 }
 
+.c-slide .entry {
+    font-size: 75%;
+    padding-bottom: 5em;
+    margin-bottom: 8em;
+    border-bottom: solid 1px rgba(10,26,39,0.1);
+}
+
+.c-slide .links {
+    margin: 2em 0;
+    font-size: 1.2em;
+}
+
+.c-slide .links li{
+    text-align: right;
+    list-style-type: none;
+    margin: 0 0;
+}
 .c-slide .bio {
     font-size: 75%;
 }
@@ -448,10 +466,11 @@ section {
     font-size: 2.5em;
     margin: 1em 0;
     line-height: 1.2;
+    font-family: Gill Sans, sans-serif;        
 }
 
 .mid-link {
-
+    font-family: Gill Sans, sans-serif;    
     font-size: 1.5em;    
 }
 
@@ -462,6 +481,7 @@ float: right;
 /*---------------------Gallery-------*/
 .gallery {
     float: left;
+    width: 100%;
 }
 
 .gallery figure.thumb {
@@ -568,6 +588,9 @@ figure.span4 {
     width: 21.25%;
 }
 
+.span4 figure {
+    width: 100%;
+}
 .span4 figcaption {
     display: none;
 }
@@ -901,8 +924,8 @@ footer a:hover {
 
 #welcome .sub h2,
 #welcome .sub h3{
-    margin: 0 0 1em 5%;
-    line-height: .5;
+    margin: 0 0 .5em 5%;
+    line-height: 1;
 }
 
 #welcome .sub a {
