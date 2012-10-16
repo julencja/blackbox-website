@@ -611,6 +611,7 @@ figure.span4 {
 
 .span4 figure {
     width: 100%;
+    margin: 0 0 1.5em 0;
 }
 .span4 figcaption {
     display: none;
