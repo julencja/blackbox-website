@@ -272,11 +272,14 @@ section {
     line-height: 1.5em;
     font-family: Helvetica, serif;
     padding: 3em 0;
+    font-size: 85%;
 }
 
 .c-slide .row {
     margin:1.5em 0 3em 0;
 }    
+
+
 .c-slide h1,
 .c-slide h2,
 .c-slide h3,
@@ -397,12 +400,31 @@ section {
 }
 
 .c-slide .entry {
-    font-size: 75%;
-    padding-bottom: 5em;
-    margin-bottom: 8em;
-    border-bottom: solid 1px rgba(10,26,39,0.1);
+
 }
 
+.c-slide .entry .links li{
+    margin: 1em 0;
+}
+
+.c-slide .entry .details {
+    font-size: 75%;
+    text-transform: uppercase;
+    font-family: Gill Sans, sans-serif;
+}
+
+.c-slide .entry .details h2 {
+    font-size: 2.3em;
+}
+
+
+.c-slide .jumbo{
+    margin: 0 !important;
+}
+
+.c-slide .jumbo .video {
+
+}
 .c-slide .links {
     margin: 2em 0;
     font-size: 1.2em;
@@ -434,13 +456,11 @@ section {
 .c-slide blockquote {
     display: block;
     float: left;
-    margin: 3em 0;
-    padding: 0 0 2em 2em;
-    background:url(../img/blockquote1.png) no-repeat bottom right;
+    padding: 0;
+    background:url(../img/blockquote1.png) no-repeat top right;
     font-size: .9em;
     font-style: italic;
-    color: rgba(10,26,39,0.5);
-    border-left: solid 3px rgba(10,26,39,0.1);
+
 
 }
 
@@ -622,8 +642,15 @@ figure.span4 {
     background-image:url(../img/bg-casual-house.jpg);
 }
 
-#programs {
+#connect {
     background-image:url(../img/bg-programs.jpg);
+}
+
+#accelerate {
+    background-image:url(../img/bg-ann-winblad.jpg);
+}
+#investorsretreat {
+    background-image:url(../img/bg-julia-dutch.jpg);
 }
 
 #mansion {
@@ -671,6 +698,11 @@ figure.span4 {
 .span4 {
     width: 21.25%;
     margin: 0 5% 0 0;
+}
+
+.span4x3 {
+    width: 73.75%;
+    
 }
 
 .span4 figcaption {
