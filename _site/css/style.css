@@ -435,8 +435,9 @@ section {
     list-style-type: none;
     margin: 0 0;
 }
-.c-slide .bio {
-    font-size: 75%;
+.c-slide .bio{
+    font-size: 90%;
+
 }
 
 .c-slide .bio figure {
@@ -667,7 +668,9 @@ figure.span4 {
 }
 /*------Specific slide---------*/
 
-
+#media {
+    background-image: url(../img/bg-scoble.jpg);
+}
 
 
 #last {
@@ -974,6 +977,18 @@ footer a:hover {
     color: rgba(10,26,39,0.8) !important;
 }
 
+#welcome .sponsors {
+    width: 20%;
+    margin: 0 1em;
+    display: block;
+    float: right;
+    opacity: 0.7;
+}
+
+#welcome .sponsors:hover {
+    opacity: 1;
+}
+
 #who-we-work-with-title .inner,
 #how-we-work-title .inner, 
 #why-are-we-doing-this-title .inner,
@@ -994,7 +1009,7 @@ footer a:hover {
 }
 /*---------Calls to action*/
 #calls-to-action {
-    background-color: #fff;
+    background-color: #3dbff4;
     background-image: url(../img/dot-pattern-alpha.png);
     background-repeat: repeat;
     -webkit-background-size: .25%;
