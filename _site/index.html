@@ -32,6 +32,24 @@ $(document).ready(function () {
             $('.gallery .thumb img').removeClass('blurred');            
             });
         });
+    $('.player').click(function (){
+        $('#active-video-holder').fadeOut('fast');
+        $('#ytplayer').fadeIn('fast');
+        });
+    $('.video-thumb').click(function(){
+        var picture = $(this).find('img').attr('src');
+        var speaker = $(this).find('figcaption h6').text();
+        var title = $(this).find('figcaption h5').text();
+        var description = $(this).find('.video-content').text();
+        var videoUrl = $(this).find('.yt-url').text();
+        $('#ytplayer').fadeOut('fast');
+        $('#active-video-holder').fadeIn('fast');
+        $('#active-video-holder img').attr('src', picture);
+        $('#active-video-holder h2').text(speaker);
+        $('#active-video-holder h3').text(title);
+        $('#active-video-holder p').text(description);        
+        $('#ytplayer').attr('src', videoUrl);
+        });
 });
     </script>
 
@@ -56,7 +74,7 @@ $(document).ready(function () {
         <a href="/connect/" >Connect</a>
         <a href="/accelerate/" >Accelerate</a>        
         <a href="/investors/" >Investor Retreat</a>
-        <a href="/media/" >Media</a>
+        <a href="/media/" >Videos</a>
         <a href="/network/" >Partners</a>        
         <a href="/companies"/ >Portfolio</a>    
         <a href="/mansion/" >Mansion</a>          
@@ -83,9 +101,9 @@ $(document).ready(function () {
             <div class="sub" id="subwelcome">
                 <div class="row">
                     <div class="l">
-                        <a href="http://google.com" target="_blank"><img class="sponsors" src="../img/logos/logo_google.png"></a>
-                        <a href="http://www.wilmerhale.com/" target="_blank"><img class="sponsors" src="../img/logos/logo_wilmerhale.png"></a>
-                        <a href="http://www.svb.com/" target="_blank"><img class="sponsors" src="../img/logos/logo_svb.png"></a>                        
+                        <a href="http://google.com" target="_blank"><img class="sponsors" src="../img/logos/logo_google.png" alt="Google Developers Startup Pack"></a>
+                        <a href="http://www.wilmerhale.com/" target="_blank"><img class="sponsors" src="../img/logos/logo_wilmerhale.png" alt="WilmerHale"></a>
+                        <a href="http://www.svb.com/" target="_blank"><img class="sponsors" src="../img/logos/logo_svb.png" alt="Silicon Valley Bank"></a>                        
                         <a href="http://rackspacestartups.com/blackbox/index.html" target="_blank"><img class="sponsors" src="../img/logos/logo_rackspace.png"></a> 
                     </div>
                     <div class="r">

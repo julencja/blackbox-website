@@ -350,10 +350,12 @@ section {
     display: block;
  }
 
-.c-slide figure img {
+.c-slide figure img,
+.c-slide figure iframe {
     padding: 5px;
     box-shadow: 0 0 2px rgba(10,26,39,0.4) inset;
     background: #fff;
+    border-radius: 5px;    
 }
 
 .c-slide  .small-logo-alpha{
@@ -461,8 +463,28 @@ section {
     background:url(../img/blockquote1.png) no-repeat top right;
     font-size: .9em;
     font-style: italic;
+}
 
+/*-------- Video Player ---------*/
+.c-slide #active-video-holder{
+    width: 100%;
+    display: block;
+    float: left;
+    margin: 0 0 4em 0;
+}
 
+#ytplayer {
+    margin: 0 0 4em 0 ;
+    display: none;
+    float: left;
+    padding: 5px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(10,26,39,0.4) inset;    
+}
+
+.hidden {
+    display: none !important; /*contains url for the embedded player*/
 }
 
 .c-slide .btn {
@@ -569,7 +591,7 @@ float: right;
 
 .grid img {
     width: 100%;
-    border-radius: 5px;
+
 }
 
 .row {

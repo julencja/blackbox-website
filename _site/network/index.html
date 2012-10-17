@@ -32,6 +32,24 @@ $(document).ready(function () {
             $('.gallery .thumb img').removeClass('blurred');            
             });
         });
+    $('.player').click(function (){
+        $('#active-video-holder').fadeOut('fast');
+        $('#ytplayer').fadeIn('fast');
+        });
+    $('.video-thumb').click(function(){
+        var picture = $(this).find('img').attr('src');
+        var speaker = $(this).find('figcaption h6').text();
+        var title = $(this).find('figcaption h5').text();
+        var description = $(this).find('.video-content').text();
+        var videoUrl = $(this).find('.yt-url').text();
+        $('#ytplayer').fadeOut('fast');
+        $('#active-video-holder').fadeIn('fast');
+        $('#active-video-holder img').attr('src', picture);
+        $('#active-video-holder h2').text(speaker);
+        $('#active-video-holder h3').text(title);
+        $('#active-video-holder p').text(description);        
+        $('#ytplayer').attr('src', videoUrl);
+        });
 });
     </script>
 
@@ -56,7 +74,7 @@ $(document).ready(function () {
         <a href="/connect/" >Connect</a>
         <a href="/accelerate/" >Accelerate</a>        
         <a href="/investors/" >Investor Retreat</a>
-        <a href="/media/" >Media</a>
+        <a href="/media/" >Videos</a>
         <a href="/network/" class='active'>Partners</a>        
         <a href="/companies"/ >Portfolio</a>    
         <a href="/mansion/" >Mansion</a>          

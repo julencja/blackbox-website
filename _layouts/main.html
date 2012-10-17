@@ -32,6 +32,24 @@ $(document).ready(function () {
             $('.gallery .thumb img').removeClass('blurred');            
             });
         });
+    $('.player').click(function (){
+        $('#active-video-holder').fadeOut('fast');
+        $('#ytplayer').fadeIn('fast');
+        });
+    $('.video-thumb').click(function(){
+        var picture = $(this).find('img').attr('src');
+        var speaker = $(this).find('figcaption h6').text();
+        var title = $(this).find('figcaption h5').text();
+        var description = $(this).find('.video-content').text();
+        var videoUrl = $(this).find('.yt-url').text();
+        $('#ytplayer').fadeOut('fast');
+        $('#active-video-holder').fadeIn('fast');
+        $('#active-video-holder img').attr('src', picture);
+        $('#active-video-holder h2').text(speaker);
+        $('#active-video-holder h3').text(title);
+        $('#active-video-holder p').text(description);        
+        $('#ytplayer').attr('src', videoUrl);
+        });
 });
     </script>
 
@@ -56,7 +74,7 @@ $(document).ready(function () {
         <a href="/connect/" {{page.connect-active}}>Connect</a>
         <a href="/accelerate/" {{page.accelerate-active}}>Accelerate</a>        
         <a href="/investors/" {{page.investors-active}}>Investor Retreat</a>
-        <a href="/media/" {{page.media-active}}>Media</a>
+        <a href="/media/" {{page.videos-active}}>Videos</a>
         <a href="/network/" {{page.partners-active}}>Partners</a>        
         <a href="/companies"/ {{page.portfolio-active}}>Portfolio</a>    
         <a href="/mansion/" {{page.mansion-active}}>Mansion</a>          
