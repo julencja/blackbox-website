@@ -18,11 +18,26 @@ $(document).ready(function () {
     $('#close-modal').click(function() { 
         $('#overlay').fadeOut('fast');
         });
-    $('#scroll-down').click(function(){
+    $('#scroll-down-1').click(function(){
          $('html, body').animate({                     
                     scrollTop: $("#how-we-work-title").offset().top
                      }, 1000);                     
         });
+    $('#scroll-down-2').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#who-we-work-with-title").offset().top
+                     }, 1000);                     
+        });        
+    $('#scroll-down-3').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#why-are-we-doing-this-title").offset().top
+                     }, 1000);                     
+        });        
+    $('#scroll-down-4').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#last").offset().top
+                     }, 1000);                     
+        });                
     $('.gallery figure').click(function (){
         $('#active-photo-container').empty();
         $(this).children().clone().removeClass('blurred').appendTo('#active-photo-container');
@@ -71,13 +86,14 @@ $(document).ready(function () {
 <nav>
         <a class="logo" href="/">blackbox</a>
     <div class="inner">      
-        <a href="/connect/" >Connect</a>
-        <a href="/accelerate/" >Accelerate</a>        
-        <a href="/investors/" >Investor Retreat</a>
+        <a href="/companies"/ >Portfolio</a>            
+        <a href="/network/" >Network</a>            
         <a href="/media/" >Videos</a>
-        <a href="/network/" >Partners</a>        
-        <a href="/companies"/ >Portfolio</a>    
-        <a href="/mansion/" >Mansion</a>          
+        <a class="divider">|</a>        
+        <a href="/mansion/"  class="programs">Residence</a>          
+        <a href="/connect/"  class="programs">Connect</a>
+        <a href="/accelerate/"  class="programs">Accelerate</a>        
+        <a href="/investors/"  class="programs">Investor Retreat <span>!</span></a>
     </div>
         <a class="social"><div class="fb-like" data-href="http://facebook.com/blackbox.vc" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-colorscheme="light"></div></a>
         <a href="https://twitter.com/blackboxvc" target="_blank" class="social"><img src="/img/mini-twitter-w.png"></a>        
@@ -91,10 +107,10 @@ $(document).ready(function () {
             <div class="inner">
                 <h1>
                 <span class="logo">blackbox</span><br>
-                Where ambitious founders<br>
+                Where international founders<br>
                 solve meaningful problems<br>
                 and build global companies<br> with Silicon Valley resources.<br>
-                <a href="#" id="scroll-down">learn more &raquo;</a>
+                <a href="#" id="scroll-down-1">learn more<br> <img src="/img/scroll.png"></a>
                 </h1>
             </div>
 
@@ -108,7 +124,7 @@ $(document).ready(function () {
                     </div>
                     <div class="r">
                         <h2><a href="/investors/">Investor Retreat // Blackbox</a></h2>
-                        <h3><a href="/investors/">Apply now &raquo;</a></h3>
+                        <h3><a href="http://investorretreat.eventbrite.com/">Apply now &raquo;</a></h3>
                     </div>            
                 </div>                           
             </div>
@@ -129,34 +145,34 @@ $(document).ready(function () {
         <div class="inner">
             <div class="row">
                 <div class="grid span3">
-                    <h2><a href="/mansion/">Blackbox<br>Residence</a></h2>    
+                    <h2 class="pushed push-1"><a href="/mansion/">Blackbox<br>Residence</a></h2>    
+                    <p>Live and work among the <em>community of like-minded founders</em>, get feedback about your product or vision, meet and talk to Silicon Valley industry experts.<br><br></p>
                     <h3><span>Who is it for?</span></h3>
-                    <p>International entrepreneurs visiting Silicon Valley who want to make their very first connections here.</p>
-                    <h3><span>What do you get?</span></h3>                    
-                    <p>Live and work among the <em>community of like-minded founders</em>, get feedback about your product or vision, meet and talk to Silicon Valley industry experts.</p>
-                    <p><a href="/mansion/" class="mid-link">Learn more &raquo;</a></p>                                        
+                    <p><em>International entrepreneurs</em> visiting Silicon Valley who want to make their very first connections here.</p>
+
+                    <p><a href="/mansion/" class="big-link-left">Learn more &raquo;</a></p>                                        
 
                 </div>
 
                 <div class="grid span3">
-                    <h2><a href="/connect/">Blackbox<br>Connect</a></h2>
+                    <h2 class="pushed push-2"><a href="/connect/">Blackbox<br>Connect</a></h2>
+                    <p>Half-a-year Silicon Valley experience condensed in a <em>two&dash;week immersion program</em>. Learn the DNA of Silicon Valley and prepare to bring your company to the next, global level.</p>
                     <h3><span>Who is it for?</span></h3>
-                    <p>Non-US startups that want to scale globally, establish US-based business operations, and seek to raise funding in Silicon Valley.</p>
-                    <h3><span>What do you get?</span></h3>                    
-                    <p>Half-a-year Silicon Valley experience condensed in a <em>two&dash;week educational program</em>. Learn the DNA of Silicon Valley and prepare to bring your company to the next, global level.</p>
-                    <p><a href="/connect/" class="mid-link">Learn more &raquo; </a></p>                    
+                    <p><em>Non-US startups</em> that want to <em>scale globally</em>, establish US-based business operations, and seek to raise funding in Silicon Valley.</p>                    
+                    <p><a href="/connect/" class="big-link-left">Learn more &raquo; </a></p>                    
                 </div>
                 
                 <div class="grid span3">
-                    <h2><a href="/accelerate/">Blackbox<br>Accelerate</a></h2>
+                    <h2 class="pushed push-3"><a href="/accelerate/">Blackbox<br>Accelerate</a></h2>
+                    <p>Custom acceleration for no less than a year, with the objective to <em>get your company funded</em> and establish your <em>business operations in the US</em>.<br><br></p>                    
                     <h3><span>Who is it for?</span></h3>       
-                    <p>Blackbox Connect Alumni, former Blackbox Residents, or companies referred by the Referring Partners.</p>
-                    <h3><span>What do you get?</span></h3>                                      
-                    <p>Custom acceleration for no less than a year, with the objective to get your company funded and establish your business operations in the US.</p>
-
-                    <p><a href="/accelerate/" class="mid-link">Learn more &raquo;</a></p>
+                    <p><em>Blackbox Connect Alumni</em>, former <em>Blackbox Residents</em>, or companies referred by the <a href="/netowrk/"><em>Referring Partners</em></a>.</p>
+                    <p><a href="/accelerate/" class="big-link-left">Learn more &raquo;</a></p>
                 </div>
             </div><!--.row-->
+            <a href="#" id="scroll-down-2" class="scroll">
+                <img src="/img/scroll.png" title="Learn more">
+            </a>
         </div><!--.inner-->
     </section>
 
@@ -173,11 +189,10 @@ $(document).ready(function () {
             <h2>We focus on people, first. </h2>
             <p>
             We work only with people who care about the problems they solve. 
-            We don't get too attached to your product idea, nor we expect you to do so.</p>
-            <p>Instead, we want you to show us what it is <em>you want to cure</em> that pains you, 
+            We don't get too attached to your product idea, nor we expect you to do so. Instead, we want you to show us what it is <em>you want to cure</em> that pains you, 
             and why you are the best person to implement the cure.
             </p>
-            <p>Like these guys, founders of some of the companies accelerated by Blackbox:</p>
+            <p><em>Like these guys</em>, founders of some of the companies accelerated by Blackbox:</p>
             <div class="row">
                 <figure class="grid span4"><a href="/companies/#fido">
                     <img src="img/michael_wroczynski.jpg"></a>
@@ -197,7 +212,10 @@ $(document).ready(function () {
                 </figure>            
             </div><!--row-->         
             <p class="big-link"><a href="/companies/">Meet our companies &raquo;</a></p>            
-        </div>
+            <a href="#" id="scroll-down-3" class="scroll">
+                <img src="/img/scroll.png" title="Learn more">
+            </a>            
+        </div><!--.inner-->
     </section>
 
 
@@ -230,7 +248,10 @@ $(document).ready(function () {
                     <p class="big-link"><a href="/about/">Meet the team &raquo;</a></p>                    
                 </div>                
             </div>
-        <div class="inner"><!--.inner-->
+            <a href="#" id="scroll-down-4" class="scroll">
+                <img src="/img/scroll.png" title="Learn more">
+            </a>
+        </div><!--.inner-->
     </section>    
 
     <section id="last" class="a-slide">
@@ -243,18 +264,18 @@ $(document).ready(function () {
     
     <section id="calls-to-action" class="a-slide">
             <div class="inner">
-                <a class="box" href="http://www.eventbrite.com/event/4528970272" target="_blank">
-                    <h2>Apply now&nbsp;&raquo;</h2>                
-                    <h3>Blackbox Connect<br>//&nbsp;Jan 2013</h3>
-                </a>
-                <a class="box-mid" href="/investors/">
-                    <h2>Apply now&nbsp;&raquo;</h2>
-                    <h3>Investor Retreat<br>//&nbsp;Dec 2012</h3>                    
-                </a>
-                <a class="box" id="mailing-list-form" href="#">
-                    <h2>Stay in touch&nbsp;&raquo;</h2>
-                    <h3>Sign up for the mailing list to get invitations to our events</h3>
-                </a>
+                <div class="box">
+                    <h2><a href="http://www.eventbrite.com/event/4528970272" target="_blank">Apply now&nbsp;&raquo;</a></h2>                
+                    <h3><a href="/connect/">Blackbox Connect<br>//&nbsp;Jan 2013</h3>
+                </div>
+                <div class="box box-mid">
+                    <h2><a href="http://investorretreat.eventbrite.com/" target="_blank">Apply now&nbsp;&raquo;</a></h2>
+                    <h3><a href="investors/">Investor Retreat<br>//&nbsp;Dec 2012</a></h3>                    
+                </div>
+                <div class="box">
+                    <h2><a href="#last" id="mailing-list-form">Mailing List&nbsp;&raquo;</a></h2>
+                    <h3><div class="fb-like" data-href="https://facebook.com/blackbox.vc" data-send="false" data-width="100%" data-show-faces="true" data-font="arial"></div></h3>
+                </div>
             </div><!--inner-->
     </section>
     
@@ -299,7 +320,7 @@ $(document).ready(function () {
 
 <div id="overlay">
 <div id="modal">
-    <a class="close" href="#" id="close-modal"> close [x]</a>
+    <a class="close" href="#last" id="close-modal"> close [x]</a>
         <!-- Begin MailChimp Signup Form -->
         <link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
         <style type="text/css">

@@ -18,11 +18,26 @@ $(document).ready(function () {
     $('#close-modal').click(function() { 
         $('#overlay').fadeOut('fast');
         });
-    $('#scroll-down').click(function(){
+    $('#scroll-down-1').click(function(){
          $('html, body').animate({                     
                     scrollTop: $("#how-we-work-title").offset().top
                      }, 1000);                     
         });
+    $('#scroll-down-2').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#who-we-work-with-title").offset().top
+                     }, 1000);                     
+        });        
+    $('#scroll-down-3').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#why-are-we-doing-this-title").offset().top
+                     }, 1000);                     
+        });        
+    $('#scroll-down-4').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#last").offset().top
+                     }, 1000);                     
+        });                
     $('.gallery figure').click(function (){
         $('#active-photo-container').empty();
         $(this).children().clone().removeClass('blurred').appendTo('#active-photo-container');
@@ -71,13 +86,14 @@ $(document).ready(function () {
 <nav>
         <a class="logo" href="/">blackbox</a>
     <div class="inner">      
-        <a href="/connect/" {{page.connect-active}}>Connect</a>
-        <a href="/accelerate/" {{page.accelerate-active}}>Accelerate</a>        
-        <a href="/investors/" {{page.investors-active}}>Investor Retreat</a>
+        <a href="/companies"/ {{page.portfolio-active}}>Portfolio</a>            
+        <a href="/network/" {{page.partners-active}}>Network</a>            
         <a href="/media/" {{page.videos-active}}>Videos</a>
-        <a href="/network/" {{page.partners-active}}>Partners</a>        
-        <a href="/companies"/ {{page.portfolio-active}}>Portfolio</a>    
-        <a href="/mansion/" {{page.mansion-active}}>Mansion</a>          
+        <a class="divider">|</a>        
+        <a href="/mansion/" {{page.mansion-active}} class="programs">Residence</a>          
+        <a href="/connect/" {{page.connect-active}} class="programs">Connect</a>
+        <a href="/accelerate/" {{page.accelerate-active}} class="programs">Accelerate</a>        
+        <a href="/investors/" {{page.investors-active}} class="programs">Investor Retreat <span>!</span></a>
     </div>
         <a class="social"><div class="fb-like" data-href="http://facebook.com/blackbox.vc" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-colorscheme="light"></div></a>
         <a href="https://twitter.com/blackboxvc" target="_blank" class="social"><img src="/img/mini-twitter-w.png"></a>        
@@ -120,7 +136,7 @@ $(document).ready(function () {
 
 <div id="overlay">
 <div id="modal">
-    <a class="close" href="#" id="close-modal"> close [x]</a>
+    <a class="close" href="#last" id="close-modal"> close [x]</a>
         <!-- Begin MailChimp Signup Form -->
         <link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
         <style type="text/css">
