@@ -149,28 +149,22 @@ nav a {
     padding:.2em 1em;
 }
 
-
-nav a:before{
-    content:">\a0 ";
-}
-
 nav a:hover {
     text-decoration: none;
 }
 
 nav .logo {
-   font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
-   font-weight: bold;
    padding-left: .5em;
    font-size: 2em;
    border-left: none;
 }
 
-nav .inner {
-    width: 100%;
+nav .logo img {
+    width: 80px;
 }
-.logo:before{
-    content: "";
+
+nav .logo:hover img{
+    opacity: 0.8;
 }
 
 nav .logo:hover {
@@ -322,6 +316,10 @@ section {
 .c-slide h2.pushed {
     padding-left: .5em;
     border-left: solid .1em rgba(10,26,39,0.1);
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;    
 }
 
 
@@ -461,6 +459,20 @@ section {
     border-radius: 5px;        
 }
 
+.c-slide .flag-mini {
+    width: 20px;
+    margin: 0 1em 0 0;
+    border: solid 1px rgba(10,26,39,.2);
+
+}
+.c-slide .press-list {
+    margin: 0 0 6em 0;
+}
+
+.c-slide .press-list li{
+    list-style-type: none;
+}
+
 h5 small {
     text-transform: uppercase;
 }
@@ -473,6 +485,9 @@ h5 small {
     margin: 1em 0;
 }
 
+.links .mid-link {
+    font-size: 150%;
+}
 .c-slide .entry .details {
     font-size: 90%;
     text-transform: uppercase;
@@ -549,6 +564,7 @@ h5 small {
 .c-slide .scroll:hover img {
     box-shadow: none;
 }
+
 /*-------- Video Player ---------*/
 .c-slide #active-video-holder{
     width: 100%;
@@ -586,25 +602,7 @@ h5 small {
     background: rgba(255,255,255,0.9);
 }
 
-/*--------------Carousel--------*/
-.carousel {
-    background: #000;
-    width: 100%; /*#slidecount x slidewidth*/
-    height: 20em;
-    padding: 1em;
-}
 
-.carousel-window {
-    position: absolute;
-    width: 100%;
-}
-
-.carousel > div{
-    width: 100%;
-    background: #fff;
-}
-
-/*-----------------------*/
 .big-link,
 .big-link-left {
     display: block;
@@ -1070,12 +1068,9 @@ footer a:hover {
     font-weight: normal;
 }
 
-#welcome .logo {
-   font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
-   font-weight: bold;
-   background-color: transparent !important;
-   font-size: 280%;
-   text-transform: lowercase;
+#welcome .logo img{
+    width: 70%;
+    margin: .5em 0 .5em 0;
 }
 
 
@@ -1263,6 +1258,30 @@ footer a:hover {
     background: transparent url(../img/mailing.png) no-repeat 1em center;
 }
 
+}
+
+@media (max-width: 599px) {
+nav {
+    position: static;
+}
+
+nav a {
+    display: block;
+    float: left;
+}
+
+nav .logo img {
+    width: 60px;
+    clear: both;
+}
+nav .inner {
+    width: 100%;
+}
+
+nav .social,
+nav .divider {
+display: none;
+}
 }
 
 
