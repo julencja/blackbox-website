@@ -212,7 +212,7 @@ section {
     padding: 3em 0;
     background-image:url(../img/dot-pattern.jpg);
     text-shadow: 0 0.1em 0 #fbfdff;
-    border-top: solid 2px #fbfdff;    
+    border-top: solid .15em #fbfdff;    
     box-shadow: 0 0px 3px #14171b;
     position: relative;
     z-index: 100;
@@ -267,12 +267,51 @@ section {
     font-family: Helvetica, serif;
     padding: 3em 0;
     font-size: 85%;
+    z-index:  10000;
 }
 
 .c-slide .row {
     margin:1.5em 0 3em 0;
 }    
 
+.c-slide .tabs {
+    width: 65%;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    z-index: 10;    
+    margin: -3.35em -32.5%;
+    background: transparent;
+    box-shadow: none;
+    text-align: right;
+}
+
+.c-slide .tabs a {
+    height: 2em;    
+    padding: .7em 1em .5em 1em;
+    background: #3DBFF4;
+    color: #fff;
+    display: inline-block;;
+    float: none;
+    text-shadow: none;
+    border: none;
+    font-size: 100%;
+    margin: 0 0 0 .5em;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow:  0 0 5px rgba(10,26,39,.5);
+
+}
+
+.c-slide .tabs a.active {
+    color: #3DBFF4;
+    background: #fff;
+
+}
+.c-slide .tabs a:hover {
+    border: none;
+    padding: .7em 1em .5em 1em;
+}
 
 .c-slide h1,
 .c-slide h2,
@@ -411,6 +450,10 @@ section {
     font-size: .6em;
 }
 
+.c-slide .speakers-gallery {
+    margin: 0 0 3em 0;
+    float: left;
+}
 .c-slide .speakers-gallery .span4 {
     width: 19.25%;
     margin: 0em 5% 2em 0;
@@ -465,8 +508,14 @@ section {
     border: solid 1px rgba(10,26,39,.2);
 
 }
+
+.c-slide .team-gallery .span4 {
+    width: 21.25%;
+    margin: 0em 5% 2em 0;
+}
 .c-slide .press-list {
-    margin: 0 0 6em 0;
+    margin: 3em 0 6em 0;
+    float: left;
 }
 
 .c-slide .press-list li{
@@ -625,6 +674,11 @@ h5 small {
     font-size: 1.5em;    
 }
 
+.mid-link-right {
+    font-family: Gill Sans, sans-serif;    
+    font-size: 1.5em;        
+    float: right;
+}
 span.right{
 float: right;
 }
@@ -736,6 +790,10 @@ figure.span2 {
     width: 100%;
 }
 
+.span3 figure img{
+    width: 100%;
+}
+
 figure.span4 {
     width: 21.25%;
 }
@@ -791,6 +849,10 @@ figure.span4 {
 
 #portfolio {
     background-image:url(../img/bg-artem.jpg);
+}
+
+#portfolio .inner {
+    margin: 10em auto 10em;
 }
 
 #about {
