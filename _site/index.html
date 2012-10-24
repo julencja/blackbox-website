@@ -39,6 +39,30 @@ $(document).ready(function () {
                     scrollTop: $("#last").offset().top
                      }, 1000);                     
         });                
+    /*Tabs on People Section*/
+
+    $('#tab-accelerate').click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+        $('#accelerate-participants').siblings().fadeOut('fast');
+        $('#accelerate-participants').fadeIn('500');
+    })
+
+    $('#tab-connect').click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+        $('#connect-graduates').siblings().fadeOut('fast');
+        $('#connect-graduates').fadeIn('500');
+    });
+
+    $('#tab-residents').click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+        $('#residents').siblings().fadeOut('fast');
+        $('#residents').fadeIn('500');
+    })
+
+    /*Gallery on Residence*/
     $('.gallery figure').click(function (){
         $('#active-photo-container').empty();
         $(this).children().clone().removeClass('blurred').appendTo('#active-photo-container');

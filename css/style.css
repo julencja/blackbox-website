@@ -313,6 +313,11 @@ section {
     padding: .7em 1em .5em 1em;
 }
 
+#connect-graduates,
+#residents {
+    display: block;
+
+}
 .c-slide h1,
 .c-slide h2,
 .c-slide h3,
