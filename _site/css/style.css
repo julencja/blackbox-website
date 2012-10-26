@@ -527,6 +527,10 @@ section {
     list-style-type: none;
 }
 
+.c-slide .videos-list figure {
+    margin: 0 0 3em 0;
+
+}
 h5 small {
     text-transform: uppercase;
 }
@@ -664,7 +668,7 @@ h5 small {
     float: right;
     text-align: right;
     font-size: 2.5em!important;
-    margin: 1em 0;
+    margin: 1em 0 0 0;
     line-height: 1.2;
     font-family: Gill Sans, sans-serif;        
 }
@@ -683,6 +687,7 @@ h5 small {
     font-family: Gill Sans, sans-serif;    
     font-size: 1.5em;        
     float: right;
+    margin: 1em 0;
 }
 span.right{
 float: right;
@@ -731,7 +736,7 @@ float: right;
 
 /*---------------------Grid general--*/
 .grid {
-    display: block;
+    display: inline-block;
     float: left;
 }
 
@@ -773,7 +778,7 @@ float: right;
 
 
 .row figure img {
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .row figure figcaption{
