@@ -874,6 +874,16 @@ figure.span4 {
 }
 /*------Specific slide---------*/
 
+#welcome .inner{
+    background: transparent url(../img/logo-hex.png) no-repeat top center;
+    width: 300px;/*500px*/
+    height: 300px;/*500px*/
+    text-align: center;
+    padding: 100px 50px 0 50px;
+    margin: 4em auto;
+
+}
+
 #media {
     background-image: url(../img/bg-scoble.jpg);
 }
@@ -1115,15 +1125,7 @@ footer a:hover {
 
 }
 
-#welcome .inner{
-    background: transparent url(../img/logo-hex.png) no-repeat top center;
-    width: 300px;/*500px*/
-    height: 300px;/*500px*/
-    text-align: center;
-    padding: 100px 50px 0 50px;
-    margin: 4em auto;
 
-}
 
 #welcome .inner a {
     display: block;
@@ -1354,6 +1356,27 @@ nav .social,
 nav .divider {
 display: none;
 }
+}
+
+/*----------------------------Mobile Devices----------------------*/
+
+@media (max-width: 599px) {
+
+.desktop-only {
+    display: none !important;
+}
+
+.a-slide {
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-position: center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+z-index: 10;
+}
+
 }
 
 

@@ -20,7 +20,7 @@
     <title>Blackbox.vc</title>
     <link rel="icon" type="image/png" href="/static/img/fav.png?foo=25102012">
     
-    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/css/style.css?foo=25102012" rel="stylesheet" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script>
 $(document).ready(function () {
@@ -106,7 +106,20 @@ $(document).ready(function () {
         });
 });
     </script>
+<!--GA-->
+<script type="text/javascript">
 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28505239-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
     
 </head>
 
@@ -146,14 +159,13 @@ $(document).ready(function () {
             <div class="inner">
                 <h1>
                 <span class="logo"><img src="../img/logos/logo_blackbox.png"></span><br>
-                Where international founders<br>
-                solve meaningful problems<br>
-                and build global companies<br> with Silicon Valley resources.<br>
+                <span class="desktop-only">Where international founders<br>
+                build global companies<br> with Silicon Valley resources.<br></span>
                 <a href="#" id="scroll-down-1">learn more<br> <img src="/img/scroll.png"></a>
                 </h1>
             </div>
 
-            <div class="sub" id="subwelcome">
+            <div class="sub desktop-only" id="subwelcome">
                 <div class="row">
                     <div class="l">
                         <a href="http://google.com" target="_blank"><img class="sponsors" src="../img/logos/logo_google.png" alt="Google Developers Startup Pack"></a>
@@ -329,13 +341,13 @@ $(document).ready(function () {
         <div class="inner">
         <div class="row">
             <div class="grid span2">
-                <h4>About Blackbox</h4>
+                <h4>Blackbox</h4>
                 <ul>
                     <li><a href="/about/">About us</a></li>
                     <li><a href="/about/team.html">Team</a></li>
-                    <li><a href="/about/vieos.html">Videos</a></li>
                     <li><a href="/people/">People</a></li>                    
-                    <li><a href="/Network/">Network</a></li>                                        
+                    <li><a href="/Network/">Network</a></li>    
+                    <li><a href="/about/videos.html">Videos</a></li>                                    
                 </ul>
             </div>
             <div class="grid span2">
