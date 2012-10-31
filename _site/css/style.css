@@ -1275,7 +1275,7 @@ footer a:hover {
 #calls-to-action .box h2,
 #calls-to-action .box h3 {
     display: block;
-    margin: 0em 10% 2em 10%;
+    margin: 0em 10% 1em 10%;
     float: left;
 }
 
@@ -1296,6 +1296,9 @@ footer a:hover {
     color: #3dbff4;
 }
 
+#calls-to-action span {
+    color: red;
+}
 
 /*---------Social*/
 
@@ -1431,6 +1434,10 @@ z-index: 10;
 
 .a-slide .inner {
     visibility: hidden;
+}
+
+.first .inner {
+    visibility: visible;
 }
 .a-slide h1 {
     font-size: 1.2em;
