@@ -8,7 +8,7 @@
     <meta property="og:title" content="{{page.title}}" />
     <meta property="og:type" content="company" />
     <meta property="og:url" content="http://blackbox.vc{{page.url}}" />
-    <meta property="og:image" {% if page.ogImage %} content='{{page.ogImage}}' {% else %} content="http://blackbox.vc/static/img/blackbox_og_logo.jpg" {% endif %} />
+    <meta property="og:image" {% if page.ogImage %} content='{{page.ogImage}}' {% else %} content="http://blackbox.vc/img/blackbox_og_logo.jpg" {% endif %} />
     <meta property="og:description" content="{{page.ogDescription}}">
     <meta property="og:site_name" content="blackbox.vc" />
     <meta property="fb:app_id" content="329792920375738" />
@@ -33,6 +33,7 @@ $(document).ready(function () {
     $('#close-modal').click(function() { 
         $('#overlay').fadeOut('fast');
         });
+    /*General scroll down on landing page*/
     $('#scroll-down-1').click(function(){
          $('html, body').animate({                     
                     scrollTop: $("#how-we-work-title").offset().top
@@ -52,7 +53,24 @@ $(document).ready(function () {
          $('html, body').animate({                     
                     scrollTop: $("#last").offset().top
                      }, 1000);                     
-        });                
+        });      
+    /*Mobile scroll-down*/          
+    $('#q1').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#how-we-work-title").offset().top
+                     }, 1000);                     
+        });
+    $('#q2').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#who-we-work-with-title").offset().top
+                     }, 1000);                     
+        });
+    $('#q3').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#why-are-we-doing-this-title").offset().top
+                     }, 1000);                     
+        });                    
+    
     /*Tabs on People Section*/
 
     $('#tab-accelerate').click(function(){
@@ -135,8 +153,8 @@ $(document).ready(function () {
     }(document, 'script', 'facebook-jssdk'));</script>
     <!--/FBML-->
     
-<nav>
-    <a class="logo" href="/"><img src="../img/logos/logo_blackbox.png" alt="Blackbox.vc"></a>
+<nav id="main-nav">
+    <a class="logo desktop-only" href="/"><img src="../img/logos/logo_blackbox.png" alt="Blackbox.vc"></a>
     <div class="inner">      
         <a href="/about/" {{page.about-active}}>About Us</a>        
         <a href="/people"/ {{page.people-active}}>People</a>            
@@ -146,6 +164,9 @@ $(document).ready(function () {
         <a href="/connect/" {{page.connect-active}} class="programs">Connect</a>
         <a href="/accelerate/" {{page.accelerate-active}} class="programs">Accelerate</a>        
         <a href="/investors/" {{page.investors-active}} class="programs">Investor Retreat <span>!</span></a>
+    </div>
+    <div class="mobile-only">
+        <span>Where international founders build global companies with Silicon Valley resources.</span>
     </div>
         <a class="social"><div class="fb-like" data-href="http://facebook.com/blackbox.vc" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-colorscheme="light"></div></a>
         <a href="https://twitter.com/blackboxvc" target="_blank" class="social"><img src="/img/mini-twitter-w.png"></a>        

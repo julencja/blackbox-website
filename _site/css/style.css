@@ -897,7 +897,9 @@ figure.span4 {
 
 @media (min-width: 600px) {
 
-
+.mobile-only {
+    display: none;
+}
 /*Grid min 600*/
 
 .span2 {
@@ -1366,15 +1368,155 @@ display: none;
     display: none !important;
 }
 
+#main-nav span {
+    text-align: right;
+    width: 100%;
+    padding: 2em .5em;
+}
+#main-nav {
+    color: #fff;
+    font-size: 50%;
+}
+#main-nav .inner {
+    display: none;
+}
+
 .a-slide {
+    width: 100%;
+    height: 30%;
 background-repeat: no-repeat;
 background-attachment: scroll;
 background-position: center center;
 -webkit-background-size: cover;
--moz-background-size: cover;
+-moz-background-size: cober;
 -o-background-size: cover;
 background-size: cover;
 z-index: 10;
+}
+
+#welcome .inner{
+    visibility: visible !important;
+    background-size: contain;
+    width: 120px;
+    height: 120px;
+    margin: 50px auto 0px;
+    padding: 50px 20px 50px 20px;
+}
+
+#welcome h1 {
+    font-size: .8em;
+}
+#welcome h1 .logo img {
+    width: 100px;
+}
+#welcome #scroll-down-1 {
+    font-size: 85%;
+}
+
+#mobile-welcome-nav {
+    color: #fff;
+}
+
+#mobile-welcome-nav h2 {
+    border-top: solid 1px rgba(220,223,225,0.3);
+    padding: .5em;
+    font-size: 1.5em;
+}
+
+#mobile-welcome-nav h2 em {
+    color: #3DBFF4;
+    font-weight: normal;
+    text-transform: upper;
+}
+
+.a-slide .inner {
+    visibility: hidden;
+}
+.a-slide h1 {
+    font-size: 1.2em;
+}
+
+.c-slide .inner {
+    padding: 1em 0;
+}
+.c-slide h1 {
+    font-size: 2.8em;
+}
+
+.c-slide h2 {
+    font-size: 1.8em;
+}
+
+.c-slide h3 {
+    font-size: 1.5em;
+}
+
+.c-slide p br {
+    display: none;
+}
+
+.c-slide .scroll {
+    display: none !important;
+}
+.big-link, .big-link-left {
+    font-size: 1.5em!important;
+    margin: 0!important;
+    text-align: right;
+}
+
+
+
+/*Grid*/
+.grid {
+    margin-bottom: 2.5em;
+}
+
+.span2 {
+    width: 50%;
+}
+.span3 figure img {
+    width: 25%;
+    float: left;
+}
+
+.span3 figure small {
+    float: left;
+    margin: 2em;
+}
+
+.span3x2 {
+    
+}
+.c-slide .row {
+margin: 1.5em 0 0em 0;
+}
+
+/*Slide specific*/
+#calls-to-action {
+    display: none;
+}
+
+footer .inner .row{
+    margin: 1em 0 1em 0;
+}
+
+footer .inner .row .span2 {
+    width: 40%;
+    margin-bottom: 0;
+}
+
+footer .inner .row .grid:first-child{
+    width: 40%;
+    margin-right: 10%;
+    text-align: right;
+}
+
+footer h4 {
+    font-size: 1.2em;
+}
+footer p {
+    font-size: 65%;
+    text-align: center;
 }
 
 }
