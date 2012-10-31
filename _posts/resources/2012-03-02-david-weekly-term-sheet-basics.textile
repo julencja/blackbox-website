@@ -1,0 +1,19 @@
+---
+layout: resource
+title: Term Sheet Basics
+speaker: David Weekly
+category: videos
+video_id: NLM89kLn8Sk
+
+ogImage: http://i4.ytimg.com/vi/NLM89kLn8Sk/default.jpg
+ogDescription: 'David Weekly, gives an introduction to stock & options for the tech entrepreneurs'
+
+related_documents: 
+- url: http://www.scribd.com/doc/55945011/An-Introduction-to-Stock-Options-for-the-Tech-Entrepreneur-or-Startup-Employee
+  name: An Introduction to Stock & Options for Tech Entrepreneur or Startup Employee (eBook)
+- url: http://www.slideshare.net/blackboxconnect/building-a-cap-table
+  name: Building a Cap Table (slideshow)	
+
+---
+
+David Weekly, the author of "An Introduction to Stock & Options for the Tech Entrepreneur or Startup Employee". Great guide to stock, options, raising funds and investments. Blackbox Connect November 2011.

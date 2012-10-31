@@ -1,0 +1,13 @@
+---
+layout: resource
+title: Alex Farcet interviews Fadi Bishara
+speaker: Fadi Bishara
+category: videos
+video_id: Rg6ATGCbHOg
+thumbnail: http://i4.ytimg.com/vi/Rg6ATGCbHOg/default.jpg
+video: http://www.youtube.com/embed/Rg6ATGCbHOg
+
+ogDescription: 'People who have emotional connection with the problem that they are trying to solve always do better than the ones who just do it for the sake of business.'
+---
+
+Great ideas might sound great, but they are not necessarily the best ones. People who have emotional connection with the problem that they are trying to solve always do better than the ones who just do it for the sake of business.

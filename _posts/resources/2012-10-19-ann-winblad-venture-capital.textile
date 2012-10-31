@@ -1,0 +1,14 @@
+---
+layout: resource
+title: Venture Capital in Silicon Valley
+speaker: Ann Winblad
+category: videos
+video_id: kJfN7MJER1U
+thumbnail: http://i4.ytimg.com/vi/kJfN7MJER1U/default.jpg
+
+
+ogDescription: 'People who have emotional connection with the problem that they are trying to solve always do better than the ones who just do it for the sake of business.'
+---
+Ann Winblad from Hummer Winblad Venture Partners talks at Blackbox Connect Summer 2012.
+
+It's not that simple to get funded in Silicon Valley even though it feels like that it doesn't take that much. Venture capitalists have a higher bar than Business Angles because they are taking care of other peoples money too. Do you know how to land a customer? Can you build a pull model and a push model? Don't make it too hard -- go for the easiest point of entry. Go find a big company and hold on to it. Build a relationship. VC's have to know that you are a businessperson that can run a company.

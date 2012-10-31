@@ -1,0 +1,17 @@
+---
+layout: resource
+title: Founder Story - Pulse
+speaker: Ankit Gupta
+category: videos
+video_id: q_Ydfs-HDhQ
+thumbnail: http://i4.ytimg.com/vi/q_Ydfs-HDhQ/default.jpg
+video: http://www.youtube.com/embed/q_Ydfs-HDhQ
+
+ogDescription: 'Ankit Gupta, the founder of pulse.me tells the story of building pulse, a news reading application for iPhone, iPad and Android devices.'
+ogImage: http://i4.ytimg.com/vi/q_Ydfs-HDhQ/default.jpg
+related_documents:
+- url: http://www.slideshare.net/blackboxconnect/pulse-story
+  name: Pulse. The Story (slideshow)
+---
+
+Ankit Gupta, the founder of pulse.me tells the story of building Pulse, a news reading application for iPhone, iPad and Android devices. Blackbox Connect November 2011.

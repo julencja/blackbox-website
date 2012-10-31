@@ -1,0 +1,18 @@
+---
+layout: resource
+title:  Venture Capital Business Basics
+speaker: Christine Herron
+category: videos
+video_id: T4usxg_g6vI
+thumbnail: http://i4.ytimg.com/vi/T4usxg_g6vI/default.jpg
+video: http://www.youtube.com/embed/T4usxg_g6vI
+
+ogDescription: 'Christine Herron from Intel Capital explains Venture Capital business basics and how it works. Great summary and inside info on how most common venture funds are structured.'
+ogImage: http://i4.ytimg.com/vi/T4usxg_g6vI/default.jpg
+related_documents:
+- url: http://www.slideshare.net/blackboxconnect/vc-101-2011-0721-11641881
+  name: "VC 101: Inside the Black Box (slideshow)"
+---
+
+"Christine Herron":http://www.linkedin.com/in/christineherron from Intel Capital explains Venture Capital business basics and how it works. Great summary and inside info on how most common venture funds are structured. Blackbox Connect November 2011.
+

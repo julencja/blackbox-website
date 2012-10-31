@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+
+<html itemscope itemtype="http://schema.org/Organization">
+<head>
+    <meta charset=utf-8>    
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <!--OG tags -->
+    <meta property="og:title" content="Videos | Blackbox.vc" />
+    <meta property="og:type" content="company" />
+    <meta property="og:url" content="http://blackbox.vc/about/videos.html" />
+    <meta property="og:image"  content="http://blackbox.vc/img/blackbox_og_logo.jpg"  />
+    <meta property="og:description" content="Videos from Blackbox Connect programs.">
+    <meta property="og:site_name" content="blackbox.vc" />
+    <meta property="fb:app_id" content="329792920375738" />
+    <!--Schema tags-->
+    <meta itemprop="name" content="blackbox.vc">
+    <meta itemprop="description" content="Blackbox is a next generation seed accelerator for technology startups, based in the heart of Silicon Valley. We connect entrepreneurs with a global network of seed investors, mentors and market entrance partners.">
+    <meta itemprop="image" content="http://blackbox.vc/static/img/blackbox_og_logo.jpg">
+
+    <title>Videos | Blackbox.vc</title>
+    <link rel="icon" type="image/png" href="/static/img/fav.png?foo=25102012">
+    
+    <link href="/css/style.css?foo=25102012" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function () {
+    $(window).scroll(function () { 
+        $("#subwelcome").css("position", "static"); 
+        });
+    $('#mailing-list-form').click(function() {
+        $('#overlay').fadeIn('fast');
+        });
+    $('#close-modal').click(function() { 
+        $('#overlay').fadeOut('fast');
+        });
+    /*General scroll down on landing page*/
+    $('#scroll-down-1').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#how-we-work-title").offset().top
+                     }, 1000);                     
+        });
+    $('#scroll-down-2').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#who-we-work-with-title").offset().top
+                     }, 1000);                     
+        });        
+    $('#scroll-down-3').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#why-are-we-doing-this-title").offset().top
+                     }, 1000);                     
+        });        
+    $('#scroll-down-4').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#last").offset().top
+                     }, 1000);                     
+        });      
+    /*Mobile scroll-down*/          
+    $('#q1').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#how-we-work-title").offset().top
+                     }, 1000);                     
+        });
+    $('#q2').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#who-we-work-with-title").offset().top
+                     }, 1000);                     
+        });
+    $('#q3').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#why-are-we-doing-this-title").offset().top
+                     }, 1000);                     
+        });                    
+    
+    /*Tabs on People Section*/
+
+    $('#tab-accelerate').click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+        $('#accelerate-participants').siblings().fadeOut('fast');
+        $('#accelerate-participants').fadeIn('500');
+    })
+
+    $('#tab-connect').click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+        $('#connect-graduates').siblings().fadeOut('fast');
+        $('#connect-graduates').fadeIn('500');
+    });
+
+    $('#tab-residents').click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+        $('#residents').siblings().fadeOut('fast');
+        $('#residents').fadeIn('500');
+    })
+
+    /*Gallery on Residence*/
+    $('.gallery figure').click(function (){
+        $('#active-photo-container').empty();
+        $(this).children().clone().removeClass('blurred').appendTo('#active-photo-container');
+        $('.gallery .thumb img').addClass('blurred');        
+        $('#active-photo-container').click(function(){
+            $(this).empty();            
+            $('.gallery .thumb img').removeClass('blurred');            
+            });
+        });
+    $('.player').click(function (){
+        $('#active-video-holder').fadeOut('fast');
+        $('#ytplayer').fadeIn('fast');
+        });
+    $('.video-thumb').click(function(){
+        var picture = $(this).find('img').attr('src');
+        var speaker = $(this).find('figcaption h6').text();
+        var title = $(this).find('figcaption h5').text();
+        var description = $(this).find('.video-content').text();
+        var videoUrl = $(this).find('.yt-url').text();
+        $('#ytplayer').fadeOut('fast');
+        $('#active-video-holder').fadeIn('fast');
+        $('#active-video-holder img').attr('src', picture);
+        $('#active-video-holder h2').text(speaker);
+        $('#active-video-holder h3').text(title);
+        $('#active-video-holder p').text(description);        
+        $('#ytplayer').attr('src', videoUrl);
+        });
+});
+    </script>
+<!--GA-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28505239-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+</head>
+
+<body>
+    <!--FBML-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=329792920375738";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!--/FBML-->
+    
+<nav id="main-nav">
+    <a class="logo desktop-only" href="/"><img src="../img/logos/logo_blackbox.png" alt="Blackbox.vc"></a>
+    <div class="inner">      
+        <a href="/about/" class='active'>About Us</a>        
+        <a href="/people"/ >People</a>            
+        <a href="/network/" >Network</a>            
+        <a class="divider">|</a>        
+        <a href="/mansion/"  class="programs">Residence</a>          
+        <a href="/connect/"  class="programs">Connect</a>
+        <a href="/accelerate/"  class="programs">Accelerate</a>        
+        <a href="/investors/"  class="programs">Investor Retreat <span>!</span></a>
+    </div>
+    <div class="mobile-only">
+        <span>Where international founders build global companies with Silicon Valley resources.</span>
+    </div>
+        <a class="social"><div class="fb-like" data-href="http://facebook.com/blackbox.vc" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-colorscheme="light"></div></a>
+        <a href="https://twitter.com/blackboxvc" target="_blank" class="social"><img src="/img/mini-twitter-w.png"></a>        
+</nav>
+
+<div id="container">
+
+<section class="a-slide first" id="media">
+    <div class="overlay">
+        <div class="inner">
+            <h1>Blackbox Videos</h1>
+        </div>
+    </div>
+</section>
+
+<section class="c-slide">
+    <div class="inner">
+        <div class="row" id="active-video-holder">
+            <figure class="span2 grid">
+                <img src="http://i4.ytimg.com/vi/zJ4FeJnfv9o/0.jpg" class="player">
+            </figure>
+
+            <div class="span2 grid video-description">
+                <h2>Silicon Valley vs Europe, Why Americans Do Startups Better</h2>
+                <h3>Fadi Bishara</h3>
+                <p><a href="http://hackfwd.com/">HackFwd Build 0.10</a> // Berlin // June 2012</p>
+                <a href="#" class="player mid-link">Play &raquo;</a>
+            </div>
+        </div>
+        <iframe id="ytplayer" type="text/html" width="100%" height="480" src="https://www.youtube.com/embed/zJ4FeJnfv9o" frameborder="0" allowfullscreen></iframe>
+        
+        <div class="row">
+        
+            <figure class="span4 grid video-thumb">
+                <a href="#active-video-holder"  class=""><img src="http://i4.ytimg.com/vi/tiuXo6Ju-to/0.jpg" alt="Why do some regions succeed in innovation?" title="Vivek Wadhwa"></a>
+                <aside class="hidden yt-url">https://www.youtube.com/embed/tiuXo6Ju-to</aside>
+                <aside class="hidden video-content"><p>Why do some regions success and some fail in innovation? Vivek talks about diversity in Silicon Valley and how it makes people open minded. To fail in Silicon Valley is not a disaster! To fail makes you smarter. You don’t have to wait for venture capital. You can start by very little and go change the world.</p></aside>                
+                <figcaption>
+                    <h5>Why do some regions succeed in innovation?</h5>
+                    <h6>Vivek Wadhwa</h6>
+                </figcaption>
+            </figure>
+            
+            
+        
+            <figure class="span4 grid video-thumb">
+                <a href="#active-video-holder"  class=""><img src="http://i4.ytimg.com/vi/kJfN7MJER1U/0.jpg" alt="Venture Capital in Silicon Valley" title="Ann Winblad"></a>
+                <aside class="hidden yt-url">https://www.youtube.com/embed/kJfN7MJER1U</aside>
+                <aside class="hidden video-content"><p>Ann Winblad from Hummer Winblad Venture Partners talks at Blackbox Connect Summer 2012.</p>
+<p>It&#8217;s not that simple to get funded in Silicon Valley even though it feels like that it doesn&#8217;t take that much. Venture capitalists have a higher bar than Business Angles because they are taking care of other peoples money too. Do you know how to land a customer? Can you build a pull model and a push model? Don&#8217;t make it too hard &#8212; go for the easiest point of entry. Go find a big company and hold on to it. Build a relationship. VC&#8217;s have to know that you are a businessperson that can run a company.</p></aside>                
+                <figcaption>
+                    <h5>Venture Capital in Silicon Valley</h5>
+                    <h6>Ann Winblad</h6>
+                </figcaption>
+            </figure>
+            
+            
+        
+            <figure class="span4 grid video-thumb">
+                <a href="#active-video-holder"  class=""><img src="http://i4.ytimg.com/vi/Rg6ATGCbHOg/0.jpg" alt="Alex Farcet interviews Fadi Bishara" title="Fadi Bishara"></a>
+                <aside class="hidden yt-url">https://www.youtube.com/embed/Rg6ATGCbHOg</aside>
+                <aside class="hidden video-content"><p>Great ideas might sound great, but they are not necessarily the best ones. People who have emotional connection with the problem that they are trying to solve always do better than the ones who just do it for the sake of business.</p></aside>                
+                <figcaption>
+                    <h5>Alex Farcet interviews Fadi Bishara</h5>
+                    <h6>Fadi Bishara</h6>
+                </figcaption>
+            </figure>
+            
+            
+        
+            <figure class="span4 grid video-thumb">
+                <a href="#active-video-holder"  class=""><img src="http://i4.ytimg.com/vi/zJ4FeJnfv9o/0.jpg" alt="Silicon Valley vs Europe, Why Americans Do Startups Better" title="Fadi Bishara"></a>
+                <aside class="hidden yt-url">https://www.youtube.com/embed/zJ4FeJnfv9o</aside>
+                <aside class="hidden video-content"><p><a href="http//hackfwd.com">HackFwd Build 0.10</a> // Berlin // June 2012</p></aside>                
+                <figcaption>
+                    <h5>Silicon Valley vs Europe, Why Americans Do Startups Better</h5>
+                    <h6>Fadi Bishara</h6>
+                </figcaption>
+            </figure>
+            
+            
+        </div>
+        <div class="row">
+            
+        
+            <figure class="span4 grid video-thumb">
+                <a href="#active-video-holder"  class=""><img src="http://i4.ytimg.com/vi/53-OYHwBYVM/0.jpg" alt="What is Blackbox?" title="Blackbox Connect"></a>
+                <aside class="hidden yt-url">https://www.youtube.com/embed/53-OYHwBYVM</aside>
+                <aside class="hidden video-content"><p>&#8220;Blackbox brings people from all over the world, who want to start businesses and they come see Silicon Valley as it is. They can see all the things that make Silicon Valley thrive.&#8221; &ndash; Tim Draper, Founder &amp; Managing Director of Draper Fisher Jurvetson</p></aside>                
+                <figcaption>
+                    <h5>What is Blackbox?</h5>
+                    <h6>Blackbox Connect</h6>
+                </figcaption>
+            </figure>
+            
+            
+        
+            <figure class="span4 grid video-thumb">
+                <a href="#active-video-holder"  class=""><img src="http://i4.ytimg.com/vi/TbvrAmPD0sQ/0.jpg" alt="TechCrunch Italy Investors Panel with Fadi Bishara" title="Fadi Bishara and others"></a>
+                <aside class="hidden yt-url">https://www.youtube.com/embed/TbvrAmPD0sQ</aside>
+                <aside class="hidden video-content"><p>TechCrunch Italy 2012 Investors Panel with Fadi Bishara (Blackbox), Nicolas Wittenborn (Point Nine Capital), Roberto Bonanzinga (Balderton), Fausto Boni (360 Capital). Moderated by Mike Butcher, TechCrunch Europe.</p></aside>                
+                <figcaption>
+                    <h5>TechCrunch Italy Investors Panel with Fadi Bishara</h5>
+                    <h6>Fadi Bishara and others</h6>
+                </figcaption>
+            </figure>
+            
+            
+        
+            <figure class="span4 grid video-thumb">
+                <a href="#active-video-holder"  class=""><img src="http://i4.ytimg.com/vi/v8rppK93I3c/0.jpg" alt="Entrepreneurs Are the New Asset Class" title="Saad Khan"></a>
+                <aside class="hidden yt-url">https://www.youtube.com/embed/v8rppK93I3c</aside>
+                <aside class="hidden video-content"><p><a href="http://www.linkedin.com/pub/saad-khan/0/5/438">Saad Khan</a>, partner at <span class="caps">CMEA</span>, describing top qualities of startup founders &ndash; Blackbox Connect November 2011.</p></aside>                
+                <figcaption>
+                    <h5>Entrepreneurs Are the New Asset Class</h5>
+                    <h6>Saad Khan</h6>
+                </figcaption>
+            </figure>
+            
+            
+        
+            <figure class="span4 grid video-thumb">
+                <a href="#active-video-holder"  class=""><img src="http://i4.ytimg.com/vi/JvG1yLObvJY/0.jpg" alt="Incompleteness for Startups" title="Max Skibinsky"></a>
+                <aside class="hidden yt-url">https://www.youtube.com/embed/JvG1yLObvJY</aside>
+                <aside class="hidden video-content"><p>What Goedel&#8217;s incompleteness theorem means for building startups &ndash; Blackbox Connect November 2012</p></aside>                
+                <figcaption>
+                    <h5>Incompleteness for Startups</h5>
+                    <h6>Max Skibinsky</h6>
+                </figcaption>
+            </figure>
+            
+            
+        </div>
+        <div class="row">
+            
+        
+            <figure class="span4 grid video-thumb">
+                <a href="#active-video-holder"  class=""><img src="http://i4.ytimg.com/vi/sgfYvuKlap0/0.jpg" alt="Recruiting and Hiring for Startups" title="Fadi Bishara"></a>
+                <aside class="hidden yt-url">https://www.youtube.com/embed/sgfYvuKlap0</aside>
+                <aside class="hidden video-content"><p>Recruiting, Hiring and Building your Core Startup Team &ndash; Blackbox Connect November 2012.</p></aside>                
+                <figcaption>
+                    <h5>Recruiting and Hiring for Startups</h5>
+                    <h6>Fadi Bishara</h6>
+                </figcaption>
+            </figure>
+            
+            
+        
+            <figure class="span4 grid video-thumb">
+                <a href="#active-video-holder"  class=""><img src="http://i4.ytimg.com/vi/NLM89kLn8Sk/0.jpg" alt="Term Sheet Basics" title="David Weekly"></a>
+                <aside class="hidden yt-url">https://www.youtube.com/embed/NLM89kLn8Sk</aside>
+                <aside class="hidden video-content"><p>David Weekly, the author of &#8220;An Introduction to Stock &amp; Options for the Tech Entrepreneur or Startup Employee&#8221;. Great guide to stock, options, raising funds and investments. Blackbox Connect November 2011.</p></aside>                
+                <figcaption>
+                    <h5>Term Sheet Basics</h5>
+                    <h6>David Weekly</h6>
+                </figcaption>
+            </figure>
+            
+            
+        
+            <figure class="span4 grid video-thumb">
+                <a href="#active-video-holder"  class=""><img src="http://i4.ytimg.com/vi/zXuDGtN7Lsc/0.jpg" alt="Being a Venture Capitalist" title="David Hornik"></a>
+                <aside class="hidden yt-url">https://www.youtube.com/embed/zXuDGtN7Lsc</aside>
+                <aside class="hidden video-content"><p>David Hornik talking on being a venture capitalist &ndash; Blackbox Connect November 2011.</p></aside>                
+                <figcaption>
+                    <h5>Being a Venture Capitalist</h5>
+                    <h6>David Hornik</h6>
+                </figcaption>
+            </figure>
+            
+            
+        
+            <figure class="span4 grid video-thumb">
+                <a href="#active-video-holder"  class=""><img src="http://i4.ytimg.com/vi/T4usxg_g6vI/0.jpg" alt="Venture Capital Business Basics" title="Christine Herron"></a>
+                <aside class="hidden yt-url">https://www.youtube.com/embed/T4usxg_g6vI</aside>
+                <aside class="hidden video-content"><p><a href="http://www.linkedin.com/in/christineherron">Christine Herron</a> from Intel Capital explains Venture Capital business basics and how it works. Great summary and inside info on how most common venture funds are structured. Blackbox Connect November 2011.</p></aside>                
+                <figcaption>
+                    <h5>Venture Capital Business Basics</h5>
+                    <h6>Christine Herron</h6>
+                </figcaption>
+            </figure>
+            
+            
+        </div>
+        <div class="row">
+            
+        
+            <figure class="span4 grid video-thumb">
+                <a href="#active-video-holder"  class=""><img src="http://i4.ytimg.com/vi/q_Ydfs-HDhQ/0.jpg" alt="Founder Story - Pulse" title="Ankit Gupta"></a>
+                <aside class="hidden yt-url">https://www.youtube.com/embed/q_Ydfs-HDhQ</aside>
+                <aside class="hidden video-content"><p>Ankit Gupta, the founder of pulse.me tells the story of building Pulse, a news reading application for iPhone, iPad and Android devices. Blackbox Connect November 2011.</p></aside>                
+                <figcaption>
+                    <h5>Founder Story - Pulse</h5>
+                    <h6>Ankit Gupta</h6>
+                </figcaption>
+            </figure>
+            
+            
+        
+            <figure class="span4 grid video-thumb">
+                <a href="#active-video-holder"  class=""><img src="http://i4.ytimg.com/vi/Ytd2t0dcMCc/0.jpg" alt="Banking for Born Global Startups" title="Andy Tsao"></a>
+                <aside class="hidden yt-url">https://www.youtube.com/embed/Ytd2t0dcMCc</aside>
+                <aside class="hidden video-content"><p><a href="http://www.svb.com/profile/Andy-Tsao/">Andy Tsao</a>, Managing Director at Silicon Valley Bank, talks about Global Market Banking Trends, Strategies and Solutions for Born Global Startups. Blackbox Connect November 2011.</p></aside>                
+                <figcaption>
+                    <h5>Banking for Born Global Startups</h5>
+                    <h6>Andy Tsao</h6>
+                </figcaption>
+            </figure>
+            
+            
+        
+            <figure class="span4 grid video-thumb">
+                <a href="#active-video-holder"  class=""><img src="http://i4.ytimg.com/vi/icnrUHD07hk/0.jpg" alt="Blackbox Connect November 2011 Testimonials" title="Blackbox Connect Participants"></a>
+                <aside class="hidden yt-url">https://www.youtube.com/embed/icnrUHD07hk</aside>
+                <aside class="hidden video-content"><p>Blackbox Connect participants sharing their experiences from the November 2011 program.</p></aside>                
+                <figcaption>
+                    <h5>Blackbox Connect November 2011 Testimonials</h5>
+                    <h6>Blackbox Connect Participants</h6>
+                </figcaption>
+            </figure>
+            
+            
+        
+        </div>
+    </div>
+</section>
+
+
+
+
+    <footer>
+        <div class="inner">
+        <div class="row">
+            <div class="grid span2">
+                <h4>Blackbox</h4>
+                <ul>
+                    <li><a href="/about/">About us</a></li>
+                    <li><a href="/about/team.html">Team</a></li>
+                    <li><a href="/people/">People</a></li>                    
+                    <li><a href="/Network/">Network</a></li>    
+                    <li><a href="/about/videos.html">Videos</a></li>                                    
+                </ul>
+            </div>
+            <div class="grid span2">
+                <h4>Programs</h4>
+                <ul>
+                    <li><a href="/mansion/">Blackbox Residence</a></li>
+                    <li><a href="/connect/">Blackbox Connect</a></li>
+                    <li><a href="/accelerate/">Blackbox Accelerate</a></li>
+                    <li><a href="/investors/">Investors Retreat</a></li>
+                </ul>
+            </div>
+       </div>
+       <p>&copy; Blackbox Accelerator 2011-2012</p>                
+       </div>
+    </footer>
+    
+</div> <!--#container-->
+
+<div id="overlay">
+<div id="modal">
+    <a class="close" href="#last" id="close-modal"> close [x]</a>
+        <!-- Begin MailChimp Signup Form -->
+        <link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+        <div id="mc_embed_signup">
+        <form action="http://blackbox.us4.list-manage.com/subscribe/post?u=fa0ed72f081ca7da2eb954e9e&amp;id=f916dfaa95" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <h2>Subscribe to our mailing list</h2>
+        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+        <div class="mc-field-group">
+        <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+        </label>
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        </div>
+        <div class="mc-field-group">
+        <label for="mce-FNAME">First Name  <span class="asterisk">*</span>
+        </label>
+        <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+        </div>
+        <div class="mc-field-group">
+        <label for="mce-LNAME">Last Name  <span class="asterisk">*</span>
+        </label>
+        <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+        </div>
+        <div class="mc-field-group input-group">
+        <strong>Email Format </strong>
+        <ul><li><input type="radio" value="html" name="EMAILTYPE" id="mce-EMAILTYPE-0"><label for="mce-EMAILTYPE-0">html</label></li>
+        <li><input type="radio" value="text" name="EMAILTYPE" id="mce-EMAILTYPE-1"><label for="mce-EMAILTYPE-1">text</label></li>
+        <li><input type="radio" value="mobile" name="EMAILTYPE" id="mce-EMAILTYPE-2"><label for="mce-EMAILTYPE-2">mobile</label></li>
+        </ul>
+        </div>
+        <div id="mce-responses" class="clear">
+	        <div class="response" id="mce-error-response" style="display:none"></div>
+	        <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </form>
+        </div>
+        <script type="text/javascript">
+        var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='imageurl';
+        try {
+        var jqueryLoaded=jQuery;
+        jqueryLoaded=true;
+        } catch(err) {
+        var jqueryLoaded=false;
+        }
+        var head= document.getElementsByTagName('head')[0];
+        if (!jqueryLoaded) {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
+        head.appendChild(script);
+        if (script.readyState && script.onload!==null){
+            script.onreadystatechange= function () {
+                  if (this.readyState == 'complete') mce_preload_check();
+            }    
+        }
+        }
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
+        head.appendChild(script);
+        var err_style = '';
+        try{
+        err_style = mc_custom_error_style;
+        } catch(e){
+        err_style = '#mc_embed_signup input.mce_inline_error{border-color:#6B0505;} #mc_embed_signup div.mce_inline_error{margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff;}';
+        }
+        var head= document.getElementsByTagName('head')[0];
+        var style= document.createElement('style');
+        style.type= 'text/css';
+        if (style.styleSheet) {
+        style.styleSheet.cssText = err_style;
+        } else {
+        style.appendChild(document.createTextNode(err_style));
+        }
+        head.appendChild(style);
+        setTimeout('mce_preload_check();', 250);
+
+        var mce_preload_checks = 0;
+        function mce_preload_check(){
+        if (mce_preload_checks>40) return;
+        mce_preload_checks++;
+        try {
+            var jqueryLoaded=jQuery;
+        } catch(err) {
+            setTimeout('mce_preload_check();', 250);
+            return;
+        }
+        try {
+            var validatorLoaded=jQuery("#fake-form").validate({});
+        } catch(err) {
+            setTimeout('mce_preload_check();', 250);
+            return;
+        }
+        mce_init_form();
+        }
+        function mce_init_form(){
+        jQuery(document).ready( function($) {
+          var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
+          var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
+          $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
+          options = { url: 'http://blackbox.us4.list-manage.com/subscribe/post-json?u=fa0ed72f081ca7da2eb954e9e&id=f916dfaa95&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+                        beforeSubmit: function(){
+                            $('#mce_tmp_error_msg').remove();
+                            $('.datefield','#mc_embed_signup').each(
+                                function(){
+                                    var txt = 'filled';
+                                    var fields = new Array();
+                                    var i = 0;
+                                    $(':text', this).each(
+                                        function(){
+                                            fields[i] = this;
+                                            i++;
+                                        });
+                                    $(':hidden', this).each(
+                                        function(){
+                                            var bday = false;
+                                            if (fields.length == 2){
+                                                bday = true;
+                                                fields[2] = {'value':1970};//trick birthdays into having years
+                                            }
+                                        	if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
+                                        		this.value = '';
+								            } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
+                                        		this.value = '';
+								            } else {
+								                if (/\[day\]/.test(fields[0].name)){
+	                                                this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;									        
+								                } else {
+	                                                this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
+                                                }
+                                            }
+                                        });
+                                });
+                            return mce_validator.form();
+                        }, 
+                        success: mce_success_cb
+                    };
+          $('#mc-embedded-subscribe-form').ajaxForm(options);
+          
+          
+        });
+        }
+        function mce_success_cb(resp){
+        $('#mce-success-response').hide();
+        $('#mce-error-response').hide();
+        if (resp.result=="success"){
+            $('#mce-'+resp.result+'-response').show();
+            $('#mce-'+resp.result+'-response').html(resp.msg);
+            $('#mc-embedded-subscribe-form').each(function(){
+                this.reset();
+	        });
+        } else {
+            var index = -1;
+            var msg;
+            try {
+                var parts = resp.msg.split(' - ',2);
+                if (parts[1]==undefined){
+                    msg = resp.msg;
+                } else {
+                    i = parseInt(parts[0]);
+                    if (i.toString() == parts[0]){
+                        index = parts[0];
+                        msg = parts[1];
+                    } else {
+                        index = -1;
+                        msg = resp.msg;
+                    }
+                }
+            } catch(e){
+                index = -1;
+                msg = resp.msg;
+            }
+            try{
+                if (index== -1){
+                    $('#mce-'+resp.result+'-response').show();
+                    $('#mce-'+resp.result+'-response').html(msg);            
+                } else {
+                    err_id = 'mce_tmp_error_msg';
+                    html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
+                    
+                    var input_id = '#mc_embed_signup';
+                    var f = $(input_id);
+                    if (ftypes[index]=='address'){
+                        input_id = '#mce-'+fnames[index]+'-addr1';
+                        f = $(input_id).parent().parent().get(0);
+                    } else if (ftypes[index]=='date'){
+                        input_id = '#mce-'+fnames[index]+'-month';
+                        f = $(input_id).parent().parent().get(0);
+                    } else {
+                        input_id = '#mce-'+fnames[index];
+                        f = $().parent(input_id).get(0);
+                    }
+                    if (f){
+                        $(f).append(html);
+                        $(input_id).focus();
+                    } else {
+                        $('#mce-'+resp.result+'-response').show();
+                        $('#mce-'+resp.result+'-response').html(msg);
+                    }
+                }
+            } catch(e){
+                $('#mce-'+resp.result+'-response').show();
+                $('#mce-'+resp.result+'-response').html(msg);
+            }
+        }
+        }
+
+        </script>
+        <!--End mc_embed_signup-->
+</div><!--End of #modal-->
+</div><!--End of overlay-->
+</body>
+</html>

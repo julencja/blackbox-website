@@ -1,0 +1,14 @@
+---
+layout: resource
+title: Blackbox Connect November 2011 Testimonials
+speaker: Blackbox Connect Participants
+category: videos
+video_id: icnrUHD07hk
+thumbnail: http://i4.ytimg.com/vi/icnrUHD07hk/default.jpg
+video: http://www.youtube.com/embed/icnrUHD07hk
+
+ogDescription: "Immerse yourself n Silicon Valley's best resources. Blackbox Connect November 2011"
+---
+
+Blackbox Connect participants sharing their experiences from the November 2011 program.
+

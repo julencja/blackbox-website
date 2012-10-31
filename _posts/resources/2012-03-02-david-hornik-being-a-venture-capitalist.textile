@@ -1,0 +1,12 @@
+---
+layout: resource
+title: Being a Venture Capitalist
+speaker: David Hornik
+category: videos
+video_id: zXuDGtN7Lsc
+
+ogDescription: 'David Hornik talking on being a venture capitalist.'
+ogImage: http://i4.ytimg.com/vi/zXuDGtN7Lsc/default.jpg
+---
+
+David Hornik talking on being a venture capitalist &ndash; Blackbox Connect November 2011.

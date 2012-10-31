@@ -1,0 +1,13 @@
+---
+layout: resource
+title: Why do some regions succeed in innovation?
+speaker: Vivek Wadhwa
+category: videos
+video_id: tiuXo6Ju-to
+thumbnail: http://i4.ytimg.com/vi/tiuXo6Ju-to/default.jpg
+
+
+ogDescription: 'Why do some regions success and some fail in innovation? Vivek talks about diversity in Silicon Valley and how it makes people open minded.'
+---
+
+Why do some regions success and some fail in innovation? Vivek talks about diversity in Silicon Valley and how it makes people open minded. To fail in Silicon Valley is not a disaster! To fail makes you smarter. You don’t have to wait for venture capital. You can start by very little and go change the world.

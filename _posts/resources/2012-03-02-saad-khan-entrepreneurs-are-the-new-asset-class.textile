@@ -1,0 +1,19 @@
+---
+layout: resource
+title: Entrepreneurs Are the New Asset Class
+speaker: Saad Khan 
+category: videos
+video_id: v8rppK93I3c
+thumbnail: http://i4.ytimg.com/vi/v8rppK93I3c/default.jpg
+
+
+ogDescription: 'Saad Khan, partner at CMEA giving a talk on "Entrepreneurs Are the New Asset Class" and describing top qualities of startup founders.'
+ogImage: http://i4.ytimg.com/vi/v8rppK93I3c/default.jpg
+
+related_documents: 
+- url: http://prezi.com/wyflfnwsfa9k/entrepreneurs-are-the-new-asset-class-blackbox/
+  name: Entrepreneurs are the New Asset Class (slideshow)
+---
+
+"Saad Khan":http://www.linkedin.com/pub/saad-khan/0/5/438, partner at CMEA, describing top qualities of startup founders &ndash; Blackbox Connect November 2011.
+

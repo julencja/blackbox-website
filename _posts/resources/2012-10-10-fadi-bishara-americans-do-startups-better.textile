@@ -1,0 +1,14 @@
+---
+layout: resource
+title: Silicon Valley vs Europe, Why Americans Do Startups Better
+speaker: Fadi Bishara
+category: videos
+video_id: zJ4FeJnfv9o
+
+ogDescription: 'HackFWD Build 0.10 - Fadi Bishara of Blackbox explains why Americans do startups better'
+ogImage: http://i4.ytimg.com/vi/zJ4FeJnfv9o/default.jpg
+---
+
+<a href="http//hackfwd.com">HackFwd Build 0.10</a> // Berlin // June 2012
+
+

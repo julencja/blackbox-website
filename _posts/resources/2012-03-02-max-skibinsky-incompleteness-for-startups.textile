@@ -1,0 +1,15 @@
+---
+layout: resource
+title: Incompleteness for Startups
+speaker: Max Skibinsky
+category: videos
+video_id: JvG1yLObvJY
+
+ogDescription: 'Max Skibinsky on Incompleteness for Startups. Very interesting lecture on what Goedels incompleteness theorem means for building startups.'
+ogImage: http://i4.ytimg.com/vi/JvG1yLObvJY/default.jpg
+related_documents:
+- url: http://www.slideshare.net/blackboxconnect/incompleteness-for-startups
+  name: Incompleteness for Startups (slideshow)
+---
+
+What Goedel's incompleteness theorem means for building startups &ndash; Blackbox Connect November 2012

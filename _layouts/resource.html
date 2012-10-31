@@ -1,0 +1,44 @@
+---
+layout: default
+mediaClassActive: 'class="active"'
+---
+
+<section class="full">
+    <article class="resources">
+        <h1>{{page.title}}</h1>
+
+		<section class="videoDescription">   		
+		{{page.content|textilize}}
+		{% if page.related_documents %}
+		<div class="relatedDocuments">
+			<h3>Related Documents</h3>
+			<ul>
+			{% for doc in page.related_documents %}
+				<li><a href="{{doc.url}}" target="_blank">{{doc.name}}</a></li>
+			{% endfor %}
+			</ul>
+		</div>
+		{% endif %}
+		</section>
+		        
+		<div class="video">
+			<iframe width="640" height="360" src="http://www.youtube.com/embed/{{page.video_id}}" frameborder="0" allowfullscreen></iframe>
+		</div>
+		
+		<section class="relatedVideos">
+		<h2>Related Videos</h2>
+		<ul class="relatedResources">
+		{% for post in site.related_posts limit:3 %}
+			<li>
+				<a href="{{ post.url }}" class="thumbnail"><img src="http://i4.ytimg.com/vi/{{post.video_id}}/default.jpg" alt="{{post.title}}"></a>
+				<a href="{{ post.url }}">{{post.title }}</a>
+			</li>
+		{% endfor %}
+		</ul>
+		</section>
+    </article>
+
+
+</section>
+
+

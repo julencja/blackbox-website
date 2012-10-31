@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+
+<html itemscope itemtype="http://schema.org/Organization">
+<head>
+    <meta charset=utf-8>    
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <!--OG tags -->
+    <meta property="og:title" content="Team | Blackbox.vc" />
+    <meta property="og:type" content="company" />
+    <meta property="og:url" content="http://blackbox.vc/about/team.html" />
+    <meta property="og:image"  content="http://blackbox.vc/img/blackbox_og_logo.jpg"  />
+    <meta property="og:description" content="Blackbox Accelerator. Soft-landing and fast-launching pad for global startups in Silicon Valley.">
+    <meta property="og:site_name" content="blackbox.vc" />
+    <meta property="fb:app_id" content="329792920375738" />
+    <!--Schema tags-->
+    <meta itemprop="name" content="blackbox.vc">
+    <meta itemprop="description" content="Blackbox is a next generation seed accelerator for technology startups, based in the heart of Silicon Valley. We connect entrepreneurs with a global network of seed investors, mentors and market entrance partners.">
+    <meta itemprop="image" content="http://blackbox.vc/static/img/blackbox_og_logo.jpg">
+
+    <title>Team | Blackbox.vc</title>
+    <link rel="icon" type="image/png" href="/static/img/fav.png?foo=25102012">
+    
+    <link href="/css/style.css?foo=25102012" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function () {
+    $(window).scroll(function () { 
+        $("#subwelcome").css("position", "static"); 
+        });
+    $('#mailing-list-form').click(function() {
+        $('#overlay').fadeIn('fast');
+        });
+    $('#close-modal').click(function() { 
+        $('#overlay').fadeOut('fast');
+        });
+    /*General scroll down on landing page*/
+    $('#scroll-down-1').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#how-we-work-title").offset().top
+                     }, 1000);                     
+        });
+    $('#scroll-down-2').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#who-we-work-with-title").offset().top
+                     }, 1000);                     
+        });        
+    $('#scroll-down-3').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#why-are-we-doing-this-title").offset().top
+                     }, 1000);                     
+        });        
+    $('#scroll-down-4').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#last").offset().top
+                     }, 1000);                     
+        });      
+    /*Mobile scroll-down*/          
+    $('#q1').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#how-we-work-title").offset().top
+                     }, 1000);                     
+        });
+    $('#q2').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#who-we-work-with-title").offset().top
+                     }, 1000);                     
+        });
+    $('#q3').click(function(){
+         $('html, body').animate({                     
+                    scrollTop: $("#why-are-we-doing-this-title").offset().top
+                     }, 1000);                     
+        });                    
+    
+    /*Tabs on People Section*/
+
+    $('#tab-accelerate').click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+        $('#accelerate-participants').siblings().fadeOut('fast');
+        $('#accelerate-participants').fadeIn('500');
+    })
+
+    $('#tab-connect').click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+        $('#connect-graduates').siblings().fadeOut('fast');
+        $('#connect-graduates').fadeIn('500');
+    });
+
+    $('#tab-residents').click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+        $('#residents').siblings().fadeOut('fast');
+        $('#residents').fadeIn('500');
+    })
+
+    /*Gallery on Residence*/
+    $('.gallery figure').click(function (){
+        $('#active-photo-container').empty();
+        $(this).children().clone().removeClass('blurred').appendTo('#active-photo-container');
+        $('.gallery .thumb img').addClass('blurred');        
+        $('#active-photo-container').click(function(){
+            $(this).empty();            
+            $('.gallery .thumb img').removeClass('blurred');            
+            });
+        });
+    $('.player').click(function (){
+        $('#active-video-holder').fadeOut('fast');
+        $('#ytplayer').fadeIn('fast');
+        });
+    $('.video-thumb').click(function(){
+        var picture = $(this).find('img').attr('src');
+        var speaker = $(this).find('figcaption h6').text();
+        var title = $(this).find('figcaption h5').text();
+        var description = $(this).find('.video-content').text();
+        var videoUrl = $(this).find('.yt-url').text();
+        $('#ytplayer').fadeOut('fast');
+        $('#active-video-holder').fadeIn('fast');
+        $('#active-video-holder img').attr('src', picture);
+        $('#active-video-holder h2').text(speaker);
+        $('#active-video-holder h3').text(title);
+        $('#active-video-holder p').text(description);        
+        $('#ytplayer').attr('src', videoUrl);
+        });
+});
+    </script>
+<!--GA-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28505239-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+</head>
+
+<body>
+    <!--FBML-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=329792920375738";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!--/FBML-->
+    
+<nav id="main-nav">
+    <a class="logo desktop-only" href="/"><img src="../img/logos/logo_blackbox.png" alt="Blackbox.vc"></a>
+    <div class="inner">      
+        <a href="/about/" class='active'>About Us</a>        
+        <a href="/people"/ >People</a>            
+        <a href="/network/" >Network</a>            
+        <a class="divider">|</a>        
+        <a href="/mansion/"  class="programs">Residence</a>          
+        <a href="/connect/"  class="programs">Connect</a>
+        <a href="/accelerate/"  class="programs">Accelerate</a>        
+        <a href="/investors/"  class="programs">Investor Retreat <span>!</span></a>
+    </div>
+    <div class="mobile-only">
+        <span>Where international founders build global companies with Silicon Valley resources.</span>
+    </div>
+        <a class="social"><div class="fb-like" data-href="http://facebook.com/blackbox.vc" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-colorscheme="light"></div></a>
+        <a href="https://twitter.com/blackboxvc" target="_blank" class="social"><img src="/img/mini-twitter-w.png"></a>        
+</nav>
+
+<div id="container">
+
+<section class="a-slide first" id="about">
+    <div class="overlay">
+        <div class="inner">
+            <h1>Blackbox Team</h1>
+        </div>
+    </div>
+</section>
+
+<section class="c-slide" id="">
+    <div class="inner"> 
+        <div class="row">
+            <h2>Blackbox Team</h2>        
+            <div class="grid span2 bio">
+                <h3 id="fadi">Fadi Bishara <span>founder</span></h3>
+                <figure>
+                    <img src="/img/fadi.jpg">
+                    <small>
+                        <a href="https://twitter.com/fbishara" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/in/fadibishara" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                    
+                </figure>
+                <p>Fadi has in-depth knowledge and experience related to building successful startups in Silicon Valley and elsewhere in the world. For over 15 years, he has been successfully matching human capital and venture capital needs across the globe, guiding talented technology entrepreneurs in their path.</p>  
+                <p>As the Founder of Blackbox, his vision is to accelerate entrepreneurs, regardless of their geographic location. Fadi is also a Venture Partner at Sinbad Ventures, a fund that invests in early stage technology startups from Arabia.</p>
+                <p>Prior to founding Blackbox, Fadi was the founder and CEO of techVenture. Having firsthand experience of  building teams for over 100 early stage startups he's a frequent speaker and an advisor/mentor with startup accelerators such as SeedCamp, HackFwd, StartupBootcamp, StartupChile, Skolkovo Startup Academy, and many other global initiatives.</p> 
+            </div>
+            <div class="grid span2 bio">
+                <h3>Julia K Szopa <span>co-founder / programs</span></h3>
+                <figure>
+                    <img src="/img/julia.jpg">
+                    <small>
+                        <a href="https://twitter.com/juliaszopa" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/in/juliaszopa" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                                        
+                </figure>                
+                <p>Julia is a webdesigner and front-end developer with a passion for product creation. Having been working with a couple of Polish startups, usually as the first non-technical team member, she has a deep understanding of challenges faced by the founders willing to scale globally.</p> 
+                <p>She writes about Silicon Valley for <a href="http://szopa.natemat.pl" target="_blank">natemat.pl</a> (Polish). She's also the founder and    developer of a vibrant online community of designer lingerie&nbsp;enthusiasts.</p>
+            </div> 
+        </div>                       
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3>Glennskii Meyer <span>community / house</span></h3>
+                <figure>
+                    <img src="/img/glenn.jpg">
+                    <small>
+                        <a href="https://twitter.com/mC_glennSKii" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/pub/glenn-greer-meyer/31/99b/32b" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                                        
+                </figure>                                   
+                <p>GlennSKii is a vocalist/MC and geographer, also working in audio/music production, and a whippet trainer/sport-designer/breeder. Originally from Texas & Maryland, he spent one year in Vietnam and over 18 years in Poland, where he released 4 albums on major labels like Sony and Warner. He toured Poland and Europe with bands and as an MC (about 800-1000 gigs). He founded and organized 3 years of ground-breaking weekly jam sessions in Sopot, Poland. Also, check out his <a href="http://machspeedwhippets.wordpress.com/">Official Blog for Mach-Speed & Sighthound Disc Sport</a></p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Rob Lott <span>general counsel / legal</span></h3>
+                <figure>
+                    <img src="/img/rob.jpg">
+                    <small>
+                        <a href="http://www.linkedin.com/pub/robert-lott/3/36/254" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                                        
+                </figure>                               
+                <p>Rob served as a venture associate and in-house counsel to venture capital firm, SVIC, where he participated in the early stage development of several portfolio companies, including Cloudshield, Inc. acquired by SAIC for over $200M and ArcSight, Inc. (formerly NASDAQ 'ARST') acquired by HP for $1.4 Billion. He co-founded Knowledge Market, a technology transfer and corporate development firm that was based at NASA Ames Research Center, where he assisted private and publicly-traded companies with sourcing and licensing intellectual property (IP) from U.S. government agencies, national laboratories, and universities. He has facilitated numerous international M&A transactions, venture financings, technology licenses and patent sales.</p>
+
+
+            </div>            
+        </div>            
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3 id="michael">Michael de la Maza <span>startup mentor / EIR</span></h3>
+                <figure>
+                    <img src="/img/michael.jpg?foo=bar">
+                    <small>
+                        <a href="https://twitter.com/#!/hearthealthyscr" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/in/michaeldelamaza" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                                        
+                </figure>                         
+                <p>Michael is the lean/agile coach at edX, the Harvard/MIT nonprofit that is revolutionizing online education.  He manages Immaculate Conception Ventures, a tiny seed stage fund. He was a member of the founding team at Inquira (acquired by Oracle) and VP of Corporate Strategy at Softricity (acquired by Microsoft). He holds a PhD in Computer Science from MIT and is the author of Rapid Chess Improvement and co-author of Professional Scrum with Team Foundation Server 2010. </p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Patrycja Tempska <span>young leaders / intern</span></h3>
+                <figure>
+                    <img src="/img/patrycja.jpg">
+                    <small>
+                        <a href="https://twitter.com/ptempska" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/pub/patrycja-tempska/46/403/3a9" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                                        
+                </figure>      
+                <p>Patrycja is a high school graduate and an adventurer interested in new technologies, programming and entrepreneurship. While still at school she was working for Pomeranian Science and Technology Park in Gdynia (Poland) and organized a conference "Play with Business" for more than 200 high school students.</p>
+                <p>She came to the Valley in June 2012, where she has been volunteering at Blackbox and at TechCrunch Disrupt in San Francisco.</p> 
+            </div>            
+        </div>            
+        <div class="row">        
+            <h2>Global Blackbox Evangelists</h2>
+
+                <figure class="grid span6">
+                    <img src="/img/michael_wroczynski.jpg">
+                    <figcaption>Michal Wroczynski</figcaption>
+                    <small>
+                        <a href="https://twitter.com/Fidofornia" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/pub/michal-wroczynski/1/361/159" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                    
+                </figure>
+                <figure class="grid span6">
+                    <img src="/img/jenny.jpg">
+                    <figcaption>Jenny Jung</figcaption>
+                    <small>
+                        <a href="https://twitter.com/jung" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/in/jennyejung/en" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                    
+                </figure>
+                <figure class="grid span6">
+                    <img src="/img/soren.jpg">
+                    <figcaption>Soren Therkelsen</figcaption>                    
+                    <small>
+                        <a href="https://twitter.com/sorenrt" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/in/sorenrt" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                    
+                </figure>
+        </div>
+    </div>
+</section>    
+
+
+
+
+
+    <footer>
+        <div class="inner">
+        <div class="row">
+            <div class="grid span2">
+                <h4>Blackbox</h4>
+                <ul>
+                    <li><a href="/about/">About us</a></li>
+                    <li><a href="/about/team.html">Team</a></li>
+                    <li><a href="/people/">People</a></li>                    
+                    <li><a href="/Network/">Network</a></li>    
+                    <li><a href="/about/videos.html">Videos</a></li>                                    
+                </ul>
+            </div>
+            <div class="grid span2">
+                <h4>Programs</h4>
+                <ul>
+                    <li><a href="/mansion/">Blackbox Residence</a></li>
+                    <li><a href="/connect/">Blackbox Connect</a></li>
+                    <li><a href="/accelerate/">Blackbox Accelerate</a></li>
+                    <li><a href="/investors/">Investors Retreat</a></li>
+                </ul>
+            </div>
+       </div>
+       <p>&copy; Blackbox Accelerator 2011-2012</p>                
+       </div>
+    </footer>
+    
+</div> <!--#container-->
+
+<div id="overlay">
+<div id="modal">
+    <a class="close" href="#last" id="close-modal"> close [x]</a>
+        <!-- Begin MailChimp Signup Form -->
+        <link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+        <div id="mc_embed_signup">
+        <form action="http://blackbox.us4.list-manage.com/subscribe/post?u=fa0ed72f081ca7da2eb954e9e&amp;id=f916dfaa95" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <h2>Subscribe to our mailing list</h2>
+        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+        <div class="mc-field-group">
+        <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+        </label>
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        </div>
+        <div class="mc-field-group">
+        <label for="mce-FNAME">First Name  <span class="asterisk">*</span>
+        </label>
+        <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+        </div>
+        <div class="mc-field-group">
+        <label for="mce-LNAME">Last Name  <span class="asterisk">*</span>
+        </label>
+        <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+        </div>
+        <div class="mc-field-group input-group">
+        <strong>Email Format </strong>
+        <ul><li><input type="radio" value="html" name="EMAILTYPE" id="mce-EMAILTYPE-0"><label for="mce-EMAILTYPE-0">html</label></li>
+        <li><input type="radio" value="text" name="EMAILTYPE" id="mce-EMAILTYPE-1"><label for="mce-EMAILTYPE-1">text</label></li>
+        <li><input type="radio" value="mobile" name="EMAILTYPE" id="mce-EMAILTYPE-2"><label for="mce-EMAILTYPE-2">mobile</label></li>
+        </ul>
+        </div>
+        <div id="mce-responses" class="clear">
+	        <div class="response" id="mce-error-response" style="display:none"></div>
+	        <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </form>
+        </div>
+        <script type="text/javascript">
+        var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='imageurl';
+        try {
+        var jqueryLoaded=jQuery;
+        jqueryLoaded=true;
+        } catch(err) {
+        var jqueryLoaded=false;
+        }
+        var head= document.getElementsByTagName('head')[0];
+        if (!jqueryLoaded) {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
+        head.appendChild(script);
+        if (script.readyState && script.onload!==null){
+            script.onreadystatechange= function () {
+                  if (this.readyState == 'complete') mce_preload_check();
+            }    
+        }
+        }
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
+        head.appendChild(script);
+        var err_style = '';
+        try{
+        err_style = mc_custom_error_style;
+        } catch(e){
+        err_style = '#mc_embed_signup input.mce_inline_error{border-color:#6B0505;} #mc_embed_signup div.mce_inline_error{margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff;}';
+        }
+        var head= document.getElementsByTagName('head')[0];
+        var style= document.createElement('style');
+        style.type= 'text/css';
+        if (style.styleSheet) {
+        style.styleSheet.cssText = err_style;
+        } else {
+        style.appendChild(document.createTextNode(err_style));
+        }
+        head.appendChild(style);
+        setTimeout('mce_preload_check();', 250);
+
+        var mce_preload_checks = 0;
+        function mce_preload_check(){
+        if (mce_preload_checks>40) return;
+        mce_preload_checks++;
+        try {
+            var jqueryLoaded=jQuery;
+        } catch(err) {
+            setTimeout('mce_preload_check();', 250);
+            return;
+        }
+        try {
+            var validatorLoaded=jQuery("#fake-form").validate({});
+        } catch(err) {
+            setTimeout('mce_preload_check();', 250);
+            return;
+        }
+        mce_init_form();
+        }
+        function mce_init_form(){
+        jQuery(document).ready( function($) {
+          var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
+          var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
+          $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
+          options = { url: 'http://blackbox.us4.list-manage.com/subscribe/post-json?u=fa0ed72f081ca7da2eb954e9e&id=f916dfaa95&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+                        beforeSubmit: function(){
+                            $('#mce_tmp_error_msg').remove();
+                            $('.datefield','#mc_embed_signup').each(
+                                function(){
+                                    var txt = 'filled';
+                                    var fields = new Array();
+                                    var i = 0;
+                                    $(':text', this).each(
+                                        function(){
+                                            fields[i] = this;
+                                            i++;
+                                        });
+                                    $(':hidden', this).each(
+                                        function(){
+                                            var bday = false;
+                                            if (fields.length == 2){
+                                                bday = true;
+                                                fields[2] = {'value':1970};//trick birthdays into having years
+                                            }
+                                        	if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
+                                        		this.value = '';
+								            } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
+                                        		this.value = '';
+								            } else {
+								                if (/\[day\]/.test(fields[0].name)){
+	                                                this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;									        
+								                } else {
+	                                                this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
+                                                }
+                                            }
+                                        });
+                                });
+                            return mce_validator.form();
+                        }, 
+                        success: mce_success_cb
+                    };
+          $('#mc-embedded-subscribe-form').ajaxForm(options);
+          
+          
+        });
+        }
+        function mce_success_cb(resp){
+        $('#mce-success-response').hide();
+        $('#mce-error-response').hide();
+        if (resp.result=="success"){
+            $('#mce-'+resp.result+'-response').show();
+            $('#mce-'+resp.result+'-response').html(resp.msg);
+            $('#mc-embedded-subscribe-form').each(function(){
+                this.reset();
+	        });
+        } else {
+            var index = -1;
+            var msg;
+            try {
+                var parts = resp.msg.split(' - ',2);
+                if (parts[1]==undefined){
+                    msg = resp.msg;
+                } else {
+                    i = parseInt(parts[0]);
+                    if (i.toString() == parts[0]){
+                        index = parts[0];
+                        msg = parts[1];
+                    } else {
+                        index = -1;
+                        msg = resp.msg;
+                    }
+                }
+            } catch(e){
+                index = -1;
+                msg = resp.msg;
+            }
+            try{
+                if (index== -1){
+                    $('#mce-'+resp.result+'-response').show();
+                    $('#mce-'+resp.result+'-response').html(msg);            
+                } else {
+                    err_id = 'mce_tmp_error_msg';
+                    html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
+                    
+                    var input_id = '#mc_embed_signup';
+                    var f = $(input_id);
+                    if (ftypes[index]=='address'){
+                        input_id = '#mce-'+fnames[index]+'-addr1';
+                        f = $(input_id).parent().parent().get(0);
+                    } else if (ftypes[index]=='date'){
+                        input_id = '#mce-'+fnames[index]+'-month';
+                        f = $(input_id).parent().parent().get(0);
+                    } else {
+                        input_id = '#mce-'+fnames[index];
+                        f = $().parent(input_id).get(0);
+                    }
+                    if (f){
+                        $(f).append(html);
+                        $(input_id).focus();
+                    } else {
+                        $('#mce-'+resp.result+'-response').show();
+                        $('#mce-'+resp.result+'-response').html(msg);
+                    }
+                }
+            } catch(e){
+                $('#mce-'+resp.result+'-response').show();
+                $('#mce-'+resp.result+'-response').html(msg);
+            }
+        }
+        }
+
+        </script>
+        <!--End mc_embed_signup-->
+</div><!--End of #modal-->
+</div><!--End of overlay-->
+</body>
+</html>

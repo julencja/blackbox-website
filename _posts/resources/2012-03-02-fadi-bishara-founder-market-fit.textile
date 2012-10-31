@@ -1,0 +1,13 @@
+---
+layout: resource
+title: Recruiting and Hiring for Startups
+speaker: Fadi Bishara
+category: videos
+video_id: sgfYvuKlap0
+thumbnail: http://i4.ytimg.com/vi/sgfYvuKlap0/default.jpg
+video: http://www.youtube.com/embed/sgfYvuKlap0
+
+ogDescription: 'Fadi Bishara of blackbox.vc on Recruiting, Hiring and building your Core Startup Team'
+---
+
+Recruiting, Hiring and Building your Core Startup Team &ndash; Blackbox Connect November 2012.

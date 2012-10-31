@@ -1,0 +1,13 @@
+---
+layout: resource
+title: Banking for Born Global Startups
+speaker: Andy Tsao
+category: videos
+video_id: Ytd2t0dcMCc
+thumbnail: http://i4.ytimg.com/vi/Ytd2t0dcMCc/default.jpg
+video: http://www.youtube.com/embed/Ytd2t0dcMCc
+
+ogDescription: 'Andy Tsao, Managing Director at Silicon Valley Bank, talks about Global Market Banking Trends, Strategies and Solutions for Born Global Startups.'
+---
+
+"Andy Tsao":http://www.svb.com/profile/Andy-Tsao/, Managing Director at Silicon Valley Bank, talks about Global Market Banking Trends, Strategies and Solutions for Born Global Startups. Blackbox Connect November 2011.

@@ -1,0 +1,14 @@
+---
+layout: resource
+title: What is Blackbox?
+speaker: Blackbox Connect
+category: videos
+video_id: 53-OYHwBYVM
+
+ogDescription: 'What is Blackbox?'
+ogImage: http://i4.ytimg.com/vi/53-OYHwBYVM/default.jpg
+---
+
+"Blackbox brings people from all over the world, who want to start businesses and they come see Silicon Valley as it is. They can see all the things that make Silicon Valley thrive." &ndash; Tim Draper, Founder & Managing Director of Draper Fisher Jurvetson
+
+

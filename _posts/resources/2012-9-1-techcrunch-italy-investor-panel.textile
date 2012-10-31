@@ -1,0 +1,13 @@
+---
+layout: resource
+title: TechCrunch Italy Investors Panel with Fadi Bishara
+speaker: Fadi Bishara and others
+category: videos
+video_id: TbvrAmPD0sQ
+thumbnail: http://i4.ytimg.com/vi/TbvrAmPD0sQ/default.jpg
+video: http://www.youtube.com/embed/TbvrAmPD0sQ
+
+ogDescription: 'Focus on Customer: Fadi Bishara at TechCrunch Italy Investors Panel'
+---
+
+TechCrunch Italy 2012 Investors Panel with Fadi Bishara (Blackbox), Nicolas Wittenborn (Point Nine Capital), Roberto Bonanzinga (Balderton), Fausto Boni (360 Capital). Moderated by Mike Butcher, TechCrunch Europe.
