@@ -380,7 +380,10 @@ section {
     text-transform: uppercase;
 }
 
- 
+ .c-slide p,
+ .c-slide li {
+    text-shadow: none!important;
+ } 
 
 .c-slide a {
     color: #1ca6df;
@@ -1172,12 +1175,12 @@ footer a:hover {
     float: left;
     text-align: right;
     font-size: 80%;
-    padding: 3em 0 ;   
+    padding: 2em 0 ;   
 }
 
 #welcome .sub .r {
    width: 50%;
-   padding: 3em 0;
+   padding: 2em 0;
    float: left;
    margin-left: 2.5%;
    background: #3dbff4;
