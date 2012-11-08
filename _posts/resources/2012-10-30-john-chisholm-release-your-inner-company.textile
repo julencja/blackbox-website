@@ -1,0 +1,13 @@
+---
+layout: resource
+title: Release your inner company
+speaker: John Chisholm
+category: videos
+video_id: K-TdaNRqTV8
+thumbnail: http://i4.ytimg.com/vi/K-TdaNRqTV8/default.jpg
+
+
+ogDescription: 'Most companies spend way too much time raising money, and raise money before they are ready to do so.'
+---
+
+Most companies spend way too much time raising money, and raise money before they are ready to do so. You don't need a permission to be an entrepreneur, you don't need credentials. You just need to do it.

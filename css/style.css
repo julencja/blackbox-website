@@ -551,12 +551,12 @@ h5 small {
 }
 .c-slide .entry .details {
     font-size: 90%;
-    text-transform: uppercase;
     font-family: Gill Sans, sans-serif;
 }
 
 .c-slide .entry .details h2 {
-    font-size: 2.3em;
+    font-size: 3em;
+    margin: 1em 0 0 0;
 }
 
 
@@ -568,15 +568,28 @@ h5 small {
 
 }
 .c-slide .links {
-    margin: 2em 0;
+    margin: 0 0 2em 0;
     font-size: 1.2em;
 }
 
 .c-slide .links li{
-    text-align: right;
+    
     list-style-type: none;
     margin: 0 0;
 }
+
+.c-slide .links h4{
+    border-bottom: none;
+    font-size: 120%;
+}
+
+
+.c-slide .links .btn-big {
+    font-size: 150%;
+    text-align: left;
+}
+
+
 .c-slide .bio{
     font-size: 90%;
 
@@ -695,6 +708,7 @@ h5 small {
 span.right{
 float: right;
 }
+
 
 /*---------------------Gallery-------*/
 .gallery {
@@ -883,7 +897,7 @@ figure.span4 {
     height: 300px;/*500px*/
     text-align: center;
     padding: 100px 50px 0 50px;
-    margin: 4em auto;
+    margin: 4em auto 1em;
 
 }
 
@@ -1154,70 +1168,120 @@ footer a:hover {
 
 
 #welcome .sub {
-    background: #fff;
-    box-shadow: 0 0 5px rgba(10,26,39,0.3);
     float: left;
     width: 100%;
     padding: 0 0;
     z-index: 1000000;
     position: relative;
     bottom: 0%;
-
 }
 
 #welcome .sub .row {
     width: 100%;
     margin-bottom: 0 !important;
+    
 }
 
 #welcome .sub .l {
-    width: 47.5%;
-    float: left;
+    background: rgba(255,255,255,.7);
+    width: 30%;
+   position: relative; 
     text-align: right;
-    font-size: 80%;
-    padding: 2em 0 ;   
+    padding: 1em 5% 2em 0;   
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 2.5%;
 }
 
 #welcome .sub .r {
-   width: 50%;
-   padding: 2em 0;
-   float: left;
+    background: rgba(255,255,255,.7);
+   width: 30%;
+   padding: 1em 0  2em 5%;
+   position: relative;
+   display: inline-block;
+   text-align: left;
+   border-radius: 5px;
    margin-left: 2.5%;
-   background: #3dbff4;
 }
 
 #welcome .sub h2 {
-    font-size: 180%;
+    margin: .7em 0;
     text-transform: uppercase;
+    font-size: 120%;
 }
 
-#welcome .sub h3 {
-    font-size: 150%;
+#welcome .sub h2 a {
+    color: #000;
 }
 
-#welcome .sub h2,
-#welcome .sub h3{
-    margin: 0 0 .5em 5%;
-    line-height: 1;
+#welcome .sub h2 a:hover{
+    text-decoration: underline;
+    color: #000 !important;
+}
+#welcome .sponsors-list {
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(10,26,39,.6);
+    border-bottom: solid 1px rgba(10,26,39,.6);
 }
 
-#welcome .sub a {
-    color: #fff;
+#welcome .buttons {
+    padding: 0 0 2em 0;
+    text-align: center;
 }
 
-#welcome .sub h3 a:hover {
+/*Buttons*/
+.btn-big {
+    border-radius: .2em;
+    box-shadow: 0 0 5px rgba(10,26,39,.6);
+    padding: .3em .5em;
+    color: #fff!important;
+    font-size: 2em;
+    text-shadow: 0 1px 1px rgba(10,26,39,1);
+    background-color: #3DBFF4;
+    background-image: -moz-linear-gradient(top, #3DBFF4, #0055cc);
+    background-image: -ms-linear-gradient(top, #3DBFF4, #0055cc);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3DBFF4), to(#0055cc));
+    background-image: -webkit-linear-gradient(top, #3DBFF4, #0055cc);
+    background-image: -o-linear-gradient(top, #3DBFF4, #0055cc);
+    background-image: linear-gradient(top, #3DBFF4, #0055cc);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0055cc', GradientType=0);
+    border-color: #0055cc #0055cc #003580;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    *background-color: #0055cc;
+    /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-big:hover,
+.btn-big:active,
+.btn-big.active,
+.btn-big.disabled,
+.btn-big[disabled] {
+    background-image: -moz-linear-gradient(top, #0055cc, #0055cc);
+    background-image: -ms-linear-gradient(top, #0055cc, #0055cc);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0055cc), to(#0055cc));
+    background-image: -webkit-linear-gradient(top, #0055cc, #0055cc);
+    background-image: -o-linear-gradient(top, #0055cc, #0055cc);
+    background-image: linear-gradient(top, #0055cc, #0055cc);
+  color: #fff;
+}
+.btn-big:active,
+.btn-big.active {
+  background-color: #004099;
 }
 
-#welcome .sub  a:hover {
-    color: rgba(10,26,39,0.8) !important;
+
+#welcome .sub  h2 a:hover {
+    color: #3DBFF4;
 }
 
 #welcome .sponsors {
-    width: 20%;
+    width: 15%;
     margin: 0 1em;
-    display: block;
-    float: right;
+    display: inline-block;
+    
     opacity: 0.7;
 }
 

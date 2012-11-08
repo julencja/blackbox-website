@@ -1,0 +1,11 @@
+---
+layout: resource
+title: Chasing Big Ideas
+speaker: Michael Baum
+category: videos
+video_id: QIr5atCBpsg
+thumbnail: http://i4.ytimg.com/vi/QIr5atCBpsg/default.jpg
+
+ogDescription: "You might have the greatest idea in the world, but if you do not have a warm introduction from somebody... it is worth close to nothing."
+---
+You might have the greatest idea in the world, but if you don't have a warm introduction from somebody... it's worth close to nothing.
