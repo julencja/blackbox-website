@@ -1127,7 +1127,18 @@ footer a:hover {
     text-decoration: underline;
 }
 
+footer .icons {
+    margin: .5em 0;
+}
+footer .icons li{
+    list-style-type: none;
+    display: inline;
+    margin-right: .5em;
+}
 
+footer .icons img {
+    width: 30px;
+}
 /*--------------------Slide specific----------------*/
 /*----------Welcome Slide*-----------*/
 
@@ -1592,6 +1603,7 @@ footer p {
     font-size: 65%;
     text-align: center;
 }
+
 
 }
 

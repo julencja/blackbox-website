@@ -1,0 +1,13 @@
+---
+layout: resource
+title: Tech Startups through VC's Eyes
+speaker: David Blumberg
+category: videos
+video_id: BAKgXCj4Skw
+thumbnail: http://i4.ytimg.com/vi/BAKgXCj4Skw/default.jpg
+video: http://www.youtube.com/embed/BAKgXCj4Skw
+
+ogDescription: "You have to show that you're in a big market, you've taken some of the risk out of it, and you are the team that can deliver. Because if you're sort of the first team, but we know you will need to hire a bunch of people, out the door goes more equity, and we, the investors, will be diluted."
+---
+
+You have to show that you're in a big market, you've taken some of the risk out of it, and you are the team that can deliver. Because if you're sort of the first team, but we know you will need to hire a bunch of people, out the door goes more equity, and we, the investors, will be diluted
