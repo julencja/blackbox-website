@@ -1,0 +1,13 @@
+---
+layout: resource
+title: Getting to Wow!
+speaker: Bill Reichert
+category: videos
+video_id: h6MS9AtJDTE
+thumbnail: http://i4.ytimg.com/vi/h6MS9AtJDTE/default.jpg
+video: http://www.youtube.com/embed/h6MS9AtJDTE
+
+ogDescription: 'Get Investors Fall in Love with You!'
+---
+
+Bill Reichert, co-founder of Garage Technology Ventures, about how to win hearts of investors when pitching your startup.

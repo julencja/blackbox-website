@@ -1,0 +1,13 @@
+---
+layout: resource
+title: Lessons from Silicon Valley
+speaker: Fadi Bishara
+category: videos
+video_id: lHy_uq8HO08
+thumbnail: http://i4.ytimg.com/vi/lHy_uq8HO08/default.jpg
+video: http://www.youtube.com/embed/lHy_uq8HO08
+
+ogDescription: 'Pioneers Festival 2012, Lessons from Silicon Valley'
+---
+
+Fadi Bishara shares the Lessons from Silicon Valley at the Pioneers Festival 2012 conference in Vienna.
