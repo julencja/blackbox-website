@@ -1,0 +1,13 @@
+---
+layout: resource
+title: Why do some regions succeed in innovation?
+speaker: Vivek Wadhwa
+category: videos
+video_id: z5YPO7R7VFk
+thumbnail: http://i4.ytimg.com/vi/z5YPO7R7VFk/default.jpg
+
+
+ogDescription: 'Why do some regions succeed and some fail in innovation?'
+---
+
+What people here realize is that when you share the idea, the idea doubles. And when you get feedback, the idea triples. You enrich yourself by sharing the idea and gaining knowledge from another person.
