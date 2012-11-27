@@ -409,7 +409,7 @@ section {
 
 .c-slide p {
     line-height: 1.5;
-    font-size: 90%;
+    font-size: 95%;
 }
 
 .c-slide h2 span,
@@ -419,6 +419,12 @@ section {
     text-transform: uppercase;
 }
 
+.c-slide h5 {
+    font-weight: bold;
+    font-size: 100%;
+    color: rgba(10, 26, 39, 0.8);
+    margin: 1em 0 0 0;
+}
  .c-slide p,
  .c-slide li {
     text-shadow: none!important;
@@ -438,7 +444,7 @@ section {
 .c-slide li {
     list-style: square inside;
     margin: .5em 0;   
-    font-size: 90%;    
+    font-size: 95%;    
 }
     
 
