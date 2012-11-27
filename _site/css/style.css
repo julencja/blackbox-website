@@ -1436,9 +1436,9 @@ border-radius: .2em;
 
 #calls-to-action .box {
     display: block;
-    background: #3dbff4;
+    background: #fff /*3dbff4*/;
     width: 33%;
-    height: 10em;
+    height: 200px;
     float: left;
     padding: 2em 0;
     color: rgba(10,26,39,1);
@@ -1466,6 +1466,9 @@ border-radius: .2em;
     background-color: #fff;
 }
 
+#calls-to-action .twitterbox {
+    padding: 0 !important;
+}
 #calls-to-action a:hover {
     background: #fff;
     color: #3dbff4;
