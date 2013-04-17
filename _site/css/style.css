@@ -618,6 +618,12 @@ h5 small {
 .c-slide .jumbo .video {
 
 }
+
+.c-slide .jumbo .logos {
+    text-align: center;
+    margin-top: -20px;
+}
+
 .c-slide .links {
     margin: 0 0 2em 0;
     font-size: 1.2em;
@@ -914,6 +920,9 @@ figure.span4 {
     background-image:url(../img/bg-programs.jpg);
 }
 
+#google {
+    background-image:url(../img/bg-google.jpg)   
+}
 #accelerate {
     background-image:url(../img/bg-ann-winblad.jpg);
 }
