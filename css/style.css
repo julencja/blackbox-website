@@ -923,6 +923,20 @@ figure.span4 {
 #google {
     background-image:url(../img/bg-google.jpg)   
 }
+
+#google .inner {
+    background-color: rgba(255,255,255,0);
+    color: #000;
+    text-shadow: 1px 1px 0px rgba(255,255,255,.3);
+    text-align: center;
+    margin-top: 15em;
+    visibility: hidden;
+}
+
+.google .jumbo {
+    text-align: center !important;
+    font-size: 150%;
+}
 #accelerate {
     background-image:url(../img/bg-ann-winblad.jpg);
 }
