@@ -23,121 +23,22 @@
     <link href="/css/style.css?foo=15042013" rel="stylesheet" type="text/css">
     <!--jQuery-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    
-    <script>
-$(document).ready(function () {
-    $(window).scroll(function () { 
-        $("#subwelcome").css("position", "static"); 
-        });
-    $('#mailing-list-form').click(function() {
-        $('#overlay').fadeIn('fast');
-        });
-    $('#close-modal').click(function() { 
-        $('#overlay').fadeOut('fast');
-        });
-    /*General scroll down on landing page*/
-    $('#scroll-down-1').click(function(){
-         $('html, body').animate({                     
-                    scrollTop: $("#how-we-work-title").offset().top
-                     }, 1000);                     
-        });
-    $('#scroll-down-2').click(function(){
-         $('html, body').animate({                     
-                    scrollTop: $("#who-we-work-with-title").offset().top
-                     }, 1000);                     
-        });        
-    $('#scroll-down-3').click(function(){
-         $('html, body').animate({                     
-                    scrollTop: $("#why-are-we-doing-this-title").offset().top
-                     }, 1000);                     
-        });        
-    $('#scroll-down-4').click(function(){
-         $('html, body').animate({                     
-                    scrollTop: $("#last").offset().top
-                     }, 1000);                     
-        });      
-    /*Mobile scroll-down*/          
-    $('#q1').click(function(){
-         $('html, body').animate({                     
-                    scrollTop: $("#how-we-work-title").offset().top
-                     }, 1000);                     
-        });
-    $('#q2').click(function(){
-         $('html, body').animate({                     
-                    scrollTop: $("#who-we-work-with-title").offset().top
-                     }, 1000);                     
-        });
-    $('#q3').click(function(){
-         $('html, body').animate({                     
-                    scrollTop: $("#why-are-we-doing-this-title").offset().top
-                     }, 1000);                     
-        });                    
-    
-    /*Tabs on People Section*/
+	<!--Custom scripts-->
+	<script src="/js/main.js"></script>
+	<!-- tiptip -->
+	<link href="/css/tiptip.css" rel="stylesheet" type="text/css">
+	<script src="/js/jquery.tipTip.minified.js"></script>
+	<!--GA-->
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-28505239-1']);
+	  _gaq.push(['_trackPageview']);
 
-    $('#tab-accelerate').click(function(){
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-        $('#accelerate-participants').siblings().fadeOut('fast');
-        $('#accelerate-participants').fadeIn('500');
-    })
-
-    $('#tab-connect').click(function(){
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-        $('#connect-graduates').siblings().fadeOut('fast');
-        $('#connect-graduates').fadeIn('500');
-    });
-
-    $('#tab-residents').click(function(){
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-        $('#residents').siblings().fadeOut('fast');
-        $('#residents').fadeIn('500');
-    })
-
-    /*Gallery on Residence*/
-    $('.gallery figure').click(function (){
-        $('#active-photo-container').empty();
-        $(this).children().clone().removeClass('blurred').appendTo('#active-photo-container');
-        $('.gallery .thumb img').addClass('blurred');        
-        $('#active-photo-container').click(function(){
-            $(this).empty();            
-            $('.gallery .thumb img').removeClass('blurred');            
-            });
-        });
-    $('.player').click(function (){
-        $('#active-video-holder').fadeOut('fast');
-        $('#ytplayer').fadeIn('fast');
-        });
-    $('.video-thumb').click(function(){
-        var picture = $(this).find('img').attr('src');
-        var speaker = $(this).find('figcaption h6').text();
-        var title = $(this).find('figcaption h5').text();
-        var description = $(this).find('.video-content').text();
-        var videoUrl = $(this).find('.yt-url').text();
-        $('#ytplayer').fadeOut('fast');
-        $('#active-video-holder').fadeIn('fast');
-        $('#active-video-holder img').attr('src', picture);
-        $('#active-video-holder h2').text(speaker);
-        $('#active-video-holder h3').text(title);
-        $('#active-video-holder p').text(description);        
-        $('#ytplayer').attr('src', videoUrl);
-        });
-});
-    </script>
-<!--GA-->
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-28505239-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
 
 </script>
     
@@ -155,15 +56,16 @@ $(document).ready(function () {
     }(document, 'script', 'facebook-jssdk'));</script>
     <!--/FBML-->
     
-<nav id="main-nav" >
-    <a class="logo desktop-only" href="/"><img src="../img/logos/logo_blackbox.png" alt="Blackbox.vc"></a>
-    <div class="inner">     
-        <a href="/"  id="home">Home</a> 
+<nav id="main-nav" style="" >
+   
+    <div class="inner" style="border:0px solid black;width:960px;" >  
+		<a class="logo desktop-only" href="/" style="padding-top:13px; margin-right:10px;"><img src="../img/logos/logo_blackbox.png" style="width:auto; height:25px;" alt="Blackbox.vc" ></a>
+        <!--<a href="/" >Home</a> -->
         <a href="/about/" class='active'>About Us</a>        
         <a href="/people"/ >Portfolio</a>            
-        <a href="/network/" >Global Network</a>            
-        <a href="/about/videos.html" >Videos</a>                    
-        <a class="divider desktop-only">|</a>                
+        <!--<a href="/network/" >Global Network</a>            -->
+        <!--<a href="/about/videos.html" >Videos</a>         -->           
+        <!--<a class="divider desktop-only">|</a>   -->             
         <a href="/connect/"  class="programs">Blackbox Connect</a>
         <a href="/mansion/"  class="programs">Residence</a>          
         <a href="/accelerate/"  class="programs">Accelerator</a>        
@@ -201,132 +103,160 @@ $(document).ready(function () {
     </div>
 </section>
 
-<section class="c-slide">
-    <div class="inner">
-        <p>Blackbox is a Silicon Valley startup accelerator focused on helping non-US startups that strive to bring their products to the global market.</p>
-
-        <p>Our programs guide highly selected startups from all around the globe through setting up US-based business operations, raising capital and recruiting US-based executives.</p>
-
+<section class="c-slide" id="">
+    <div class="inner"> 
         <div class="row">
-            <div class="grid span3x2">
-                <div class="team-gallery">
-                    <h2 class="pushed push-1"><a href="/about/team.html">Team &raquo;</a></h2>
-                    <div class="row">
-                    <figure class="grid span4">
-                        <a href="/about/team.html#fadi"><img src="/img/fadi.jpg"></a>
-                        <figcaption>Fadi Bishara</figcaption>    
-                    </figure>                
-                    <figure class="grid span4">
-                        <a href="/about/team.html#mackenzie"><img src="/img/mackenzie.jpg"></a>
-                        <figcaption>Mackenzie Hall</figcaption>    
-                    </figure>                  
-                    <figure class="grid span4">
-                        <a href="/about/team.html#glenn"><img src="/img/glenn.jpg"></a>
-                        <figcaption>Glennskii Meyer</figcaption>    
-                    </figure>                
-                    <figure class="grid span4">
-                        <a href="/about/team.html#rob"><img src="/img/dave.jpg"></a>
-                        <figcaption>Dave Strigler</figcaption>    
-                    </figure>                             
-                </div>
-                <a class="mid-link-right" href="/about/team.html">Meet the Team &raquo;</a>                    
-                </div>
-                <div class="press-list">
-                    <h2 class="pushed push-1">In the Press:</h2>
-                        <ul>
-                            <li><img src="/img/flags/fr.png" class="flag-mini"><a href="http://www.rudebaguette.com/2012/11/06/blackbox-connect/"><em>The Rude Baguette</em> | Blackbox Connect is your chance to break into the Silicon Valley</a></li>
-                            <li><img src="/img/flags/ro.png" class="flag-mini"><a href="http://www.cariereonline.ro/articol/exclusiv-fadi-bishara-fondator-blackbox-echipa-este-cel-mai-important-criteriu-de-selectie"><em>Cariere Online</em> | Fadi Bishara (Fondator BlackBox): Echipa este cel mai important criteriu de selecţie</a></li>
-                            <li><img src="/img/flags/ro.png" class="flag-mini"><a href="http://www.wall-street.ro/articol/Start-Up/139326/szopa-blackbox-nu-incepe-compania-pe-piata-locala-incepe-global-si-localizeaza-dupa.html"><em>Wall Street Romania</em> | Sfat de la o tanara din Silicon Valley: Incepe compania global!</a></li>
-                            <li><img src="/img/flags/ar.png" class="flag-mini"><a href="http://lisandrobril.wordpress.com/2012/02/14/blackbox-connect-the-destination-for-start-up-entrepreneurs-in-palo-alto/"><em>Lisandro Bril</em> | Blackbox Connect – the destination for startup entrepreneurs in Palo Alto</a></li>
-                            <li><img src="/img/flags/au.png" class="flag-mini"><a href="http://www.moverell.com/post/22147324557/blackbox-connect-big-brother-meets-the-playboy"><em>Michael Overell</em> | Work In Progress: Big Brother meets the Playboy Mansion, for startups</a></li>
-                            <li><img src="/img/flags/au.png" class="flag-mini"><a href="http://www.startupsmart.com.au/strategy/aussie-entrepreneur-picked-for-silicon-valley-big-brother-house/201205016154.html"><em>StartUpSmart</em> | Aussie entrepreneur picked for Sillicon Valley Big Brother house</a></li>                            
-                            <li><img src="/img/flags/be.png" class="flag-mini"><a href="http://www.hyperthinker.eu/2012/failure-is-the-only-option/" target="_blank"><em>The Hyperthinker by Philip Weiss</em> | Failure is the only option</a></li>
-                            <li><img src="/img/flags/cz.png" class="flag-mini"><a href="http://startup.lupa.cz/clanky/fadi-bishara-blackbox/" target="_bank"><em>StartupLupa</em> | Fadi Bishara: Vyřešte něco velkého, a obchodní model se najde sám</a></li>
-                            <li><img src="/img/flags/de.png" class="flag-mini"><a href="http://vimeo.com/50606443" target="_bank"><em>Startup Bootcamp TV</em> | Alex Farcet interviews Fadi Bishara</a></li>
-                            <li><img src="/img/flags/de.png" class="flag-mini"><a href="http://piratesummit.com/2012/04/24/the-mystery-about-the-blackbox/"><em>The European Pitare Summit</em> | The mystery about the Blackbox</a></li>
-                            <li><img src="/img/flags/de.png" class="flag-mini"><a href="http://medien.nrw.de/apollo-m/2012/03/01/thanks-for-ignoring-them-homework-for-a-european-startup-ecosystem/"><em>Medien.nrw</em> | Thanks for ignoring them. Homework for a European startup ecosystem</a></li>                            
-                            <li><img src="/img/flags/it.png" class="flag-mini"><a href="http://www.youtube.com/watch?v=TbvrAmPD0sQ&feature=share" target="_bank"><em>TechCrunch Italy 2012</em> | Power panel: Insider View from the VC World with Fadi Bishara</a></li>
-                            <li><img src="/img/flags/it.png" class="flag-mini"><a href="http://www.ilsole24ore.com/art/tecnologie/2012-09-09/siamo-paese-start-082008.shtml?uuid=AbyGrjaG&fromSearch" target="_bank"><em>Il Sole 24ore</em> | Non siamo un Paese per start up</a></li>     
-                            <li><img src="/img/flags/lv.png" class="flag-mini"><a href="http://www.diena.lv/tehnologijas/zinas/mykoob-klust-par-starptautiski-atzitu-zimolu-pioneers-un-blackbox-vestnesiem-latvija-13961959"><em>Diena.lv</em> | Mykoob kļūst par starptautiski atzītu zīmolu Pioneers un Blackbox vēstnešiem Latvijā</a></li>                   
-                            <li><img src="/img/flags/pl.png" class="flag-mini"><a href="http://trojmiasto.startupweekend.org/2012/05/29/brainstorming-session-with-fadi-bishara-from-blackbox-vc/"><em>Startup Weekend Trojmiasto</em> | Brainstorming session with Fadi Bishara from Blackbox.vc</a></li>
-                            <li><img src="/img/flags/pl.png" class="flag-mini"><a href="http://blog.kurasinski.com/2012/04/17/julia-krysztofiak-szopa-blackbox-vc-czerpiemy-z-najlepszych-wzorcow-doliny-krzemowej/"><em>AK74</em> | Julia Krysztofiak-Szopa (Blackbox.vc): Czerpiemy z najlepszych wzorców Doliny Krzemowej</a></li>
-                            <li><img src="/img/flags/pl.png" class="flag-mini"><a href="http://www.insourcepr.com/blog/startup-pytania-na-ktore-musisz-znac-odpowiedz-przed-spotkaniem-z-inwestorem/"><em>InSourcePR</em> | StartUp – pytania na które musisz znać odpowiedź przed spotkaniem z Inwestorem</a></li>
-                            <li><img src="/img/flags/kr.png" class="flag-mini"><a href="http://www.besuccess.com/?p=8093"><em>BeSuccess</em> | 펀그랩 채진석 대표 인터뷰 part2, Blackbox를 가다!</a></li>                            
-                            <li><img src="/img/flags/uk.png" class="flag-mini"><a href="http://www.guardian.co.uk/technology/audio/2012/jun/06/tech-weekly-podcast-e3-2012"><em>The Guardian</em> | Tech Weekly Podcast</a></li>
-                            <li><img src="/img/flags/uk.png" class="flag-mini"><a href="http://disruptdecentralisedisintermediate.wordpress.com/2012/10/" target="_blank"><em>Disrupt. Decentralise. Disintermediate.</em> | Don’t Blame the Bankers</a></li>                            
-                            <li><img src="/img/flags/us.png" class="flag-mini"><a href="http://techcrunch.com/2012/05/24/european-startups-need-to-get-a-valley-education-and-fast/"><em>TechCrunch</em> | European startups need to get a Valley education, and fast</a></li>
-                            <li><img src="/img/flags/us.png" class="flag-mini"><a href="http://www.women2.com/discovering-the-entrepreneur-inside-of-me/"><em>Women 2.0</em> | Discovering the entrepreneur inside of me</a></li>
-                            <li><img src="/img/flags/us.png" class="flag-mini"><a href="http://www.women2.com/homework-for-a-european-startup-ecosystem/"><em>Women 2.0</em> | Homework for a European startup ecosystem</a></li>
-                            <li><img src="/img/flags/us.png" class="flag-mini"><a href="http://www.women2.com/at-age-17-sara-naseri-and-emilie-kjeldsen-invent-new-sun-protective-technology/"><em>Women 2.0</em> | At age 17, Sara Naseri and Emilie Kjeldsen invent new sun-protective technology</a></li>
-                            <li><img src="/img/flags/us.png" class="flag-mini"><a href="http://www.youtube.com/watch?v=Cg6IxAzU4uc&amp;feature=plcp"><em>Scobleizer</em> | Check out this Silicon Valley pressure cooker: A mansion full of entrepreneurs [<span class="caps">VIDEO</span>]</a></li>
-                            <li><img src="/img/flags/us.png" class="flag-mini"><a href="http://thenextweb.com/video/2011/04/14/video-angel-fadi-bishara-everyone-has-an-entrepreneur-inside-of-them/"><em>TheNextWeb</em> | Angel Fadi Bishara: Everyone has an entrepreneur inside of them [<span class="caps">VIDEO</span>]</a></li>
-                            <li><img src="/img/flags/us.png" class="flag-mini"><a href="http://swissnexsanfrancisco.org/aboutus/newscenter/news/blackbox-connect"><em>Swissnex San Francisco</em> | Swissnex San Francisco hosted Blackbox Connect participants</a></li>
-                            <li><img src="/img/flags/ru.png" class="flag-mini"><a href="http://startupafisha.ru/about/news/item/otkryt-priem-zayavok-ot-startapov-v-mezhdunarodnuy/"><em>Starupfisha.ru</em> | Открыт прием заявок от стартапов в международную программу Blackbox Connect</a></li>
-                            <li><img src="/img/flags/ua.png" class="flag-mini"><a href="http://ain.ua/2012/05/24/85841"><em><span class="caps">AIN</span>.ua</em> | Открыт прием заявок от стартапов в международную программу Blackbox Connect</a></li>
-                            <li><img src="/img/flags/ua.png" class="flag-mini"><a href="http://dou.ua/lenta/interviews/andrej-havryuchenko/"><em><span class="caps">DOU</span>.ua</em> | Андрей Хаврюченко, 42 Coffee Cups: «Главная задача для предпринимателя тут — стать частичкой Долины</a></li>
-                            <li><img src="/img/flags/ua.png" class="flag-mini"><a href="http://freshle.com/blog/blackbox/"><em>Freshle.com</em> | Blackbox Connect – познакомиться с Долиной, 10% скидка от Freshle.com</a></li>
-                        </ul>
-                    </div>
+            <h2>Blackbox Team</h2>        
+            <div class="grid span2 bio">
+                <h3 id="fadi">Fadi Bishara <span>founder</span></h3>
+                <figure>
+                    <img src="/img/fadi.jpg">
+                    <small>
+                        <a href="https://twitter.com/fbishara" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/in/fadibishara" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                    
+                </figure>
+                <p>Fadi has in-depth knowledge and experience related to building successful startups in Silicon Valley and elsewhere in the world. For over 15 years, he has been successfully matching human capital and venture capital needs across the globe, guiding talented technology entrepreneurs in their path.</p>  
+                <p>As the Founder of Blackbox, his vision is to accelerate entrepreneurs, regardless of their geographic location. Fadi is also a Venture Partner at Sinbad Ventures, a fund that invests in early stage technology startups from Arabia.</p>
+                <p>Prior to founding Blackbox, Fadi was the founder and CEO of techVenture. Having firsthand experience of  building teams for over 100 early stage startups he's a frequent speaker and an advisor/mentor with startup accelerators such as SeedCamp, HackFwd, StartupBootcamp, StartupChile, Skolkovo Startup Academy, and many other global initiatives.</p> 
             </div>
+            <div class="grid span2 bio">
+                <h3>Mackenzie Hall <span>project manager</span></h3>
+                <figure>
+                    <img src="/img/mackenzie.jpg">
+                    <small>
+                        <a href="www.linkedin.com/pub/mackenzie-hall/45/701/629" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                                        
+                </figure>                
+                <p>Mackenzie is the newest member of our team and is passionate about language, travel and connecting across cultures. Originally from Boston, she attended St. Lawrence University where she received her BA in Hispanic Studies. She relocated to San Francisco in February 2012 to work for Facebook and explore her interests in entrepreneurship and the intersection of technology and human connection.</p> 
+                <p>Before landing at Blackbox, Mackenzie worked at a tech startup called awe.sm and continues to be Special Projects Administrator for Foundation Rwanda, a NGO that provides educational opportunities to children born from rape during the genocide of 1994.</p>
 
-            <div class="grid span3 videos-list">
-                <h2 class="pushed push-1"><a href="/about/videos.html">Videos &raquo;</a></h2>
-                <figure class="span2">
-                    <iframe width="100%"  src="http://www.youtube.com/embed/53-OYHwBYVM" frameborder="0" allowfullscreen></iframe>
-                    <figcaption>Fadi Bishara | What is Blackbox?</figcaption>
-                </figure>
-                <figure class="span2">
-                    <iframe width="100%"  src="http://www.youtube.com/embed/Rg6ATGCbHOg" frameborder="0" allowfullscreen></iframe>
-                    <figcaption>Startup Bootcamp | Interview with Fadi Bishara</figcaption>                    
-                </figure>                  
-                <figure class="span2">
-                    <iframe width="100%"  src="http://www.youtube.com/embed/Cg6IxAzU4uc" frameborder="0" allowfullscreen></iframe>
-                    <figcaption>Scobleizer | Blackbox - Silicon Valley's pressure cooker </figcaption>                    
-                </figure>
-                <figure class="span2">
-                    <iframe width="100%"  src="http://www.youtube.com/embed/NLM89kLn8Sk" frameborder="0" allowfullscreen></iframe>
-                    <figcaption>David Weekly | Term Sheet Basics for Startup</figcaption>                    
-                </figure>
-                <a class="mid-link-right" href="/about/videos.html">More videos &raquo;</a>
-
-                <br><br>
-                <!--Twitter stream-->                                              
-                <a class="twitter-timeline" data-dnt=true href="https://twitter.com/blackboxvc" data-widget-id="261634793127673856">Tweets by @blackboxvc</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
+            </div> 
+        </div>                       
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3>Glennskii Meyer <span>community / house</span></h3>
+                <figure>
+                    <img src="/img/glenn.jpg">
+                    <small>
+                        <a href="https://twitter.com/mC_glennSKii" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/pub/glenn-greer-meyer/31/99b/32b" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                                        
+                </figure>                                   
+                <p>GlennSKii is a vocalist/MC and geographer, also working in audio/music production, and a whippet trainer/sport-designer/breeder. Originally from Texas & Maryland, he spent one year in Vietnam and over 18 years in Poland, where he released 4 albums on major labels like Sony and Warner. He toured Poland and Europe with bands and as an MC (about 800-1000 gigs). He founded and organized 3 years of ground-breaking weekly jam sessions in Sopot, Poland. Also, check out his <a href="http://machspeedwhippets.wordpress.com/">Official Blog for Mach-Speed & Sighthound Disc Sport</a></p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Dave Strigler <span>Venture Advisor</span></h3>
+                <figure>
+                    <img src="/img/dave.jpg">
+                    <small>
+                        <a href="http://www.linkedin.com/pub/dave-strigler/0/44/774" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                                        
+                </figure>                               
+                <p>Dave Strigler is a member of Sand Hill Angels and  has over 20 years experience as a senior architect and technology manager where he has led development efforts both for startups and within fortune 500 companies.</p> 
+                <p>At Blackbox, Dave is responsible for helping with investments, due diligence, financials, legal, marketing, strategic planning, partnerships, mentoring and fund raising. </p>
+                <p>
+                Dave received his Masters in Computer Science from McGill University and also has degrees in Psychology and Health Sciences, and MBA coursework; and has been awarded NSERC and FCAR research grants.</p>
 
 
             </div>            
+        </div>            
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3 id="michael">Michael de la Maza <span>startup mentor / EIR</span></h3>
+                <figure>
+                    <img src="/img/michael.jpg?foo=bar">
+                    <small>
+                        <a href="https://twitter.com/#!/hearthealthyscr" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/in/michaeldelamaza" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                                        
+                </figure>                         
+                <p>Michael is the lean/agile coach at edX, the Harvard/MIT nonprofit that is revolutionizing online education.  He manages Immaculate Conception Ventures, a tiny seed stage fund. He was a member of the founding team at Inquira (acquired by Oracle) and VP of Corporate Strategy at Softricity (acquired by Microsoft). He holds a PhD in Computer Science from MIT and is the author of Rapid Chess Improvement and co-author of Professional Scrum with Team Foundation Server 2010. </p>
+            </div>
+            <div class="grid span2 bio">              
+                <h3 id="sana">Sana Okmyanskaya <span>finance</span></h3>
+                <figure>
+                    <img src="/img/sana.jpg">
+                    <small>
+                        <a href="http://www.linkedin.com/in/sanaokmyanskaya" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                    
+                </figure>
+                <p>Sana works with Blackbox and it's companies as a numbers cruncher and finance wizard.</p>              
+            </div>            
         </div>
-</section>
+        <div class="row">
+	       <div class="grid span2 bio">
+                <h3 id="sana">Maria Utyaganova <span>chef</span></h3>
+                <figure>
+                    <img src="/img/masha.jpg">
+                </figure>
+                <p>Masha has been cooking healthy, home-style, gourmet lunches during Blackbox Connect programs. </p>  
+            </div>
+        </div>
+        <div class="row">        
+            <h2>Global Blackbox Evangelists</h2>
+                <figure class="grid span6">
+                    <img src="/img/jenny.jpg">
+                    <figcaption>Jenny Jung</figcaption>
+                    <small>
+                        <a href="https://twitter.com/jung" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/in/jennyejung/en" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                    
+                </figure>
+                <figure class="grid span6">
+                    <img src="/img/julia.jpg">
+                    <figcaption>Julia K Szopa</figcaption>
+                    <small>
+                        <a href="https://twitter.com/juliaszopa" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/in/juliaszopa" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                    
+                </figure>
+                <figure class="grid span6">
+                    <img src="/img/patrycja.jpg">
+                    <figcaption>Patrycja Tempska</figcaption>                    
+                    <small>
+                        <a href="https://twitter.com/ptempska" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/in/patrycjatempska" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                    
+                </figure>
+                <figure class="grid span6">
+                    <img src="/img/soren.jpg">
+                    <figcaption>Soren Therkelsen</figcaption>                    
+                    <small>
+                        <a href="https://twitter.com/sorenrt" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/in/sorenrt" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                    
+                </figure>
+                <figure class="grid span6">
+                    <img src="/img/michael_wroczynski.jpg">
+                    <figcaption>Michal Wroczynski</figcaption>
+                    <small>
+                        <a href="https://twitter.com/Fidofornia" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/pub/michal-wroczynski/1/361/159" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                    
+                </figure>
+                
+        </div>
+    </div>
+</section>    
 
 
 
 
-    <footer>
+    <footer id="footer">
         <div class="inner">
         <div class="row">
             <div class="grid span3">
                 <h4>Blackbox</h4>
-                <ul>
-                    <li><a href="/about/">About us</a></li>
-                    <li><a href="/about/team.html">Team</a></li>
-                    <li><a href="/people/">Portfolio</a></li>                    
-                    <li><a href="/network/">Global Network</a></li>    
-                    <li><a href="/about/videos.html">Videos</a></li>                                    
+                <ul><!-- put <li><a href="/about/team.html">Team</a></li>    inside "about us" TODO -->                     
+                    <li><a href="/contact">Contact us</a></li>
+					<li><a href="/press">Press</a></li>  
+					<li><a href="/network">Global Network</a></li>  
+					<li><a href="/about/videos.html">Videos</a></li>					
                 </ul>
             </div>
             <div class="grid span3">
-                <h4>Programs</h4>
-                <ul>
-                    <li><a href="/accelerate/">Blackbox Accelerator</a></li>                    
-                    <li><a href="/connect/">Blackbox Connect Training</a></li>
-                    <li><a href="/mansion/">Blackbox Residence</a></li>
-                    <!--li><a href="/investors/">Investors Retreat</a></li-->
-                </ul>
-            </div>
-            <div class="grid span3">
-                <h4>Follow us!</h4>
+			  <h4>Follow us!</h4>
                 <ul class="icons">
                     <li><a href="https://www.youtube.com/user/blackboxvc?feature=mhee"><img src="/img/icons/yt.png" alt="YouTube Channel"></a></li>
                     <li><a href="https://twitter.com/blackboxvc"><img src="/img/icons/twitter.png" alt="Twitter"></a></li>
@@ -335,13 +265,19 @@ $(document).ready(function () {
                 </ul>
                 <div class="fb-like" data-href="https://facebook.com/blackbox.vc" data-send="false" data-width="100%" data-show-faces="true" data-colorscheme="dark"></div>
             </div>
+            <div class="grid span3" style="height:220px;">
+                 <div class="box twitterbox">
+<a class="twitter-timeline"  href="https://twitter.com/blackboxvc"  data-widget-id="342437025670103040">Tweets by @blackboxvc</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+                </div>
+            </div>
        </div>
-       <p>&copy; Blackbox Accelerator 2011-2012</p>                
+       <p>&copy; Blackbox Accelerator 2011-2013</p>                
        </div>
     </footer>
     
 </div> <!--#container-->
-
 
 </body>
 </html>
