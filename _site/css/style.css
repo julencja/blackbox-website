@@ -1027,6 +1027,15 @@ figure.span4 {
     opacity: 0.7;
 }
 
+ .sponsors_bigger {
+    width: 150px;
+    margin: 0 1em;
+    display: inline-block;
+    opacity: 0.7;
+}
+
+
+
 #media {
     background-image: url(../img/bg-scoble.jpg);
 }
@@ -1467,6 +1476,10 @@ border-radius: .2em;
 
 
 /*#welcome */.sponsors:hover {
+    opacity: 1;
+}
+
+/*#welcome */.sponsors_bigger:hover {
     opacity: 1;
 }
 
