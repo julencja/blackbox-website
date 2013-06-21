@@ -29,6 +29,15 @@ time, mark, audio, video {
 	color:#f8f8f8;
 }
 
+.flagsmall{
+	position:relative;
+	width:19px;
+}
+/*
+.cliquable{
+	cursor:pointer;
+}
+*/
 .connectwinners{
 	height:120px; width:211px;  padding: 6px;
 	margin:7px;
