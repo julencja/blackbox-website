@@ -163,7 +163,8 @@
                 <div class="grid span3" style="width:300px; margin-left:10px;">
 					<div  style="padding-left:23px; padding-right:20px; margin-top:55px; text-align:center;">
                     <h2 class="pushed push-3">Blackbox Accelerate</h2>
-                    <p>Custom acceleration for <em>12 months</em> in the heart of the Silicon Valley to <em>get your company funded</em> and establish your <em>business operations in the US</em>. <a href="/accelerate/">More info</a><br></p>
+					
+                    <p>Custom acceleration for <em>12 months</em> in the heart of the Silicon Valley to <em>get your company funded</em> and establish your <em>business operations in the US</em>.<a href="/accelerate/"><br />More info</a><br></p>
 					
                     <p><a href="/contact/" class="big-link-left"><!--&raquo; Start now &laquo;--><img src="../img/start-now.png" style="margin-top:-7px;height:50px; width:auto;" onMouseOver="this.src='../img/start-now-hover.png'; return false;" onMouseOut="this.src='../img/start-now.png'; return false;"></a></p>
 					</div>
@@ -174,11 +175,20 @@
 			<div>
 	
 
-				<div style="margin-bottom:20px;margin-top:-50px; text-shadow:0.09em 0.09em #b9b9b9;"><center><div style="font-size:2.55em; font-style:oblique; line-height:2em;">
+				<div style="margin-bottom:20px;margin-top:-50px; text-shadow:0.09em 0.09em #b9b9b9;"><center><div style="font-size:2.55em; line-height:2em;">
 				
 			<script type="text/javascript">
 			jQuery(document).ready(function() {
 				jQuery('#mycarousel').jcarousel({
+				
+					setupCallback: function(carousel) {
+						carousel.prevNext.mousedown(function(e){
+							e.preventDefault();
+						});
+						carousel.buttonNext.mousedown(function(e){
+							e.preventDefault();
+						});
+					},
 					// Configuration goes here
 					 start: 1,
 					 auto: 6,
@@ -186,14 +196,36 @@
 					 scroll: 5, /*number of items to scroll*/
 				});
 				
+				jQuery('#mycarousel').jcarousel({
+					 setupCallback: function(carousel) {
+						carousel.prevNext.mousedown(function(e){
+							e.preventDefault();
+						});
+						carousel.buttonNext.mousedown(function(e){
+							e.preventDefault();
+						});
+					}
+				});
+								/*Prevent text selection after double click.*/
+				/*jQuery('#mycarousel').jcarousel({
+					 setupCallback: function(carousel) {
+						carousel.prevNext.mousedown(function(e){
+							e.preventDefault();
+						});
+						carousel.buttonNext.mousedown(function(e){
+							e.preventDefault();
+						});
+					}
+				});
+				*/
 				<!-- For Tooltips FUNCTION START -->
 
-				Opentip.style = 'alert';
+				/*Opentip.style = 'alert';*/
 			});
 			</script>
 		<div style="position:absolute; margin-top:30px;width: margin-left:5px;margin-top:385px;margin-left:-40px;">
 		<div style="height:35px;"></div>
-						<span style="position:absolute;margin-top:-40px; width:200px; margin-left:-100px; left:50%;" >Speakers</span>
+						<span style="position:absolute;margin-top:-40px; width:200px; margin-left:-100px; left:50%;font-family: Gill Sans, sans-serif;" >Speakers</span>
 						
 		 <ul id="mycarousel"  class="jcarousel-skin-tango" style="width:250px;height:220px;" >
 			<li class="cliquable">
@@ -213,6 +245,15 @@
 					Flood Gate
 				</div></a>
 			</li>
+			
+			<li class="cliquable">
+				<a href="http://www.thestartupgamebook.com/" target="_blank"><div class="speaker-item"  >
+					<img src="/img/speakers/speaker_bill.png" class="bordered-image" />
+					<br />
+					Bill Draper III<br />
+					The Startup Game
+				</div></a>
+			</li>		
 			
 			<li class="cliquable">
 				<a href="http://dfj.com/team/teamdetail.php?TimDraper-10149" target="_blank"><div class="speaker-item"  >
@@ -285,7 +326,7 @@ True Ventures
 				<a href="http://www.linkedin.com/in/seanjacobsohn" target="_blank"><div class="speaker-item">
 					<img src="/img/speakers/speaker_sean.png" class="bordered-image" />
 					<br />
-					Sean Jacobson<br />
+					Sean Jacobsohn<br />
 Emergence Capital
 				</div></a>
 			</li>
@@ -302,7 +343,7 @@ Kaufmann Fellows
 					<img src="/img/speakers/speaker_mary.png" class="bordered-image" />
 					<br />
 					Mary Grove<br />
-Google Ventures
+Google
 				</div></a>
 			</li>
 			<li class="cliquable">
@@ -363,12 +404,165 @@ Just.me
 			</li>
 		
 			
+			<!---------Added speakers--------->
+			
+			
+			
+			
+			<li class="cliquable">
+				<a href="http://www.rembrandtvc.com/person/michael-baum" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_baum.png" class="bordered-image" />
+					<br />Michael Baum
+					<br />Rembrandt
+					
+				</div></a>
+			</li>
+		
+		
+			<li class="cliquable">
+				<a href="http://blumbergcapital.com/member/davidblumberg/" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_blumberg.png" class="bordered-image" />
+					<br />David Blumberg
+					<br />Blumberg Capital
+					
+				</div></a>
+			</li>
+		
+			<li class="cliquable">
+				<a href="http://www.youtube.com/watch?v=d7T4RKvZo_U" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_chisholm.png" class="bordered-image" />
+					<br />John Chisholm
+					<br />Serial Entrepreneur
+					
+				</div></a>
+			</li>
+		
+			<li class="cliquable">
+				<a href="http://www.infoq.com/interviews/emil-eifrem-neo4j" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_emil.png" class="bordered-image" />
+					<br />Emil Eifrem
+					<br />NEO4J
+					
+				</div></a>
+			</li>
+		
+			<li class="cliquable">
+				<a href="http://luxr.co/team#janice_fraser" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_janice.png" class="bordered-image" />
+					<br />Janice Fraser
+					<br />Luxr.co
+					
+				</div></a>
+			</li>
+		
+			<li class="cliquable">
+				<a href="https://www.pulse.me/" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_ankit.png" class="bordered-image" />
+					<br />Ankit Gupta
+					<br />Pulse
+					
+				</div></a>
+			</li>
+		
+			<li class="cliquable">
+				<a href="http://www.linkedin.com/in/stevenkan" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_steven.png" class="bordered-image" />
+					<br />Steven Kan
+					<br />Google
+					
+				</div></a>
+			</li>
+		
+			<li class="cliquable">
+				<a href="http://www.cmea.com/team/team-saad-khan.php" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_saad.png" class="bordered-image" />
+					<br />Saad Khan
+					<br />CMEA Capital
+					
+				</div></a>
+			</li>
+		
+			<li class="cliquable">
+				<a href="http://www.danmartell.com/" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_dan.png" class="bordered-image" />
+					<br />Dan Martell
+					<br />Clarity.FM
+					
+				</div></a>
+			</li>
+		
+		
+			<li class="cliquable">
+				<a href="http://www.bunchball.com/" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_rajat.png" class="bordered-image" />
+					<br />Rajat Paharia
+					<br />Bunchball
+					
+				</div></a>
+			</li>
+		
+			<li class="cliquable">
+				<a href="http://ravixgroup.com/people.html" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_pai.png" class="bordered-image" />
+					<br />Tom Pai
+					<br />Ravix Group
+					
+				</div></a>
+			</li>
+		
+			<li class="cliquable">
+				<a href="http://softtechvc.com/team_member/stephanie-palmeri/" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_steph.png" class="bordered-image" />
+					<br />Steph Palmeri
+					<br />Softtech VC
+					
+				</div></a>
+			</li>
+		
+			<li class="cliquable">
+				<a href="http://lemon.com/" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_bel.png" class="bordered-image" />
+					<br />Bel Pesce
+					<br />Lemon
+					
+				</div></a>
+			</li>
+		
+			<li class="cliquable">
+				<a href="http://www.googleventures.com/team/bridgette-sexton" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_bridgette.png" class="bordered-image" />
+					<br />Bridgette Sexton
+					<br />Google
+					
+				</div></a>
+			</li>
+		
+			<li class="cliquable">
+				<a href="http://www.yelp.com/management" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_warren.png" class="bordered-image" />
+					<br />Miriam Warren
+					<br />Yelp
+					
+				</div></a>
+			</li>
+			
+			
+			<li class="cliquable">
+				<a href="http://www.floodgate.com/annmiurako.html" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_annko2.jpg" class="bordered-image" />
+					<br />Ann Miura-Ko
+					<br />Floodgate
+					
+				</div></a>
+			</li>
+		
+			
 			
 			
 		  </ul>
 		  </div>
 				
-				<i>"A unique work/live environment in the heart of Silicon Valley"</i></div></center></div>
+				<span style="font-style:/*oblique*/normal;font-family: Gill Sans, sans-serif;">"A unique work/live environment in the heart of Silicon Valley"</span></div></center></div>
 				<div style="border: 1px solid #dfdfdf;  background-color:#fff;
 					-webkit-border-radius: 3px;
 					-moz-border-radius: 3px;
@@ -452,7 +646,7 @@ Just.me
                 <ul><!-- put <li><a href="/about/team.html">Team</a></li>    inside "about us" TODO -->                     
                     <li><a href="/contact">Contact us</a></li>
 					<li><a href="/press">Press</a></li>  
-					<li><a href="/network">Global Network</a></li>  
+					<!--<li><a href="/network">Global Network</a></li>-->
 					<li><a href="/about/videos.html">Videos</a></li>					
                 </ul>
             </div>
