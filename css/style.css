@@ -287,7 +287,7 @@ section {
 
 .c-slide {
     padding: 3em 0;
-    background-image:url(../img/dot-pattern.jpg);
+    /*background-image:url(../img/dot-pattern.jpg);*/
     text-shadow: 0 0.1em 0 #fbfdff;
     border-top: solid .15em #fbfdff;    
     box-shadow: 0 0px 3px #14171b;
@@ -297,7 +297,7 @@ section {
 
 
 .overlay {
-    background-image:url(../img/dot-pattern-alpha.png);
+    /*background-image:url(../img/dot-pattern-alpha.png);*/
     background-repeat: repeat;
     background-attachment: scroll;
     -webkit-background-size: .5%;
@@ -1201,7 +1201,7 @@ nav .social {
 
 
 .overlay {
-    background-image:url(../img/dot-pattern-alpha.png);
+    /*background-image:url(../img/dot-pattern-alpha.png);*/
     background-repeat: repeat;
     background-attachment: scroll;
     -webkit-background-size: .25%;
@@ -1519,7 +1519,7 @@ border-radius: .2em;
 /*---------Calls to action*/
 #calls-to-action {
     background-color: #3dbff4;
-    background-image: url(../img/dot-pattern-alpha.png);
+    /*background-image: url(../img/dot-pattern-alpha.png);*/
     background-repeat: repeat;
     -webkit-background-size: .25%;
 	-moz-background-size: .25%;
