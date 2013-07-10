@@ -594,7 +594,14 @@ Just.me
 			
 		  </ul>
 		  </div>
-				
+		
+			<script type="text/javascript">
+				function clickVid() {
+					/*jQuery('#ytv').click();			*/
+					jQuery("#player").html('<iframe id="ytv" style="position:relative; width:936px; height:525px;" src="http://www.youtube.com/embed/wI4GhV5MT9k?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+					//alert("ok");
+				}
+			</script>
 				<span style="font-style:/*oblique*/normal;font-family: Gill Sans, sans-serif;">"A unique work/live environment in the heart of Silicon Valley"</span></div></center></div>
 				<div style="border: 1px solid #dfdfdf;  background-color:#fff;
 					-webkit-border-radius: 3px;
@@ -615,66 +622,15 @@ Just.me
 				 
 				 <!--preloading-->
 				 <img src="/img/youtube-home-hover.png" style="display:none;">
-				 <img  onclick="play(); this.style.display='none'; return false;" onmouseover="this.src='/img/youtube-home-hover.png';" onmouseout="this.src='/img/youtube-home.png';" src="/img/youtube-home.png" style="width:936px;height:525px;position:absolute;margin-left:5px;margin-top:5px; z-index:10; cursor:pointer;">
-    <div id="player" style="margin-left:5px;margin-top:5px; z-index:9;"></div>
+				 <img  onclick="this.style.display='none'; clickVid();" onmouseover="this.src='/img/youtube-home-hover.png';" onmouseout="this.src='/img/youtube-home.png';" src="/img/youtube-home.png" style="width:936px;height:525px;position:absolute;margin-left:5px;margin-top:5px; z-index:10; cursor:pointer;">
+				 <!--document.getElementById('ytv').style.display='';<iframe id="ytv" style="position:relative; width:936px; height:525px;margin-left:5px;margin-top:5px;display:none;" src="http://www.youtube.com/embed/wI4GhV5MT9k" frameborder="0" allowfullscreen></iframe>-->
+				 <!--<div id="player" style="margin-left:5px;margin-top:5px; z-index:9;"></div>-->
+				<div id="player" style="margin-left:5px;margin-top:5px; z-index:9;"></div>
 
    
 				</div>
 			</div>
 			
-		 <script>
-      // 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '525',
-          width: '936',
-          videoId: 'wI4GhV5MT9k',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-
-      // 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        /*event.target.playVideo();*/
-      }
-
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-        /*if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
-          done = true;
-        }*/
-      }
-      function stopVideo() {
-        player.stopVideo();
-      }
-	  
-	  function play() {
-			if(player) {
-				player.playVideo();
-			}
-			else{
-				alert("yops");
-			}
-		}
-    </script>	
-
-
           	
         </div><!--.inner-->
    
