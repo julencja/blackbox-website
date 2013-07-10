@@ -185,16 +185,17 @@ nav .logo {
 nav .logo img {
     width: 80px;
 }
-
+/*
 nav .logo:hover img{
     opacity: 0.8;
-}
-
+}*/
+/*
 nav .logo:hover {
     background: transparent;
     border-left: none;
     border-right: solid 1px rgba(20,23,27,1);
 }
+*/
 
 nav form {
     
@@ -1119,14 +1120,21 @@ nav a span {
     color: red;
 }
 nav a.active,
-nav a.active:hover {
+nav a.active:hover ,
+nav a:hover,
+.programs:hover{
     border-top: solid .15em #3dbff4;
     padding-top: .85em;
 }
+nav .logo:hover {
+	border-top: solid 0em #00ff00;
+    padding-top: 0em;
+}
+
 nav a:before{
     content: "";
 }
-
+/*
 nav a:hover {
     background-color: rgba(10,26,39,1); 
     border-left: solid 1px rgba(220,223,225,0.3);
@@ -1134,20 +1142,16 @@ nav a:hover {
     border-top: none;
     border-bottom: none;    
 }
-
+*/
 nav a.divider {
     color: rgba(220,223,225,0.3);        
-    }
-    
-nav a.programs {
-    color: #3dbff4;;
-
 }
+/*
 nav a.divider:hover {
     border-left: solid 1px rgba(10,26,39,1);
     border-right: solid 1px rgba(10,26,39,1);
 
-}
+}*/
 nav .logo {
     font-size: 1.2em;
     padding: 1em 0 .5em .5em;

@@ -19,7 +19,7 @@
 
     <title>Videos | Blackbox.vc</title>
     <link rel="icon" type="image/png" href="/img/fav.png?foo=892012">
-    
+    <link href="/css/menu.css" rel="stylesheet" type="text/css">
     <link href="/css/style.css?foo=15042013" rel="stylesheet" type="text/css">
     <!--jQuery-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -56,28 +56,61 @@
     }(document, 'script', 'facebook-jssdk'));</script>
     <!--/FBML-->
     
-<nav id="main-nav" style="" >
+<nav id="main-nav" >
   
-    <div class="inner" style="padding-left:47px; border:0px solid black;" >  
+    <div class="inner" id="cssmenu" style="padding-left:47px; border:0px solid black;" >  
+	<ul>
         <!--<a href="/" >Home</a> -->
-		 <a class="logo desktop-only" style="padding-top:15px;padding-right:8px;" href="/"><img  src="../img/logos/logo_blackbox.png" alt="Blackbox.vc"></a>
-        <a style="" href="/about/" >About Us</a>        
-        <a href="/people"/ >Portfolio</a>            
-        <!--<a href="/network/" >Global Network</a>            -->
+		<li>
+		<a class="logo desktop-only" style="padding-top:15px;padding-right:8px;" href="/"><img  src="../img/logos/logo_blackbox.png" alt="Blackbox.vc" style="width:70px;"></a>
+		</li>
+        <li>
+		<a style="" href="/about/" >About Us</a>    
+		</li>		
+        <li>
+		<a href="/press" >Press</a>         
+        </li><!--<a href="/network/" >Global Network</a>            -->
         <!--<a href="/about/videos.html" class='active'>Videos</a>         -->           
         <!--<a class="divider desktop-only">|</a>   -->             
-        <a href="/connect/"  class="programs">Blackbox Connect</a>
-        <a href="/mansion/"  class="programs">Residence</a>          
-        <a href="/accelerate/"  class="programs">Accelerator</a>        
+        <li  class='has-sub' id="shiftmenu1">
+			<a  class="programs">Blackbox Connect</a>
+			
+			 <ul>
+				 <li><a href='/connect'><span class="submenuitem" >Learn More</span></a></li>
+				 <li><a href='/connect-summer-13/'><span class="submenuitem">Summer 2013 program</span></a></li>
+				 <li><a href='/connect-graduates'><span class="submenuitem">Connect Graduates</span></a></li>
+			 </ul>
+        </li>
+		
+		<li class='has-sub' id="shiftmenu2">
+			<a   class="programs">Residence</a>
+			
+			 <ul>
+				 <li><a href='/mansion'><span class="submenuitem" >Learn More</span></a></li>
+				 <li><a  href='/mansion-residents'><span class="submenuitem">Previous residents</span></a></li>
+			 </ul>
+        </li>
+		
+		<li class='has-sub' id="shiftmenu3">
+			<a  class="programs">Accelerator</a>
+			
+			 <ul>
+				 <li><a href='/accelerate'><span class="submenuitem" >Learn More</span></a></li>
+				 <li><a href='/accelerated-companies/'><span class="submenuitem">Accelerated companies</span></a></li>
+			 </ul>
+        </li>
+		
+		    
         <!--a href="/investors/"  class="programs">Investors</a-->
+	</ul>
     </div>
     
     <!-- Begin MailChimp Signup Form -->
-    <div id="mc_embed_signup" class="desktop-only" style="margin-top:15px; ">
+    <div id="mc_embed_signup" class="desktop-only" style=" margin-top:15px; ">
         <form action="http://blackbox.us4.list-manage.com/subscribe/post?u=fa0ed72f081ca7da2eb954e9e&amp;id=f916dfaa95" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <!--<label>Join the Network</label>-->
             <div class="mc-field-group" >
-                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email">
+                <input style="margin-left:15px;" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email">
                 <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn-small">Subscribe now!</button>
             </div>
             <div id="mce-responses" class="">
@@ -388,7 +421,6 @@
                 <h4>Blackbox</h4>
                 <ul><!-- put <li><a href="/about/team.html">Team</a></li>    inside "about us" TODO -->                     
                     <li><a href="/contact">Contact us</a></li>
-					<li><a href="/press">Press</a></li>  
 					<!--<li><a href="/network">Global Network</a></li>-->
 					<li><a href="/about/videos.html">Videos</a></li>					
                 </ul>

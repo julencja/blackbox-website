@@ -19,7 +19,7 @@
 
     <title>About Us| Blackbox.vc</title>
     <link rel="icon" type="image/png" href="/img/fav.png?foo=892012">
-    
+    <link href="/css/menu.css" rel="stylesheet" type="text/css">
     <link href="/css/style.css?foo=15042013" rel="stylesheet" type="text/css">
     <!--jQuery-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -56,28 +56,61 @@
     }(document, 'script', 'facebook-jssdk'));</script>
     <!--/FBML-->
     
-<nav id="main-nav" style="" >
+<nav id="main-nav" >
   
-    <div class="inner" style="padding-left:47px; border:0px solid black;" >  
+    <div class="inner" id="cssmenu" style="padding-left:47px; border:0px solid black;" >  
+	<ul>
         <!--<a href="/" >Home</a> -->
-		 <a class="logo desktop-only" style="padding-top:15px;padding-right:8px;" href="/"><img  src="../img/logos/logo_blackbox.png" alt="Blackbox.vc"></a>
-        <a style="" href="/about/" class='active'>About Us</a>        
-        <a href="/people"/ >Portfolio</a>            
-        <!--<a href="/network/" >Global Network</a>            -->
+		<li>
+		<a class="logo desktop-only" style="padding-top:15px;padding-right:8px;" href="/"><img  src="../img/logos/logo_blackbox.png" alt="Blackbox.vc" style="width:70px;"></a>
+		</li>
+        <li>
+		<a style="" href="/about/" class='active'>About Us</a>    
+		</li>		
+        <li>
+		<a href="/press" >Press</a>         
+        </li><!--<a href="/network/" >Global Network</a>            -->
         <!--<a href="/about/videos.html" >Videos</a>         -->           
         <!--<a class="divider desktop-only">|</a>   -->             
-        <a href="/connect/"  class="programs">Blackbox Connect</a>
-        <a href="/mansion/"  class="programs">Residence</a>          
-        <a href="/accelerate/"  class="programs">Accelerator</a>        
+        <li  class='has-sub' id="shiftmenu1">
+			<a  class="programs">Blackbox Connect</a>
+			
+			 <ul>
+				 <li><a href='/connect'><span class="submenuitem" >Learn More</span></a></li>
+				 <li><a href='/connect-summer-13/'><span class="submenuitem">Summer 2013 program</span></a></li>
+				 <li><a href='/connect-graduates'><span class="submenuitem">Connect Graduates</span></a></li>
+			 </ul>
+        </li>
+		
+		<li class='has-sub' id="shiftmenu2">
+			<a   class="programs">Residence</a>
+			
+			 <ul>
+				 <li><a href='/mansion'><span class="submenuitem" >Learn More</span></a></li>
+				 <li><a  href='/mansion-residents'><span class="submenuitem">Previous residents</span></a></li>
+			 </ul>
+        </li>
+		
+		<li class='has-sub' id="shiftmenu3">
+			<a  class="programs">Accelerator</a>
+			
+			 <ul>
+				 <li><a href='/accelerate'><span class="submenuitem" >Learn More</span></a></li>
+				 <li><a href='/accelerated-companies/'><span class="submenuitem">Accelerated companies</span></a></li>
+			 </ul>
+        </li>
+		
+		    
         <!--a href="/investors/"  class="programs">Investors</a-->
+	</ul>
     </div>
     
     <!-- Begin MailChimp Signup Form -->
-    <div id="mc_embed_signup" class="desktop-only" style="margin-top:15px; ">
+    <div id="mc_embed_signup" class="desktop-only" style=" margin-top:15px; ">
         <form action="http://blackbox.us4.list-manage.com/subscribe/post?u=fa0ed72f081ca7da2eb954e9e&amp;id=f916dfaa95" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <!--<label>Join the Network</label>-->
             <div class="mc-field-group" >
-                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email">
+                <input style="margin-left:15px;" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email">
                 <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn-small">Subscribe now!</button>
             </div>
             <div id="mce-responses" class="">
@@ -125,8 +158,8 @@
                         <a href="www.linkedin.com/pub/mackenzie-hall/45/701/629" class="linkedin">LinkedIn&raquo;</a>
                     </small>                                        
                 </figure>                
-                <p>Mackenzie is the newest member of our team and is passionate about language, travel and connecting across cultures. Originally from Boston, she attended St. Lawrence University where she received her BA in Hispanic Studies. She relocated to San Francisco in February 2012 to work for Facebook and explore her interests in entrepreneurship and the intersection of technology and human connection.</p> 
-                <p>Before landing at Blackbox, Mackenzie worked at a tech startup called awe.sm and continues to be Special Projects Administrator for Foundation Rwanda, a NGO that provides educational opportunities to children born from rape during the genocide of 1994.</p>
+                <p>Mackenzie is passionate about language, travel and connecting across cultures. Originally from Boston, she attended St. Lawrence University where she received her BA in Hispanic Studies. She relocated to San Francisco in February 2012 to work for Facebook and explore her interests in entrepreneurship and the intersection of technology and human connection.</p> 
+                <p>Before landing at Blackbox, Mackenzie worked at a tech startup called awe.sm and helps Foundation Rwanda, a NGO that provides educational opportunities to children born from rape during the genocide of 1994.</p>
 
             </div> 
         </div>                       
@@ -159,18 +192,26 @@
             </div>            
         </div>            
         <div class="row">
-            <div class="grid span2 bio">
-                <h3 id="michael">Michael de la Maza <span>startup mentor / EIR</span></h3>
+			<div class="grid span2 bio">
+                <h3 id="sana">Xavier de Ryckel <span>Intern</span></h3>
                 <figure>
-                    <img src="/img/michael.jpg?foo=bar">
-                    <small>
-                        <a href="https://twitter.com/#!/hearthealthyscr" class="follow-me">Twitter&raquo;</a>
-                        <a href="http://www.linkedin.com/in/michaeldelamaza" class="linkedin">LinkedIn&raquo;</a>
-                    </small>                                        
-                </figure>                         
-                <p>Michael is the lean/agile coach at edX, the Harvard/MIT nonprofit that is revolutionizing online education.  He manages Immaculate Conception Ventures, a tiny seed stage fund. He was a member of the founding team at Inquira (acquired by Oracle) and VP of Corporate Strategy at Softricity (acquired by Microsoft). He holds a PhD in Computer Science from MIT and is the author of Rapid Chess Improvement and co-author of Professional Scrum with Team Foundation Server 2010. </p>
+                    <img src="/img/xavier.jpg">
+                </figure>
+                <p>Xavier got a M.Sc. in entrepreneurship & software engineering after studying in multiple European countries. He belives in the power of getting out of his comfort zone (and out of the building). He is betting everything on the intersection of human capital, technology and personnal development.<br /> When he's not working on social media, marketing and strategy, you'll find him developping a new mobile application or website.</p>  
             </div>
-            <div class="grid span2 bio">              
+           
+
+			<div class="grid span2 bio">
+                <h3 id="sana">Firouzeh Lorzadeh <span>Project Manager</span></h3>
+                <figure>
+                    <img src="/img/fi.jpg">
+                </figure>
+                <p>Firouzeh is a Management Consultant. She manages, structures and normalizes Blackbox's programs.</p>  
+            </div>
+			
+        </div>
+        <div class="row">
+			  <div class="grid span2 bio">              
                 <h3 id="sana">Sana Okmyanskaya <span>finance</span></h3>
                 <figure>
                     <img src="/img/sana.jpg">
@@ -179,16 +220,8 @@
                     </small>                    
                 </figure>
                 <p>Sana works with Blackbox and it's companies as a numbers cruncher and finance wizard.</p>              
-            </div>            
-        </div>
-        <div class="row">
-	       <div class="grid span2 bio">
-                <h3 id="sana">Maria Utyaganova <span>chef</span></h3>
-                <figure>
-                    <img src="/img/masha.jpg">
-                </figure>
-                <p>Masha has been cooking healthy, home-style, gourmet lunches during Blackbox Connect programs. </p>  
-            </div>
+            </div> 
+		
         </div>
        
 		
@@ -321,7 +354,6 @@
                 <h4>Blackbox</h4>
                 <ul><!-- put <li><a href="/about/team.html">Team</a></li>    inside "about us" TODO -->                     
                     <li><a href="/contact">Contact us</a></li>
-					<li><a href="/press">Press</a></li>  
 					<!--<li><a href="/network">Global Network</a></li>-->
 					<li><a href="/about/videos.html">Videos</a></li>					
                 </ul>
