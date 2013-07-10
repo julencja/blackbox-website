@@ -1188,9 +1188,10 @@ nav .social {
 	padding-bottom:30px;
 	padding-top:5px;
     /*background-image:url(../img/dot-pattern.png);*/
-	background-image:url(../img/homebg-noise.jpg);
+	/*background-image:url(../img/homebg-noise.jpg);xav*/
+	background-color:#f6f6f6;
 	background-repeat:repeat-xy;
-	background-color:#fafafa;/*fafafa;*/
+	/*background-color:#fafafa;/*fafafa;*/
     text-shadow: 0 0.1em 0 #fbfdff;
     /*border-top: solid 2px #fbfdff;    */
     /*box-shadow: 0 0px 3px #14171b;*/
