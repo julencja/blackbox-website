@@ -4,17 +4,18 @@ title: Videos | Blackbox.vc
 ogDescription: "Videos from Blackbox Connect programs."
 videos-active: "class='active'"
 ---
-
+<!--
 <section class="a-slide first" id="media">
     <div class="overlay">
         <div class="inner">
             <h1>Blackbox Videos</h1>
         </div>
     </div>
-</section>
+</section>-->
 
 <section class="c-slide">
     <div class="inner">
+	<!--<h2 style="margin-bottom:10px;">Blackbox videos</h2>  -->
         <div class="row" id="active-video-holder">
             <figure class="span2 grid">
                 <img src="http://i4.ytimg.com/vi/zJ4FeJnfv9o/0.jpg" class="player">
@@ -31,17 +32,18 @@ videos-active: "class='active'"
         
         <div class="row">
         {% for video in site.categories.videos %}
-            <figure class="span4 grid video-thumb">
+            <figure class="span3 grid video-thumb">
                 <a href="#active-video-holder"  class=""><img src="http://i4.ytimg.com/vi/{{video.video_id}}/0.jpg" alt="{{video.title}}" title="{{video.speaker}}"></a>
                 <aside class="hidden yt-url">https://www.youtube.com/embed/{{video.video_id}}</aside>
                 <aside class="hidden video-content">{{video.content}}</aside>                
                 <figcaption>
-                    <h5>{{video.title}}</h5>
-                    <h6>{{video.speaker}}</h6>
+                    <em>{{video.title}}</em>
+					<br />
+                    <span style>{{video.speaker}}</span>
                 </figcaption>
             </figure>
-            {% capture thecycle %}{% cycle '1', '2', '3', '4' %}{% endcapture %}
-            {% if thecycle == "4" %}
+            {% capture thecycle %}{% cycle '1', '2', '3' %}{% endcapture %}
+            {% if thecycle == "3" %}
         </div>
         <div class="row">
             {% endif %}

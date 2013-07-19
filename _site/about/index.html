@@ -75,28 +75,28 @@
         <li class='has-sub' id="shiftmenu1">
 			<a  onClick="return true" class="programs">Blackbox Connect</a>
 			
-			 <ul>
+			 <ul id="shiftsubmenu1">
 				 <li><a href='/connect'><span class="submenuitem" >Learn More</span></a></li>
-				 <li><a href='/connect-summer-13/'><span class="submenuitem">Summer 2013 program</span></a></li>
-				 <li><a href='/connect-graduates'><span class="submenuitem">Connect Graduates</span></a></li>
+				 <li><a href='/connect-summer-13/'><span class="submenuitem">Summer 2013</span></a></li>
+				 <li><a href='/connect-graduates'><span class="submenuitem">Graduates</span></a></li>
 			 </ul>
         </li>
 		
 		<li class='has-sub' id="shiftmenu2">
 			<a   onClick="return true" class="programs">Residence</a>
 			
-			 <ul>
+			 <ul id="shiftsubmenu2">
 				 <li><a href='/mansion'><span class="submenuitem" >Learn More</span></a></li>
-				 <li><a  href='/mansion-residents'><span class="submenuitem">Previous residents</span></a></li>
+				 <li><a  href='/mansion-residents'><span class="submenuitem">Residents</span></a></li>
 			 </ul>
         </li>
 		
 		<li class='has-sub' id="shiftmenu3">
 			<a  onClick="return true" class="programs">Accelerator</a>
 			
-			 <ul>
+			 <ul id="shiftsubmenu3">
 				 <li><a href='/accelerate'><span class="submenuitem" >Learn More</span></a></li>
-				 <li><a href='/accelerated-companies/'><span class="submenuitem">Accelerated companies</span></a></li>
+				 <li><a href='/accelerated-companies/'><span class="submenuitem">Companies</span></a></li>
 			 </ul>
         </li>
 		
@@ -110,7 +110,7 @@
         <form action="http://blackbox.us4.list-manage.com/subscribe/post?u=fa0ed72f081ca7da2eb954e9e&amp;id=f916dfaa95" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <!--<label>Join the Network</label>-->
             <div class="mc-field-group" >
-                <input style="margin-left:15px;" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email">
+                <input style="margin-left:15px; width:130px;" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email">
                 <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn-small">Subscribe now!</button>
             </div>
             <div id="mce-responses" class="">
@@ -125,18 +125,25 @@
 
 <div id="container">
 
+<!--
 <section class="a-slide first" id="about">
     <div class="overlay">
         <div class="inner">
             <h1>About Blackbox</h1>
         </div>
     </div>
-</section>
+</section>-->
 
 <section class="c-slide" id="">
     <div class="inner"> 
-        <div class="row">
-            <h2>Blackbox Team</h2>        
+		<div class="row">
+			<h2>About us</h2>   
+			<figure>
+				<img style="width:100%;" src="/img/houseoverview.jpg">
+			</figure>
+			<center><span style="font-style:italic; font-size:1.33em;">We are a dedicated, close-knit team helping promising non-US startups scale and interface with Silicon Valley</span></center>
+			<br /><br />
+		   <h4>Blackbox Team</h4>			
             <div class="grid span2 bio">
                 <h3 id="fadi">Fadi Bishara <span>founder</span></h3>
                 <figure>
@@ -196,6 +203,10 @@
                 <h3 id="sana">Xavier de Ryckel <span>Intern</span></h3>
                 <figure>
                     <img src="/img/xavier.jpg">
+					<small>
+                        <a href="https://twitter.com/xderyckel" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/in/xavierderyckel/en" class="linkedin">LinkedIn&raquo;</a>
+                    </small>  
                 </figure>
                 <p>Xavier got a M.Sc. in entrepreneurship & software engineering after studying in multiple European countries. He belives in the power of getting out of his comfort zone (and out of the building). He is betting everything on the intersection of human capital, technology and personnal development.<br /> When he's not working on social media, marketing and strategy, you'll find him developping a new mobile application or website.</p>  
             </div>
@@ -205,6 +216,9 @@
                 <h3 id="sana">Firouzeh Lorzadeh <span>Project Manager</span></h3>
                 <figure>
                     <img src="/img/fi.jpg">
+					<small>
+                        <a href="http://www.linkedin.com/pub/firouzeh-lorzadeh/a/973/95" class="linkedin">LinkedIn&raquo;</a>
+                    </small>  
                 </figure>
                 <p>Firouzeh is a Management Consultant. She manages, structures and normalizes Blackbox's programs.</p>  
             </div>
@@ -227,8 +241,8 @@
 		
 		
             <div class="ambassadors-gallery"> 
+            <h4>Blackbox Country Ambassadors</h4>	
             
-            <h2>Blackbox Country Ambassadors</h2>
             <p>Our country ambassadors refer and endorse candidates for <a href="/connect/">Blackbox Connect</a> and <a href="/accelerate/">Blackbox Accelerate</a> programs.</p>
 
            <!-- <ul>
@@ -354,8 +368,10 @@
                 <h4>Blackbox</h4>
                 <ul><!-- put <li><a href="/about/team.html">Team</a></li>    inside "about us" TODO -->                     
                     <li><a href="/contact">Contact us</a></li>
+					<li><a href="/info">General info</a></li>
 					<!--<li><a href="/network">Global Network</a></li>-->
-					<li><a href="/about/videos.html">Videos</a></li>					
+					<li><a href="/about/videos.html">Videos</a></li>
+					<li><a href="/jobs">Jobs</a></li>					
                 </ul>
             </div>
             <div class="grid span3">

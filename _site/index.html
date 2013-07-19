@@ -75,28 +75,28 @@
         <li class='has-sub' id="shiftmenu1">
 			<a  onClick="return true" class="programs">Blackbox Connect</a>
 			
-			 <ul>
+			 <ul id="shiftsubmenu1">
 				 <li><a href='/connect'><span class="submenuitem" >Learn More</span></a></li>
-				 <li><a href='/connect-summer-13/'><span class="submenuitem">Summer 2013 program</span></a></li>
-				 <li><a href='/connect-graduates'><span class="submenuitem">Connect Graduates</span></a></li>
+				 <li><a href='/connect-summer-13/'><span class="submenuitem">Summer 2013</span></a></li>
+				 <li><a href='/connect-graduates'><span class="submenuitem">Graduates</span></a></li>
 			 </ul>
         </li>
 		
 		<li class='has-sub' id="shiftmenu2">
 			<a   onClick="return true" class="programs">Residence</a>
 			
-			 <ul>
+			 <ul id="shiftsubmenu2">
 				 <li><a href='/mansion'><span class="submenuitem" >Learn More</span></a></li>
-				 <li><a  href='/mansion-residents'><span class="submenuitem">Previous residents</span></a></li>
+				 <li><a  href='/mansion-residents'><span class="submenuitem">Residents</span></a></li>
 			 </ul>
         </li>
 		
 		<li class='has-sub' id="shiftmenu3">
 			<a  onClick="return true" class="programs">Accelerator</a>
 			
-			 <ul>
+			 <ul id="shiftsubmenu3">
 				 <li><a href='/accelerate'><span class="submenuitem" >Learn More</span></a></li>
-				 <li><a href='/accelerated-companies/'><span class="submenuitem">Accelerated companies</span></a></li>
+				 <li><a href='/accelerated-companies/'><span class="submenuitem">Companies</span></a></li>
 			 </ul>
         </li>
 		
@@ -110,7 +110,7 @@
         <form action="http://blackbox.us4.list-manage.com/subscribe/post?u=fa0ed72f081ca7da2eb954e9e&amp;id=f916dfaa95" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <!--<label>Join the Network</label>-->
             <div class="mc-field-group" >
-                <input style="margin-left:15px;" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email">
+                <input style="margin-left:15px; width:130px;" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email">
                 <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn-small">Subscribe now!</button>
             </div>
             <div id="mce-responses" class="">
@@ -208,18 +208,35 @@
 			<div>
 	
 
-				<div style="margin-bottom:20px;margin-top:-50px; text-shadow:0.09em 0.09em #b9b9b9;"><center><div style="font-size:2.55em; line-height:2em;">
-				
+			<div style="margin-bottom:20px;margin-top:-50px; text-shadow:0.09em 0.09em #b9b9b9;"><center><div style="font-size:2.55em; line-height:2em;">
+		
+			<script src="/js/jquery.disable.text.select.js"></script>
 			<script type="text/javascript">
 			jQuery(document).ready(function() {
 				jQuery('#mycarousel').jcarousel({
 				
 					setupCallback: function(carousel) {
 						carousel.prevNext.mousedown(function(e){
-							e.preventDefault();
+							//e.preventDefault();
+							$('#mycarousel').disableTextSelect();
+							$(".jcarousel-prev, .jcarousel-next").disableTextSelect();
+							//$("#mycarousel").css("-webkit-touch-callout","none");
+							$(".jcarousel-container").css("-webkit-user-select","none");
+							/*$("#mycarousel").css("-khtml-user-select","none");
+							$("#mycarousel").css("-moz-user-select","moz-none");
+							$("#mycarousel").css("-ms-user-select","none");
+							$("#mycarousel").css("user-select","none");*/
 						});
 						carousel.buttonNext.mousedown(function(e){
-							e.preventDefault();
+							//e.preventDefault();
+							$('#mycarousel').disableTextSelect();
+							$(".jcarousel-prev, .jcarousel-next").disableTextSelect();
+							//$("#mycarousel").css("-webkit-touch-callout","none");
+							$(".jcarousel-container").css("-webkit-user-select","none");
+							/*$("#mycarousel").css("-khtml-user-select","none");
+							$("#mycarousel").css("-moz-user-select","moz-none");
+							$("#mycarousel").css("-ms-user-select","none");
+							$("#mycarousel").css("user-select","none");*/
 						});
 					},
 					// Configuration goes here
@@ -228,7 +245,15 @@
 					 wrap: "circular",
 					 scroll: 5, /*number of items to scroll*/
 				});
-				
+				$('#mycarousel').disableTextSelect();
+				$(".jcarousel-prev, .jcarousel-next").disableTextSelect();
+				//$("#mycarousel").css("-webkit-touch-callout","none");
+				$("#mycarousel").css("-webkit-user-select","none");
+				/*$("#mycarousel").css("-khtml-user-select","none");
+				$("#mycarousel").css("-moz-user-select","moz-none");
+				$("#mycarousel").css("-ms-user-select","none");
+				$("#mycarousel").css("user-select","none");*/
+							/*
 				jQuery('#mycarousel').jcarousel({
 					 setupCallback: function(carousel) {
 						carousel.prevNext.mousedown(function(e){
@@ -238,7 +263,7 @@
 							e.preventDefault();
 						});
 					}
-				});
+				});*/
 								/*Prevent text selection after double click.*/
 				/*jQuery('#mycarousel').jcarousel({
 					 setupCallback: function(carousel) {
@@ -256,11 +281,11 @@
 				/*Opentip.style = 'alert';*/
 			});
 			</script>
-		<div style="position:absolute; margin-top:30px;width: margin-left:5px;margin-top:385px;margin-left:-40px;">
+		<div style="position:absolute; margin-top:30px;width: margin-left:5px;margin-top:385px;margin-left:-40px;-webkit-user-select:none;-webkit-touch-callout: none;-khtml-user-select: none;-moz-user-select: moz-none;-ms-user-select: none;user-select: none;">
 		<div style="height:35px;"></div>
 						<span style="position:absolute;margin-top:-40px; width:200px; margin-left:-100px; left:50%;font-family: Gill Sans, sans-serif;" >Speakers</span>
 						
-		 <ul id="mycarousel"  class="jcarousel-skin-tango" style="width:250px;height:220px;" >
+		 <ul id="mycarousel"  class="jcarousel-skin-tango" style="width:250px;height:220px;-webkit-user-select:none;" >
 			<li class="cliquable">
 				<a href="http://www.nea.com/Default.aspx" target="_blank"><div class="speaker-item" >
 					<img src="/img/speakers/speaker_forest.png" class="bordered-image" />
@@ -589,6 +614,104 @@ Just.me
 				</div></a>
 			</li>
 		
+			<!--summer 13 lately added-->
+			<li class="cliquable">
+				<a href="http://www.googleventures.com/team/bill-maris" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_maris.jpg" class="bordered-image" />
+					<br />Bill Maris
+					<br />Google Ventures
+	
+				</div></a>
+			</li>
+		
+			
+						
+			<li class="cliquable">
+				<a href="http://www.linkedin.com/pub/marten-mickos/0/1b/7b5" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_marten.jpg" class="bordered-image" />
+					<br />Marten Mickos
+					<br />Eucalyptus
+				</div></a>
+			</li>
+		
+			
+						
+			<li class="cliquable">
+				<a href="http://www.linkedin.com/in/chadhurley" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_chad.jpg" class="bordered-image" />
+					<br />Chad Hurley
+					<br />YouTube/AVOS
+					
+				</div></a>
+			</li>
+		
+			
+						
+			<li class="cliquable">
+				<a href="http://www.linkedin.com/pub/julien-christiaens/39/aaa/740" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_julien.jpg" class="bordered-image" />
+					<br />Julien Christiaens
+					<br />Bank of the West
+					
+				</div></a>
+			</li>
+		
+			
+						
+			<li class="cliquable">
+				<a href="http://www.linkedin.com/pub/victoria-ransom/3/572/141" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_victorial.jpg" class="bordered-image" />
+					<br />Victoria Ransom
+					<br />Wildfire
+					
+				</div></a>
+			</li>
+		
+						
+			<li class="cliquable">
+				<a href="http://www.linkedin.com/in/adamcheyer" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_adam.jpg" class="bordered-image" />
+					<br />Adam Cheyer 
+					<br />Siri
+					
+				</div></a>
+			</li>
+		
+			
+						
+			<li class="cliquable">
+				<a href="http://www.linkedin.com/in/dominikbalogh" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_dominik.jpg" class="bordered-image" />
+					<br />Dominik Balogh
+					<br />M.dot
+					
+				</div></a>
+			</li>
+		
+			
+						
+			<li class="cliquable">
+				<a href="http://www.linkedin.com/in/ydnar" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_randy.jpg" class="bordered-image" />
+					<br />Randy Reddig
+					<br />Square
+					
+				</div></a>
+			</li>
+		
+			
+				
+			
+						
+			<li class="cliquable">
+				<a href="http://www.linkedin.com/profile/view?id=8151653&authType=NAME_SEARCH&authToken=q--9&locale=en_US&srchid=322497771373306954382&srchindex=2&srchtotal=10&trk=vsrp_people_res_photo&trkInfo=VSRPsearchId%3A322497771373306954382%2CVSRPtargetId%3A8151653%2CVSRPcmpt%3Aprimary" target="_blank"><div class="speaker-item">
+					<img src="/img/speakers/speaker_arto.jpg" class="bordered-image" />
+					<br />Arto Viitanen
+					<br />Idean
+					
+				</div></a>
+			</li>
+		
 			
 			
 			
@@ -621,8 +744,8 @@ Just.me
 				 <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
 				 
 				 <!--preloading-->
-				 <img src="/img/youtube-home-hover.png" style="display:none;">
-				 <img  onclick="this.style.display='none'; clickVid();" onmouseover="this.src='/img/youtube-home-hover.png';" onmouseout="this.src='/img/youtube-home.png';" src="/img/youtube-home.png" style="width:936px;height:525px;position:absolute;margin-left:5px;margin-top:5px; z-index:10; cursor:pointer;">
+				 <img src="/img/youtube-home-hover_old.png" style="display:none;">
+				 <img  onclick="this.style.display='none'; clickVid();" onmouseover="this.src='/img/youtube-home-hover_old.png';" onmouseout="this.src='/img/youtube-home_old.png';" src="/img/youtube-home_old.png" style="width:936px;height:525px;position:absolute;margin-left:5px;margin-top:5px; z-index:10; cursor:pointer;">
 				 <!--document.getElementById('ytv').style.display='';<iframe id="ytv" style="position:relative; width:936px; height:525px;margin-left:5px;margin-top:5px;display:none;" src="http://www.youtube.com/embed/wI4GhV5MT9k" frameborder="0" allowfullscreen></iframe>-->
 				 <!--<div id="player" style="margin-left:5px;margin-top:5px; z-index:9;"></div>-->
 				<div id="player" style="margin-left:5px;margin-top:5px; z-index:9;"></div>
@@ -641,38 +764,25 @@ Just.me
         <div style="background-image:url(../img/bg-house.jpg); background-repeat:no; height:300px; width:100%; background-size:100%;background-position:center; "></div>
     </section>
     -->
- <div class="row" style="border-top:2px solid #bfbfbf; box-shadow: 10px 10px 5px #00ff00;">
- <div class="sponsors-list" style="background:#f8f8f8; ">
-			
+		<div class="row" style="border-top:2px solid #bfbfbf; box-shadow: 10px 10px 5px #00ff00;">
+			<div class="sponsors-list" style="background:#f8f8f8; ">
 					<center>
-                        
-						<a href="http://www.google.com/entrepreneurs/initiatives/blackbox-connect.html" target="_blank"><img class="sponsors_bigger"  src="../img/logos/logo_googlefore.png" alt="Google for Entrepreneurs"></a>
-                        <a href="http://www.wilmerhale.com/" target="_blank"><img class="sponsors_bigger"  src="../img/logos/logo_wilmerhale_tr.png" alt="WilmerHale"></a>
-                        <a href="http://www.svb.com/" target="_blank"><img class="sponsors_bigger" src="../img/logos/logo_svb_tr.png"  alt="Silicon Valley Bank"></a>   
-                        <a href="http://rackspacestartups.com/blackbox/index.html" target="_blank"><img class="sponsors_bigger"   src="../img/logos/logo_rackspace_tr.png"></a> 
-						<a href="https://developers.google.com/startups/" target="_blank" style=" margin-top:-50px; position:relative; padding-top:-50px;"><img class="sponsors_bigger"  src="../img/logos/googlestartuppack.png" alt="Google Developers Startup Pack"></a>
-					
+						<a target="_blank" href="http://www.google.com/entrepreneurs/initiatives/blackbox-connect.html" target="_blank"><img class="sponsors_bigger"  src="../img/logos/logo_googlefore.png" alt="Google for Entrepreneurs"></a>
+                        <a target="_blank" href="http://www.wilmerhale.com/" target="_blank"><img class="sponsors_bigger"  src="../img/logos/logo_wilmerhale_tr.png" alt="WilmerHale"></a>
+                        <a target="_blank" href="http://www.svb.com/" target="_blank"><img class="sponsors_bigger" src="../img/logos/logo_svb_tr.png"  alt="Silicon Valley Bank"></a>   
+                        <a target="_blank" target="_blank" href="http://rackspacestartups.com/blackbox/index.html" target="_blank"><img class="sponsors_bigger"   src="../img/logos/logo_rackspace_tr.png"></a> 
+						<a target="_blank" href="https://developers.google.com/startups/" target="_blank" style=" margin-top:-50px; position:relative; padding-top:-50px;"><img class="sponsors_bigger"  src="../img/logos/googlestartuppack.png" alt="Google Developers Startup Pack"></a>
 						<br />
+						<a target="_blank" href="http://techcrunch.com/2012/05/24/european-startups-need-to-get-a-valley-education-and-fast/" target="_blank" style=" margin-top:-50px; position:relative; padding-top:-50px;"><img class="sponsors"  src="../img/logos/techcrunch.png" alt="TechCrunch"></a>
+						<a target="_blank" href="http://thenextweb.com/video/2011/04/14/video-angel-fadi-bishara-everyone-has-an-entrepreneur-inside-of-them/"><img class="sponsors"  src="../img/logos/thenextweb.png" alt="TheNextWeb"></a>
+						<a target="_blank" href="http://www.guardian.co.uk/technology/audio/2012/jun/06/tech-weekly-podcast-e3-2012"><img class="sponsors"  src="../img/logos/theguardian.png" alt="TheGuardian"></a>
+						<a target="_blank" href="http://www.wall-street.ro/articol/Start-Up/139326/szopa-blackbox-nu-incepe-compania-pe-piata-locala-incepe-global-si-localizeaza-dupa.html"><img class="sponsors"  src="../img/logos/wallstreet.png" alt="Wall Street"></a>
+						<a target="_blank" href="http://venturebeat.com/2012/08/17/dear-czech-and-polish-entrepreneurs-ditch-silicon-valley-come-to-berlin/"><img class="sponsors"  src="../img/logos/venturebeat.png" alt="Venture Beat"></a>
+						<a target="_blank" href="http://www.bbc.co.uk/news/technology-21773244"><img class="sponsors"  src="../img/logos/bbc.png" alt="BBC"></a>
 						
-						<a href="http://techcrunch.com/2012/05/24/european-startups-need-to-get-a-valley-education-and-fast/" target="_blank" style=" margin-top:-50px; position:relative; padding-top:-50px;"><img class="sponsors"  src="../img/logos/techcrunch.png" alt="TechCrunch"></a>
-						<a href="http://thenextweb.com/video/2011/04/14/video-angel-fadi-bishara-everyone-has-an-entrepreneur-inside-of-them/"><img class="sponsors"  src="../img/logos/thenextweb.png" alt="TheNextWeb"></a>
-						
-						<a href="http://www.guardian.co.uk/technology/audio/2012/jun/06/tech-weekly-podcast-e3-2012"><img class="sponsors"  src="../img/logos/theguardian.png" alt="TheGuardian"></a>
-								
-						<a href="http://www.wall-street.ro/articol/Start-Up/139326/szopa-blackbox-nu-incepe-compania-pe-piata-locala-incepe-global-si-localizeaza-dupa.html"><img class="sponsors"  src="../img/logos/wallstreet.png" alt="Wall Street"></a>
-								
-						<a href="http://venturebeat.com/2012/08/17/dear-czech-and-polish-entrepreneurs-ditch-silicon-valley-come-to-berlin/"><img class="sponsors"  src="../img/logos/venturebeat.png" alt="Venture Beat"></a>
-						
-							<a href="http://www.bbc.co.uk/news/technology-21773244"><img class="sponsors"  src="../img/logos/bbc.png" alt="BBC"></a>
-						
-						
-
-
-
-
 					</center>
                 </div> 
- </div><!--.row-->
+		</div><!--.row-->
 
 
 <div id="tiptip_holder">
@@ -696,8 +806,10 @@ Just.me
                 <h4>Blackbox</h4>
                 <ul><!-- put <li><a href="/about/team.html">Team</a></li>    inside "about us" TODO -->                     
                     <li><a href="/contact">Contact us</a></li>
+					<li><a href="/info">General info</a></li>
 					<!--<li><a href="/network">Global Network</a></li>-->
-					<li><a href="/about/videos.html">Videos</a></li>					
+					<li><a href="/about/videos.html">Videos</a></li>
+					<li><a href="/jobs">Jobs</a></li>					
                 </ul>
             </div>
             <div class="grid span3">
