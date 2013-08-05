@@ -29,6 +29,13 @@ time, mark, audio, video {
 	color:#f8f8f8;
 }
 
+.border-img{
+	padding: 5px;
+    box-shadow: 0 0 2px rgba(10,26,39,0.4) inset;
+    background: #fff;
+    border-radius: 5px;  
+}
+
 .flagsmall{
 	position:relative;
 	width:19px;
@@ -786,17 +793,13 @@ h5 small {
     display: block;*
     width: 100%;
     /*float: right;*/
-    text-align: right;
+    text-align: center;
     font-size: 2.5em!important;
-    margin: 1em 0 0 0;
+    margin: 1.33em 0 0 0;
     line-height: 1.2;
     font-family: Gill Sans, sans-serif;        
 }
 
-.big-link-left {
-    /*float: left;/*/
-    text-align: center;
-}
 
 .mid-link {
     font-family: Gill Sans, sans-serif;    
