@@ -533,14 +533,16 @@ section {
     }
 
 .c-slide small {
-    font-size: .9em;
+    font-size: 1.2em; /*.9em;*/
+	font-weight:bold;
     font-family: Gill Sans, sans-serif;    
 }
 
 .c-slide figure small a {
     display: block;
     font-size: 1em;
-    padding: 0 0 0 2em;
+    padding: 0 0 0 /*2*/0em;
+	text-align:center;
 }
 
 .c-slide figure small a:hover {
@@ -550,8 +552,8 @@ section {
 
 .c-slide figure h5,
 .c-slide figure h6 {
-    font-size: .75em;
-    line-height: 1.2;
+    font-size: 1.2em; /*.75em;*/
+    /*line-height: 1.2;*/
     font-family: Gill Sans, sans-serif;
     font-weight: bold;
     text-align: center;
