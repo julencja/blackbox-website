@@ -29,6 +29,11 @@ time, mark, audio, video {
 	color:#f8f8f8;
 }
 
+.social-icon{
+	height:20px; 
+	width:auto !important;
+}
+
 .border-img{
 	padding: 5px;
     box-shadow: 0 0 2px rgba(10,26,39,0.4) inset;
