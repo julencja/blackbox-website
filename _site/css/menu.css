@@ -4,12 +4,14 @@
 #cssmenu ul li.has-sub:hover > #shiftsubmenu1, #cssmenu ul li.has-sub:hover > div, #cssmenu ul li.has-sub:active > #shiftsubmenu1, #cssmenu ul li.has-sub:active > div{display:inline; margin-left:-150px;margin-top:8px;} 
 #cssmenu ul li.has-sub:hover > #shiftsubmenu2, #cssmenu ul li.has-sub:hover > div, #cssmenu ul li.has-sub:active > #shiftsubmenu2, #cssmenu ul li.has-sub:active > div{display:inline; margin-left:-100px;margin-top:8px;} 
 #cssmenu ul li.has-sub:hover > #shiftsubmenu3, #cssmenu ul li.has-sub:hover > div, #cssmenu ul li.has-sub:active > #shiftsubmenu3, #cssmenu ul li.has-sub:active > div{display:inline; margin-left:-107px;margin-top:8px;} 
+#cssmenu ul li.has-sub:hover > #shiftsubmenu4, #cssmenu ul li.has-sub:hover > div, #cssmenu ul li.has-sub:active > #shiftsubmenu4, #cssmenu ul li.has-sub:active > div{display:inline; margin-left:-89px;margin-top:8px;} 
 
 #cssmenu ul li > ul, #cssmenu ul li > div{ display:none; width:auto; position:absolute; top:38px; padding:10px 0; background:rgba(10,26,39,1); border-radius:0 0 5px 5px; z-index:999; } 
-.submenuitem{color:#fbfdff; width:170px; display:block;}
+.submenuitem{color:#fbfdff; width:160px; display:block;}
 #cssmenu > ul > li.has-sub > a:before{ position:absolute; margin-top:10px; border:5px solid transparent; border-top:5px solid #3dbff4; } 
 #shiftmenu1> a:before{margin-left:132px;}
 #shiftmenu2> a:before{margin-left:86px; }
 #shiftmenu3> a:before{margin-left:86px; }
+#shiftmenu4> a:before{margin-left:68px; }/*for the blue down arrow*/
 .has-sub{cursor:default;}
 

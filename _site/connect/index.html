@@ -40,7 +40,20 @@
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
 
-</script>
+	</script>
+	<script type="text/javascript">var _kmq = _kmq || [];
+	var _kmk = _kmk || '045ef3810d35bc33865917cc32603ae50238a0be';
+	function _kms(u){
+	  setTimeout(function(){
+		var d = document, f = d.getElementsByTagName('script')[0],
+		s = d.createElement('script');
+		s.type = 'text/javascript'; s.async = true; s.src = u;
+		f.parentNode.insertBefore(s, f);
+	  }, 1);
+	}
+	_kms('//i.kissmetrics.com/i.js');
+	_kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+	</script>
     
 </head>
 
@@ -64,8 +77,13 @@
 		<li>
 		<a class="logo desktop-only" style="padding-top:15px;padding-right:8px;" href="/"><img  src="/img/logos/logo_blackbox.png" alt="Blackbox.vc" style="width:70px;"></a>
 		</li>
-        <li>
-		<a  style="margin-left:20px;" style="" href="/about/" >About Us</a>    
+        <li class='has-sub' id="shiftmenu4">
+			<a style="margin-left:20px;"  onClick="return true" class="programs">About us</a>
+			 <ul id="shiftsubmenu4">
+				 <li><a href="/about/team"><span class="submenuitem">Team</span></a>    </li>
+				 <li><a href='/about/ambassadors'><span class="submenuitem">Ambassadors</span></a></li>
+			 </ul>
+			
 		</li>		
         <li>
 		<a style="margin-left:20px;" href="/press" >Press</a>         
@@ -77,12 +95,13 @@
 			
 			 <ul id="shiftsubmenu1">
 				 <li><a href='/connect'><span class="submenuitem" >Learn More</span></a></li>
+				 <li><a href='/testimonials'><span class="submenuitem">Testimonials</span></a></li>
 				 <li><a href='/connect-october-13/'><span class="submenuitem">October 2013</span></a></li>
 				 <li><a href='/connect-summer-13/'><span class="submenuitem">Summer 2013</span></a></li>
 				 <li><a href='/connect-graduates'><span class="submenuitem">Graduates</span></a></li>
 			 </ul>
         </li>
-		<li   class='has-sub' id="shiftmenu3">
+		<li class='has-sub' id="shiftmenu3">
 			<a style="margin-left:20px;"  onClick="return true" class="programs">Accelerator</a>
 			
 			 <ul id="shiftsubmenu3">
@@ -204,6 +223,11 @@
                 
                 
             </div>  
+			
+			<br />
+			<center>
+			<h3><a href="http://blackbox.vc/testimonials">Read what the Graduates have to say about Blackbox Connect</a></h3>
+			</center>
             <div class="row" >
                 <h4>Program Curriculum Highlights</h4>
 
@@ -236,12 +260,13 @@
 				<br />
 				<h5 style="padding-top:5px;"><em>Quality Networking Events</em></h5>
 				 <ul>
-										<li>Dinners at Blackbox Mansion with local SV community members</li>
+										<li>Lunches and dinners with local SV community members</li>
 				 <li>Attend other select happening events in Silicon Valley</li>
 				 <li>Demo/Pitch event to investors followed by dinner event </li>
 				.</div>
 
             </div>
+			<!--
             <div class="row"  style="text-align:justify;text-justify:inter-word; ">           
                 <h4>Testimonials</h4>  
                 <div class="grid span2 bio">
@@ -315,7 +340,7 @@
                     <h5>April 2012 Aulmn</h5>                         
                     <p>Blackbox is a great experience! For two weeks I've been in the heart of Silicon Valley's ecosystem, meeting and learning from lots of entrepreneurs and investors. It blew my mind and helped me think really big. Don't miss it if you're an entrepreneur who wants to change the world.</p>
                 </div>           
-            </div>
+            </div>  -->
     </div>        
 </section>
 

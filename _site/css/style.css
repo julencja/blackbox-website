@@ -29,6 +29,28 @@ time, mark, audio, video {
 	color:#f8f8f8;
 }
 
+
+.big-italic{
+	font-style:italic;
+	font-size:1.25em;
+}
+
+.testimonial-horizontal-left{
+	position:relative; 
+	/*border:1px solid blue;*/
+	height:500px;
+}
+
+.testimonial-horizontal-right{
+	float:right;
+	/*border:1px solid red;*/
+	height:250px;
+	/*padding-bottom:50px;*/
+}
+
+
+
+
 .social-icon{
 	height:20px; 
 	width:auto !important;

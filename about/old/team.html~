@@ -1,0 +1,149 @@
+---
+layout: main
+title: Team | Blackbox.vc
+about-active: "class='active'"
+ogDescription: "Blackbox Accelerator. Soft-landing and fast-launching pad for global startups in Silicon Valley."
+
+---
+
+<section class="a-slide first" id="about">
+    <div class="overlay">
+        <div class="inner">
+            <h1>Blackbox Team</h1>
+        </div>
+    </div>
+</section>
+
+<section class="c-slide" id="">
+    <div class="inner"> 
+        <div class="row">
+            <h2>Blackbox Team</h2>        
+            <div class="grid span2 bio">
+                <h3 id="fadi">Fadi Bishara <span>founder</span></h3>
+                <figure>
+                    <img src="/img/fadi.jpg">
+                    <small>
+                        <a href="https://twitter.com/fbishara" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/in/fadibishara" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                    
+                </figure>
+                <p>Fadi has in-depth knowledge and experience related to building successful startups in Silicon Valley and elsewhere in the world. For over 15 years, he has been successfully matching human capital and venture capital needs across the globe, guiding talented technology entrepreneurs in their path.</p>  
+                <p>As the Founder of Blackbox, his vision is to accelerate entrepreneurs, regardless of their geographic location. Fadi is also a Venture Partner at Sinbad Ventures, a fund that invests in early stage technology startups from Arabia.</p>
+                <p>Prior to founding Blackbox, Fadi was the founder and CEO of techVenture. Having firsthand experience of  building teams for over 100 early stage startups he's a frequent speaker and an advisor/mentor with startup accelerators such as SeedCamp, HackFwd, StartupBootcamp, StartupChile, Skolkovo Startup Academy, and many other global initiatives.</p> 
+            </div>
+            <div class="grid span2 bio">
+                <h3>Julia K Szopa <span>co-founder / programs</span></h3>
+                <figure>
+                    <img src="/img/julia.jpg">
+                    <small>
+                        <a href="https://twitter.com/juliaszopa" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/in/juliaszopa" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                                        
+                </figure>                
+                <p>Julia is a webdesigner and front-end developer with a passion for product creation. Having been working with a couple of Polish startups, usually as the first non-technical team member, she has a deep understanding of challenges faced by the founders willing to scale globally.</p> 
+                <p>She writes about Silicon Valley for <a href="http://szopa.natemat.pl" target="_blank">natemat.pl</a> (Polish). She's also the founder and    developer of a vibrant online community of designer lingerie&nbsp;enthusiasts.</p>
+            </div> 
+        </div>                       
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3>Glennskii Meyer <span>community / house</span></h3>
+                <figure>
+                    <img src="/img/glenn.jpg">
+                    <small>
+                        <a href="https://twitter.com/mC_glennSKii" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/pub/glenn-greer-meyer/31/99b/32b" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                                        
+                </figure>                                   
+                <p>GlennSKii is a vocalist/MC and geographer, also working in audio/music production, and a whippet trainer/sport-designer/breeder. Originally from Texas & Maryland, he spent one year in Vietnam and over 18 years in Poland, where he released 4 albums on major labels like Sony and Warner. He toured Poland and Europe with bands and as an MC (about 800-1000 gigs). He founded and organized 3 years of ground-breaking weekly jam sessions in Sopot, Poland. Also, check out his <a href="http://machspeedwhippets.wordpress.com/">Official Blog for Mach-Speed & Sighthound Disc Sport</a></p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Rob Lott <span>general counsel / legal</span></h3>
+                <figure>
+                    <img src="/img/rob.jpg">
+                    <small>
+                        <a href="http://www.linkedin.com/pub/robert-lott/3/36/254" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                                        
+                </figure>                               
+                <p>Rob served as a venture associate and in-house counsel to venture capital firm, SVIC, where he participated in the early stage development of several portfolio companies, including Cloudshield, Inc. acquired by SAIC for over $200M and ArcSight, Inc. (formerly NASDAQ 'ARST') acquired by HP for $1.4 Billion. He co-founded Knowledge Market, a technology transfer and corporate development firm that was based at NASA Ames Research Center, where he assisted private and publicly-traded companies with sourcing and licensing intellectual property (IP) from U.S. government agencies, national laboratories, and universities. He has facilitated numerous international M&A transactions, venture financings, technology licenses and patent sales.</p>
+
+
+            </div>            
+        </div>            
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3 id="michael">Michael de la Maza <span>startup mentor / EIR</span></h3>
+                <figure>
+                    <img src="/img/michael.jpg?foo=bar">
+                    <small>
+                        <a href="https://twitter.com/#!/hearthealthyscr" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/in/michaeldelamaza" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                                        
+                </figure>                         
+                <p>Michael is the lean/agile coach at edX, the Harvard/MIT nonprofit that is revolutionizing online education.  He manages Immaculate Conception Ventures, a tiny seed stage fund. He was a member of the founding team at Inquira (acquired by Oracle) and VP of Corporate Strategy at Softricity (acquired by Microsoft). He holds a PhD in Computer Science from MIT and is the author of Rapid Chess Improvement and co-author of Professional Scrum with Team Foundation Server 2010. </p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Patrycja Tempska <span>young leaders / intern</span></h3>
+                <figure>
+                    <img src="/img/patrycja.jpg">
+                    <small>
+                        <a href="https://twitter.com/ptempska" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/pub/patrycja-tempska/46/403/3a9" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                                        
+                </figure>      
+                <p>Patrycja is a high school graduate and an adventurer interested in new technologies, programming and entrepreneurship. While still at school she was working for Pomeranian Science and Technology Park in Gdynia (Poland) and organized a conference "Play with Business" for more than 200 high school students.</p>
+                <p>She came to the Valley in June 2012, where she has been volunteering at Blackbox and at TechCrunch Disrupt in San Francisco.</p> 
+            </div>            
+        </div>            
+        <div class="row">
+             <div class="grid span2 bio">
+                <h3 id="sana">Sana Okmyanskaya <span>finance</span></h3>
+                <figure>
+                    <img src="/img/sana.jpg">
+                    <small>
+                        <a href="http://www.linkedin.com/in/sanaokmyanskaya" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                    
+                </figure>
+                <p>Sana works with Blackbox and it's companies as a numbers cruncher and finance wizard.</p>  
+            </div>
+	<div class="grid span2 bio">
+                <h3 id="sana">Maria Utyaganova <span>chef</span></h3>
+                <figure>
+                    <img src="/img/sana.jpg">
+                    <small>
+                        <a href="http://www.linkedin.com/in/sanaokmyanskaya" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                    
+                </figure>
+                <p>Sana works with Blackbox and it's companies as a numbers cruncher and finance wizard.</p>  
+            </div>
+        </div>
+        <div class="row">        
+            <h2>Global Blackbox Evangelists</h2>
+
+                <figure class="grid span6">
+                    <img src="/img/michael_wroczynski.jpg">
+                    <figcaption>Michal Wroczynski</figcaption>
+                    <small>
+                        <a href="https://twitter.com/Fidofornia" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/pub/michal-wroczynski/1/361/159" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                    
+                </figure>
+                <figure class="grid span6">
+                    <img src="/img/jenny.jpg">
+                    <figcaption>Jenny Jung</figcaption>
+                    <small>
+                        <a href="https://twitter.com/jung" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/in/jennyejung/en" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                    
+                </figure>
+                <figure class="grid span6">
+                    <img src="/img/soren.jpg">
+                    <figcaption>Soren Therkelsen</figcaption>                    
+                    <small>
+                        <a href="https://twitter.com/sorenrt" class="follow-me">Twitter&raquo;</a>
+                        <a href="http://www.linkedin.com/in/sorenrt" class="linkedin">LinkedIn&raquo;</a>
+                    </small>                    
+                </figure>
+        </div>
+    </div>
+</section>    
+
