@@ -96,8 +96,6 @@
 			 <ul id="shiftsubmenu1">
 				 <li><a href='/connect'><span class="submenuitem" >Learn More</span></a></li>
 				 <li><a href='/testimonials'><span class="submenuitem">Testimonials</span></a></li>
-				 <li><a href='/connect-october-13/'><span class="submenuitem">October 2013</span></a></li>
-				 <li><a href='/connect-summer-13/'><span class="submenuitem">Summer 2013</span></a></li>
 				 <li><a href='/connect-graduates'><span class="submenuitem">Graduates</span></a></li>
 			 </ul>
         </li>
@@ -120,7 +118,7 @@
         <form action="http://blackbox.us4.list-manage.com/subscribe/post?u=fa0ed72f081ca7da2eb954e9e&amp;id=f916dfaa95" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <!--<label>Join the Network</label>-->
             <div class="mc-field-group" >
-                <input style="margin-left:50px; width:130px;" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email">
+                <input style="margin-left:50px; width:130px;  -moz-box-sizing: border-box;" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email">
                 <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn-small">Subscribe now!</button>
             </div>
             <div id="mce-responses" class="">
@@ -148,10 +146,173 @@
     <div class="inner">  
 	<div class="row">
         <h2>Blackbox Connect Graduates</h2>
-		<figure>
-			<img src="/img/bg-girts-and-martins.jpg">
-		</figure>
-		<center><span style="font-style:italic; font-size:1.33em;">We help promising non-US startups interface with Silicon Valley and scale globally.<br /> Already <em>77</em> startup founders attended Blackbox Connect.</span></center>
+
+		
+		
+		
+		
+					<!--
+			
+				https://code.google.com/apis/ajax/playground/?type=visualization#geo_map (	playground )
+				https://developers.google.com/chart/image/docs/gallery/new_map_charts?csw=1
+				https://developers.google.com/chart/interactive/docs/gallery/geomap?csw=1
+				-->
+
+				<script type="text/javascript" src="//www.google.com/jsapi"></script>
+				  <script type="text/javascript">
+					google.load('visualization', '1', {packages: ['geomap']});
+
+					function drawVisualization() {
+					  /*var data = google.visualization.arrayToDataTable([
+						['Country', 'Blackbox Ambassadors'],
+						['Germany',2],
+						['Latvia',2],
+						['France',2],
+						['Argentina',1],
+						['Australia',1],
+						['Ukraine',1],
+						['South Africa',1],
+						['Saudi Arabia',1],
+						['Thailand',1],
+						['Pakistan',1]
+						
+					  ]);*/
+					  
+					  var data = new google.visualization.DataTable();
+						data.addColumn('string', 'Country'); // Implicit domain label col.
+						data.addColumn('number', 'Value'); // Implicit series 1 data col.
+						data.addColumn({type:'string', role:'tooltip'}); // 
+
+						data.addRows([
+							/*
+							[{v:"Germany",f:"Germany"}, 2,"Ambassadors: Jenny Jung, Steffen Reitz"],
+							[{v:"Latvia",f:"Latvia"}, 2,"Ambassadors: Girts Laudaks, Martins Kalnins"],
+							[{v:"France",f:"France"}, 2,"Ambassadors: Ismael Nzouetom, Richard Phan"],
+							[{v:"Argentina",f:"Argentina"}, 1,"Ambassador: Agustin Badano"],
+							[{v:"Australia",f:"Australia"}, 1,"Ambassador: Michael Overell"],
+							[{v:"Ukraine",f:"Ukraine"}, 1,"Ambassador: Nikolay Pavlov"],
+							[{v:"South Africa",f:"South Africa"}, 1,"Ambassador: Matt Tagg"],
+							[{v:"Saudi Arabia",f:"Saudi Arabia"}, 1,"Ambassador: Rafah Alkhatib"],
+							[{v:"Thailand",f:"Thailand"}, 1,"Ambassador: Krating Poonpol"],
+							[{v:"Pakistan",f:"Pakistan"}, 1,"Ambassador: Ali Rehan"], 
+							[{v:"Chile",f:"Chile"}, 1,"Ambassador: Matías Fontecilla"], 
+							[{v:"Cyprus",f:"Cyprus"}, 1,"Ambassador: Conno Christou"], 
+							[{v:"The Netherlands",f:"The Netherlands"}, 1,"Ambassador: Ruben Timmerman"], 
+							*/
+							/*
+							[{v:"Germany",f:"Germany"}, 1,"Ambassadors: Jenny Jung, Steffen Reitz, Graduates: Thorsten Luettger, Jurgen Koehler, Steffen Reitz"],
+							[{v:"Latvia",f:"Latvia"}, 1,"Ambassadors: Girts Laudaks, Martins Kalnins"],
+							[{v:"France",f:"France"}, 1,"Ambassadors: Ismael Nzouetom, Richard Phan, Graduates: Edouard de La Jonquière, Vincent Naigeon, Anne-Aymone Ferreira, Marine Tranquard, Maxime Lamure, Octave Bory-Bert, Noemie Prin, Philippe Lebeau"],
+							[{v:"Argentina",f:"Argentina"}, 1,"Ambassador: Agustin Badano, Graduates: Lisandro Bril, Santiago Fossatti "],
+							[{v:"Australia",f:"Australia"}, 1,"Ambassador: Michael Overell, Graduates: Raj Prasad, Alex Bartzis"],
+							[{v:"Ukraine",f:"Ukraine"}, 1,"Ambassador: Nikolay Pavlov, Graduates: Andriy Khavryuchenko, Artem Zavyalov, Viktor Strelbitskyy, Sergey Moliavko"],
+							[{v:"South Africa",f:"South Africa"}, 1,"Ambassador: Matt Tagg, Graduates: Dylan Kohlstädt, Steven Ellis"],
+							[{v:"Saudi Arabia",f:"Saudi Arabia"}, 1,"Ambassador: Rafah Alkhatib"],
+							[{v:"Thailand",f:"Thailand"}, 1,"Ambassador: Krating Poonpol, Graduates: Jakkarin Pipopkullaporn, Chalermyuth Boonma"],
+							[{v:"Pakistan",f:"Pakistan"}, 1,"Ambassador: Ali Rehan, Graduates: Salman Ul Haq, Murtaza Taj"], 
+							[{v:"Chile",f:"Chile"}, 1,"Ambassador: Matías Fontecilla, Graduates: Ricardo Dorado"], 
+							[{v:"Cyprus",f:"Cyprus"}, 1,"Ambassador: Conno Christou"], 
+							[{v:"The Netherlands",f:"The Netherlands"}, 1,"Ambassador: Ruben Timmerman, Graduates: Onno Faber, Eleanor Watson "], 
+
+							[{v:"Italy",f:"Italy"}, 100,"Graduates: Alessandro Vannucci, Federico Treu"], 
+							[{v:"Poland",f:"Poland"}, 100,"Graduates: Michał Wroczyński, Marcin Treder, Marcin Kowalski, Lukasz Korga, Michal Mikulski"], 
+							[{v:"Russia",f:"Russia"}, 100,"Graduates: Aynur Abdulnasyrov, Vassili Gatov, Eugene Barulin, Roman Siderenko, Yuri Chikhalov, Sergiy Chekalsky, Ernest Shakarov"], 
+							[{v:"United Kingdom",f:"United Kingdom"}, 100,"Graduates: Barbara Nowacka, George Eracleous, Conno Christou"],
+							[{v:"Denmark",f:"Denmark"}, 100,"Graduates: Sara Naseri, Lars Tackmann, Martin Ebbesen, Kim Løwert"],		
+							[{v:"Brazil",f:"Brazil"}, 100,"Graduates: Leonardo Grijó, Daniel Scandian"],	
+							[{v:"Austria",f:"Austria"}, 100,"Graduates: Michael Eisler"],	
+							[{v:"Canada",f:"Canada"}, 100,"Graduates: Nik Macintosh, Pinyi Zhou"],	
+							[{v:"Saudi Arabia",f:"Saudi Arabia"}, 100,"Graduates: Rafah Alkhatib"],	
+							[{v:"Czech Republic",f:"Czech Republic"}, 100,"Graduates: Jan Kuča, Jakub Rož"],
+							[{v:"Israel",f:"Israel"}, 100,"Graduates: Nissan Yaron"],	
+							[{v:"Egypt",f:"Egypt"}, 100,"Graduates: Omar Gabr, Moataz Soliman"],
+							[{v:"Serbia",f:"Serbia"}, 100,"Graduates: Vladan Petrovic, Ivana Gadjanski "],		
+							[{v:"India",f:"India"}, 100,"Graduates: Jofin Joseph, Arjun Pillai"],	
+							[{v:"Romania",f:"Romania"}, 100,"Graduates: Cristian Ivan, Cosmin Ciobanu"],	
+							[{v:"Chile",f:"Chile"}, 100,"Graduates: Matías Fontecilla, "],	
+							*/							
+							/*
+							[{v:"Germany",f:"Germany"}, 1,"2 Ambassadors & 2 Graduates"],
+							[{v:"Latvia",f:"Latvia"}, 1,"2 Ambassadors"],
+							[{v:"France",f:"France"}, 1,"2 Ambassadors & 8 Graduates"],
+							[{v:"Argentina",f:"Argentina"}, 1,"1 Ambassador & 2 Graduates"],
+							[{v:"Australia",f:"Australia"}, 1,"1 Ambassador & 2 Graduates"],
+							[{v:"Ukraine",f:"Ukraine"}, 1,"1 Ambassador & 4 Graduates"],
+							[{v:"South Africa",f:"South Africa"}, 1,"1 Ambassador & 2 Graduates"],
+							[{v:"Saudi Arabia",f:"Saudi Arabia"}, 1,"1 Ambassador"],
+							[{v:"Thailand",f:"Thailand"}, 1,"1 Ambassador & 2 Graduates"],
+							[{v:"Pakistan",f:"Pakistan"}, 1,"1 Ambassador & 2 Graduates"], 
+							[{v:"Chile",f:"Chile"}, 1,"1 Ambassador"], 
+							[{v:"Cyprus",f:"Cyprus"}, 1,"1 Ambassador & 1 Graduate"], 
+							[{v:"The Netherlands",f:"The Netherlands"}, 1,"1 Ambassador & 2 Graduates"], 
+
+							[{v:"Poland",f:"Poland"}, 100,"5 Graduates"], 
+							[{v:"Russia",f:"Russia"}, 100,"7 Graduates"], 
+							[{v:"United Kingdom",f:"United Kingdom"}, 100,"1 Graduate"],
+							[{v:"Denmark",f:"Denmark"}, 100,"4 Graduates"],		
+							[{v:"Brazil",f:"Brazil"}, 100,"2 Graduates"],	
+							[{v:"Italy",f:"Italy"}, 100,"2 Graduates"], 
+							[{v:"Canada",f:"Canada"}, 100,"2 Graduates"],	
+							[{v:"Czech Republic",f:"Czech Republic"}, 100,"2 Graduates"],
+							[{v:"Serbia",f:"Serbia"}, 100,"2 Graduates"],	
+							[{v:"Romania",f:"Romania"}, 100,"2 Graduates"],	
+							[{v:"India",f:"India"}, 100,"2 Graduates"],	
+							[{v:"Egypt",f:"Egypt"}, 100,"2 Graduates"],
+							[{v:"Austria",f:"Austria"}, 100,"1 Graduate"],	
+							[{v:"Saudi Arabia",f:"Saudi Arabia"}, 100,"1 Graduate"],	
+							[{v:"Israel",f:"Israel"}, 100,"1 Graduate"],	
+							*/
+							
+							[{v:"Germany",f:"Germany"}, 3,"3 Graduates"],
+							[{v:"Latvia",f:"Latvia"}, 2,"2 Graduates"],
+							[{v:"France",f:"France"}, 11,"11 Graduates"],
+							[{v:"Argentina",f:"Argentina"}, 3,"3 Graduates"],
+							[{v:"Australia",f:"Australia"}, 3,"3 Graduates"],
+							[{v:"Ukraine",f:"Ukraine"}, 4,"4 Graduates"],
+							[{v:"South Africa",f:"South Africa"}, 2,"2 Graduates"],
+							[{v:"Saudi Arabia",f:"Saudi Arabia"}, 1,"1 Graduate"],
+							[{v:"Thailand",f:"Thailand"}, 3,"3 Graduates"],
+							[{v:"Pakistan",f:"Pakistan"}, 3,"3 Graduates"], 
+							[{v:"Chile",f:"Chile"}, 2,"2 Graduates"], 
+							[{v:"Cyprus",f:"Cyprus"}, 2,"2 Graduates"], 
+							[{v:"The Netherlands",f:"The Netherlands"}, 2,"2 Graduates"], 
+							
+							[{v:"Poland",f:"Poland"}, 5,"5 Graduates"], 
+							[{v:"Russia",f:"Russia"}, 7,"7 Graduates"], 
+							[{v:"United Kingdom",f:"United Kingdom"}, 1,"2 Graduates"],
+							[{v:"Denmark",f:"Denmark"}, 4,"4 Graduates"],		
+							[{v:"Brazil",f:"Brazil"}, 2,"2 Graduates"],	
+							[{v:"Italy",f:"Italy"}, 2,"2 Graduates"], 
+							[{v:"Canada",f:"Canada"}, 2,"2 Graduates"],	
+							[{v:"Czech Republic",f:"Czech Republic"}, 2,"2 Graduates"],
+							[{v:"Serbia",f:"Serbia"}, 2,"2 Graduates"],	
+							[{v:"Romania",f:"Romania"}, 2,"2 Graduates"],	
+							[{v:"India",f:"India"}, 2,"2 Graduates"],	
+							[{v:"Egypt",f:"Egypt"}, 2,"2 Graduates"],
+							[{v:"Austria",f:"Austria"}, 2,"1 Graduate"],	
+							[{v:"Saudi Arabia",f:"Saudi Arabia"}, 1,"1 Graduate"],	
+							[{v:"Israel",f:"Israel"}, 1,"1 Graduate"],	
+						]);
+					
+					  var geomap = new google.visualization.GeoChart( //GeoChart or GeoMap //to config the chart:https://developers.google.com/chart/interactive/docs/gallery/geochart?csw=1
+						  document.getElementById('visualization'));
+					  geomap.draw(data, {width: 950, height: 440, legend: 'Vists', /*legend:'none', */ /*enableRegionInteractivity:false,*/ keepAspectRatio:true, backgroundColor:{fill:'#fdfdfd' /*f6f6f6*/, stroke:'#000000', strokeWidth:'0'},datalessRegionColor:'#eeeeee' /*e1e1e1*/, sizeAxis: { minValue: 0, maxValue: 100 }, colorAxis: {minValue: 1,  colors: ['#0a1a27', '#0a1a27' /*'#537ea2'*/]}}); //if no option, write null 
+					  //, colors: [0x0a1a27, 0x0a1a27], showLegend:false, showZoomOut:false
+					}
+					
+					  
+
+					google.setOnLoadCallback(drawVisualization);
+				  </script>
+					<div id="visualization" style="width: 950px; height: 440px; padding:10px; margin-top: 15px; margin-bottom:15px;   box-shadow: 0 0 2px rgba(10,26,39,0.4) inset;  background: #fdfdfd;border-radius: 5px;"></div>
+				
+		
+		
+		
+		
+		
+		
+		<center><span style="font-style:italic; font-size:1.33em;">We help promising non-US startups interface with Silicon Valley and scale globally.<br /> Already <em>77</em> startup founders from <em>25</em> different countries attended Blackbox Connect.</span></center>
 		<br /><br />
 
 
@@ -642,7 +803,7 @@ products.
                 <p>Cubeyou is the "google analytics for Facebook Apps". A robust platform that gives businesses the ability to unlock and harness the power of facebook Apps data.</p>
             </div>
             <div class="grid span2 bio">
-                <h3>Eleanor Watson <span>UK/Netherlands</span></h3>
+                <h3>Eleanor Watson <span>UK/The Netherlands</span></h3>
                 <figure>
                     <img src="/img/participants/nell.png">
                     <small>

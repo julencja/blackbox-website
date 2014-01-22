@@ -256,7 +256,7 @@ nav form button {
     border-radius: 2px;
     box-sizing: border-box;
     color: #7E7E7E;
-    height: 20px;
+    /*height: 20px;*/
     margin: 0;
     padding: 3px 5px 3px 5px;
     display: inline-block;
