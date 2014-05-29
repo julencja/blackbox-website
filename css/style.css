@@ -58,8 +58,8 @@ time, mark, audio, video {
 
 .border-img{
 	padding: 5px;
-    box-shadow: 0 0 2px rgba(10,26,39,0.4) inset;
-    background: #fff;
+   /* box-shadow: 0 0 2px rgba(10,26,39,0.4) inset;
+    background: #fff;*/
     border-radius: 5px;  
 }
 
@@ -541,9 +541,9 @@ section {
 
 .c-slide figure img,
 .c-slide figure iframe {
-    padding: 5px;
-    box-shadow: 0 0 2px rgba(10,26,39,0.4) inset;
-    background: #fff;
+   /* padding: 5px;*/
+   /* box-shadow: 0 0 2px rgba(10,26,39,0.4) inset;*/
+   /* background: #fff;*/
     border-radius: 5px;    
 }
 
