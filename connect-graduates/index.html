@@ -1,0 +1,1548 @@
+---
+layout: main
+title: Connect Graduates | Blackbox.vc
+ogDescription: "Blackbox Connect Alumni"
+connect2-active: "class='active'"
+---
+<!--
+<section class="a-slide first" id="portfolio">
+    <div class="overlay">
+        <div class="inner">
+            <h1>We focus on people, first.</h1>
+        </div>
+    </div>
+</section>
+-->
+<section class="c-slide">
+    <div class="inner">  
+	<div class="row">
+        <h2>Blackbox Connect Graduates</h2>
+
+		
+		
+		
+		
+					<!--
+			
+				https://code.google.com/apis/ajax/playground/?type=visualization#geo_map (	playground )
+				https://developers.google.com/chart/image/docs/gallery/new_map_charts?csw=1
+				https://developers.google.com/chart/interactive/docs/gallery/geomap?csw=1
+				-->
+
+				<script type="text/javascript" src="//www.google.com/jsapi"></script>
+				  <script type="text/javascript">
+					google.load('visualization', '1', {packages: ['geomap']});
+
+					function drawVisualization() {
+					  /*var data = google.visualization.arrayToDataTable([
+						['Country', 'Blackbox Ambassadors'],
+						['Germany',2],
+						['Latvia',2],
+						['France',2],
+						['Argentina',1],
+						['Australia',1],
+						['Ukraine',1],
+						['South Africa',1],
+						['Saudi Arabia',1],
+						['Thailand',1],
+						['Pakistan',1]
+						
+					  ]);*/
+					  
+					  var data = new google.visualization.DataTable();
+						data.addColumn('string', 'Country'); // Implicit domain label col.
+						data.addColumn('number', 'Value'); // Implicit series 1 data col.
+						data.addColumn({type:'string', role:'tooltip'}); // 
+
+						data.addRows([
+							/*
+							[{v:"Germany",f:"Germany"}, 2,"Ambassadors: Jenny Jung, Steffen Reitz"],
+							[{v:"Latvia",f:"Latvia"}, 2,"Ambassadors: Girts Laudaks, Martins Kalnins"],
+							[{v:"France",f:"France"}, 2,"Ambassadors: Ismael Nzouetom, Richard Phan"],
+							[{v:"Argentina",f:"Argentina"}, 1,"Ambassador: Agustin Badano"],
+							[{v:"Australia",f:"Australia"}, 1,"Ambassador: Michael Overell"],
+							[{v:"Ukraine",f:"Ukraine"}, 1,"Ambassador: Nikolay Pavlov"],
+							[{v:"South Africa",f:"South Africa"}, 1,"Ambassador: Matt Tagg"],
+							[{v:"Saudi Arabia",f:"Saudi Arabia"}, 1,"Ambassador: Rafah Alkhatib"],
+							[{v:"Thailand",f:"Thailand"}, 1,"Ambassador: Krating Poonpol"],
+							[{v:"Pakistan",f:"Pakistan"}, 1,"Ambassador: Ali Rehan"], 
+							[{v:"Chile",f:"Chile"}, 1,"Ambassador: Matías Fontecilla"], 
+							[{v:"Cyprus",f:"Cyprus"}, 1,"Ambassador: Conno Christou"], 
+							[{v:"The Netherlands",f:"The Netherlands"}, 1,"Ambassador: Ruben Timmerman"], 
+							*/
+							/*
+							[{v:"Germany",f:"Germany"}, 1,"Ambassadors: Jenny Jung, Steffen Reitz, Graduates: Thorsten Luettger, Jurgen Koehler, Steffen Reitz"],
+							[{v:"Latvia",f:"Latvia"}, 1,"Ambassadors: Girts Laudaks, Martins Kalnins"],
+							[{v:"France",f:"France"}, 1,"Ambassadors: Ismael Nzouetom, Richard Phan, Graduates: Edouard de La Jonquière, Vincent Naigeon, Anne-Aymone Ferreira, Marine Tranquard, Maxime Lamure, Octave Bory-Bert, Noemie Prin, Philippe Lebeau"],
+							[{v:"Argentina",f:"Argentina"}, 1,"Ambassador: Agustin Badano, Graduates: Lisandro Bril, Santiago Fossatti "],
+							[{v:"Australia",f:"Australia"}, 1,"Ambassador: Michael Overell, Graduates: Raj Prasad, Alex Bartzis"],
+							[{v:"Ukraine",f:"Ukraine"}, 1,"Ambassador: Nikolay Pavlov, Graduates: Andriy Khavryuchenko, Artem Zavyalov, Viktor Strelbitskyy, Sergey Moliavko"],
+							[{v:"South Africa",f:"South Africa"}, 1,"Ambassador: Matt Tagg, Graduates: Dylan Kohlstädt, Steven Ellis"],
+							[{v:"Saudi Arabia",f:"Saudi Arabia"}, 1,"Ambassador: Rafah Alkhatib"],
+							[{v:"Thailand",f:"Thailand"}, 1,"Ambassador: Krating Poonpol, Graduates: Jakkarin Pipopkullaporn, Chalermyuth Boonma"],
+							[{v:"Pakistan",f:"Pakistan"}, 1,"Ambassador: Ali Rehan, Graduates: Salman Ul Haq, Murtaza Taj"], 
+							[{v:"Chile",f:"Chile"}, 1,"Ambassador: Matías Fontecilla, Graduates: Ricardo Dorado"], 
+							[{v:"Cyprus",f:"Cyprus"}, 1,"Ambassador: Conno Christou"], 
+							[{v:"The Netherlands",f:"The Netherlands"}, 1,"Ambassador: Ruben Timmerman, Graduates: Onno Faber, Eleanor Watson "], 
+
+							[{v:"Italy",f:"Italy"}, 100,"Graduates: Alessandro Vannucci, Federico Treu"], 
+							[{v:"Poland",f:"Poland"}, 100,"Graduates: Michał Wroczyński, Marcin Treder, Marcin Kowalski, Lukasz Korga, Michal Mikulski"], 
+							[{v:"Russia",f:"Russia"}, 100,"Graduates: Aynur Abdulnasyrov, Vassili Gatov, Eugene Barulin, Roman Siderenko, Yuri Chikhalov, Sergiy Chekalsky, Ernest Shakarov"], 
+							[{v:"United Kingdom",f:"United Kingdom"}, 100,"Graduates: Barbara Nowacka, George Eracleous, Conno Christou"],
+							[{v:"Denmark",f:"Denmark"}, 100,"Graduates: Sara Naseri, Lars Tackmann, Martin Ebbesen, Kim Løwert"],		
+							[{v:"Brazil",f:"Brazil"}, 100,"Graduates: Leonardo Grijó, Daniel Scandian"],	
+							[{v:"Austria",f:"Austria"}, 100,"Graduates: Michael Eisler"],	
+							[{v:"Canada",f:"Canada"}, 100,"Graduates: Nik Macintosh, Pinyi Zhou"],	
+							[{v:"Saudi Arabia",f:"Saudi Arabia"}, 100,"Graduates: Rafah Alkhatib"],	
+							[{v:"Czech Republic",f:"Czech Republic"}, 100,"Graduates: Jan Kuča, Jakub Rož"],
+							[{v:"Israel",f:"Israel"}, 100,"Graduates: Nissan Yaron"],	
+							[{v:"Egypt",f:"Egypt"}, 100,"Graduates: Omar Gabr, Moataz Soliman"],
+							[{v:"Serbia",f:"Serbia"}, 100,"Graduates: Vladan Petrovic, Ivana Gadjanski "],		
+							[{v:"India",f:"India"}, 100,"Graduates: Jofin Joseph, Arjun Pillai"],	
+							[{v:"Romania",f:"Romania"}, 100,"Graduates: Cristian Ivan, Cosmin Ciobanu"],	
+							[{v:"Chile",f:"Chile"}, 100,"Graduates: Matías Fontecilla, "],	
+							*/							
+							/*
+							[{v:"Germany",f:"Germany"}, 1,"2 Ambassadors & 2 Graduates"],
+							[{v:"Latvia",f:"Latvia"}, 1,"2 Ambassadors"],
+							[{v:"France",f:"France"}, 1,"2 Ambassadors & 8 Graduates"],
+							[{v:"Argentina",f:"Argentina"}, 1,"1 Ambassador & 2 Graduates"],
+							[{v:"Australia",f:"Australia"}, 1,"1 Ambassador & 2 Graduates"],
+							[{v:"Ukraine",f:"Ukraine"}, 1,"1 Ambassador & 4 Graduates"],
+							[{v:"South Africa",f:"South Africa"}, 1,"1 Ambassador & 2 Graduates"],
+							[{v:"Saudi Arabia",f:"Saudi Arabia"}, 1,"1 Ambassador"],
+							[{v:"Thailand",f:"Thailand"}, 1,"1 Ambassador & 2 Graduates"],
+							[{v:"Pakistan",f:"Pakistan"}, 1,"1 Ambassador & 2 Graduates"], 
+							[{v:"Chile",f:"Chile"}, 1,"1 Ambassador"], 
+							[{v:"Cyprus",f:"Cyprus"}, 1,"1 Ambassador & 1 Graduate"], 
+							[{v:"The Netherlands",f:"The Netherlands"}, 1,"1 Ambassador & 2 Graduates"], 
+
+							[{v:"Poland",f:"Poland"}, 100,"5 Graduates"], 
+							[{v:"Russia",f:"Russia"}, 100,"7 Graduates"], 
+							[{v:"United Kingdom",f:"United Kingdom"}, 100,"1 Graduate"],
+							[{v:"Denmark",f:"Denmark"}, 100,"4 Graduates"],		
+							[{v:"Brazil",f:"Brazil"}, 100,"2 Graduates"],	
+							[{v:"Italy",f:"Italy"}, 100,"2 Graduates"], 
+							[{v:"Canada",f:"Canada"}, 100,"2 Graduates"],	
+							[{v:"Czech Republic",f:"Czech Republic"}, 100,"2 Graduates"],
+							[{v:"Serbia",f:"Serbia"}, 100,"2 Graduates"],	
+							[{v:"Romania",f:"Romania"}, 100,"2 Graduates"],	
+							[{v:"India",f:"India"}, 100,"2 Graduates"],	
+							[{v:"Egypt",f:"Egypt"}, 100,"2 Graduates"],
+							[{v:"Austria",f:"Austria"}, 100,"1 Graduate"],	
+							[{v:"Saudi Arabia",f:"Saudi Arabia"}, 100,"1 Graduate"],	
+							[{v:"Israel",f:"Israel"}, 100,"1 Graduate"],	
+							*/
+							
+							[{v:"Germany",f:"Germany"}, 5,"5 Graduates"],
+							[{v:"Latvia",f:"Latvia"}, 2,"2 Graduates"],
+							[{v:"France",f:"France"}, 15,"15 Graduates"],
+							[{v:"Argentina",f:"Argentina"}, 3,"3 Graduates"],
+							[{v:"Australia",f:"Australia"}, 3,"3 Graduates"],
+							[{v:"Ukraine",f:"Ukraine"}, 4,"4 Graduates"],
+							[{v:"South Africa",f:"South Africa"}, 4,"4 Graduates"],
+							[{v:"Saudi Arabia",f:"Saudi Arabia"}, 1,"1 Graduate"],
+							[{v:"Thailand",f:"Thailand"}, 3,"3 Graduates"],
+							[{v:"Pakistan",f:"Pakistan"}, 5,"5 Graduates"], 
+							[{v:"Chile",f:"Chile"}, 2,"2 Graduates"], 
+							[{v:"Cyprus",f:"Cyprus"}, 2,"2 Graduates"], 
+							[{v:"The Netherlands",f:"The Netherlands"}, 2,"2 Graduates"], 
+							
+							[{v:"Poland",f:"Poland"}, 5,"5 Graduates"], 
+							[{v:"Russia",f:"Russia"}, 7,"7 Graduates"], 
+							[{v:"United Kingdom",f:"United Kingdom"}, 3,"3 Graduates"],
+							[{v:"Denmark",f:"Denmark"}, 4,"4 Graduates"],		
+							[{v:"Brazil",f:"Brazil"}, 2,"2 Graduates"],	
+							[{v:"Italy",f:"Italy"}, 3,"3 Graduates"], 
+							[{v:"Canada",f:"Canada"}, 3,"3 Graduates"],	
+							[{v:"Czech Republic",f:"Czech Republic"}, 2,"2 Graduates"],
+							[{v:"Serbia",f:"Serbia"}, 2,"2 Graduates"],	
+							[{v:"Romania",f:"Romania"}, 2,"2 Graduates"],	
+							[{v:"India",f:"India"}, 4,"4 Graduates"],	
+							[{v:"Egypt",f:"Egypt"}, 4,"4 Graduates"],
+							[{v:"Austria",f:"Austria"}, 2,"1 Graduate"],	
+							[{v:"Saudi Arabia",f:"Saudi Arabia"}, 1,"1 Graduate"],	
+							[{v:"Israel",f:"Israel"}, 4,"4 Graduate"],	
+
+							[{v:"Kuwait",f:"Kuwait"}, 1,"1 Graduate"],	
+							[{v:"Spain",f:"Spain"}, 1,"1 Graduate"],	
+							[{v:"Korea",f:"Korea"}, 1,"1 Graduate"],	
+							[{v:"Turkey",f:"Turkey"}, 1,"1 Graduate"],	
+							[{v:"Palestine",f:"Palestine"}, 1,"1 Graduate"],	
+
+
+
+							
+						]);
+					
+					  var geomap = new google.visualization.GeoChart( //GeoChart or GeoMap //to config the chart:https://developers.google.com/chart/interactive/docs/gallery/geochart?csw=1
+						  document.getElementById('visualization'));
+					  geomap.draw(data, {width: 950, height: 440, legend: 'Vists', /*legend:'none', */ /*enableRegionInteractivity:false,*/ keepAspectRatio:true, backgroundColor:{fill:'#fdfdfd' /*f6f6f6*/, stroke:'#000000', strokeWidth:'0'},datalessRegionColor:'#eeeeee' /*e1e1e1*/, sizeAxis: { minValue: 0, maxValue: 100 }, colorAxis: {minValue: 1,  colors: ['#0a1a27', '#0a1a27' /*'#537ea2'*/]}}); //if no option, write null 
+					  //, colors: [0x0a1a27, 0x0a1a27], showLegend:false, showZoomOut:false
+					}
+					
+					  
+
+					google.setOnLoadCallback(drawVisualization);
+				  </script>
+					<div id="visualization" style="width: 950px; height: 440px; padding:10px; margin-top: 15px; margin-bottom:15px;   box-shadow: 0 0 2px rgba(10,26,39,0.4) inset;  background: #fdfdfd;border-radius: 5px;"></div>
+				
+		
+		
+		
+		
+		
+		
+		<center><span style="font-style:italic; font-size:1.33em;">We help promising non-US startups interface with Silicon Valley and scale globally.<br /> Already <em>102</em> startup founders from <em>33</em> different countries attended Blackbox Connect.</span></center>
+		<br /><br />
+
+
+
+<h4>7th class, March 2014 (25 participants)</h4>
+
+
+
+<div class="row"  style="text-align:justify;text-justify:inter-word; ">  
+			<div class="grid span2 bio">
+				<h3>Dupsy Abiola<span> UK</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Dupsy-Abiola.png"></a>
+                <h5><a href="http://www.internavenue.com" target="_blank">Intern Avenue</a></h5>  
+				</figure>
+                <p class="read_more">
+                	Founder and CEO of Intern Avenue. After graduating from Oxford, she began her career as a lawyer at a leading specialist law firm where she also participated in building a team of top entry level talent. Dupsy was inspired to create Intern Avenue to leverage data and technology to automate top candidate sourcing and selection and produce effective system for hiring top entry level talent. Dupsy has collaborated with UK government on youth employment legislation, and was added to Thomson-Reuters Power List 2013. Dupsy has been featured in Wired and the Financial Times and on the BBC. Intern Avenue has won the Techcrunch / Web Summit Europa Award for Best Recruitment Start Up in Europe.
+                </p>
+            </div>  
+            <div class="grid span2 bio">
+				<h3>Omer Khan<span> Pakistan</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Omer-Kahn.png"></a>
+                <h5><a href="http://thevividtech.com/" target="_blank">VIVID</a></h5>  
+				</figure>
+                <p class="read_more">
+                	Omer Khan has been a hands on engineer working with several contact center in the past and lead teams responsible for different voice and CTI platforms. Omer is also a part time musician and occasionally writes as well.
+                </p>
+            </div> 
+        </div>
+        <div class="row"  style="text-align:justify;text-justify:inter-word; ">  
+			<div class="grid span2 bio">
+				<h3>Abdullah Alshalabi<span> Kuwait</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Abdullah.png"></a>
+                <h5><a href="http://www.fishfishme.com" target="_blank">Fishfishme</a></h5>  
+				</figure>
+                <p class="read_more">
+                	Cofounder and Managing Director of Fishfishme, a global minded entrepreneur and a passionate fisherman. Abdullah's previous startup, MyBuyFriends was accelerated by Wayra in Barcelona, Spain. Previous to his startup life he had a 3 years work experience in the investment field as a Financial Analyst. Abdullahe earned a Mechanical Engineering degree from Kuwait University and an MBA from HKUST in Hong Kong.
+                </p>
+            </div> 
+			<div class="grid span2 bio">
+				<h3>Jose Gil Zafra<span> Spain</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Jose-Gil.png"></a>
+                <h5><a href="http://www.fishfishme.com" target="_blank">Fishfishme</a></h5>  
+				</figure>
+                <p class="read_more">
+                	Cofounder and Managing Director of Fishfishme, Jose has lived in Europe, Asia and US and holds a MBA degree, a BSc in Computers and a BA in Economics providing him a rich and diverse personal and professional background. Prior to fishfishme, Jose has worked across different industries, always linked to technology and innovation.
+                </p>
+            </div>  
+        </div> 
+
+        <div class="row"  style="text-align:justify;text-justify:inter-word; ">  
+			<div class="grid span2 bio">
+				<h3>Catherine Dahl<span> Canada</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Catherine-Dahl.png"></a>
+                <h5><a href="http://www.beanworks.com" target="_blank">Beanworks Solutions</a></h5>  
+				</figure>
+                <p class="read_more">
+                	Cofounder & CEO of Beanworks, Catherine has a passion for business process management and system improvement. Catherine has a successsful track record establishing programs and improving systems for both private and public, profit and non-profit organizations. She has developped successful strategic initiatives as well as business and financial process improvement in financial roles. Catherine has a Bachelor Degree in Commerce from Ryerson University in Toronto, Canada, and Certified Professional Accountant. 
+                </p>
+            </div>  
+			<div class="grid span2 bio">
+				<h3>Heidi Han<span> Korea</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Heidi-Han.png"></a>
+                <h5><a href="http://www.malangstudio.com" target="_blank">Malang Studio</a></h5>  
+				</figure>
+                <p class="read_more">
+                	Cofounder and CMO of MelangStudio, Heidi graduated from HanKuk University of Foreign Studies with a Master Degree in Business Administration and Marketing. After publishing her reasearch paper; The Influence of Purchase Quantity and Timing on Consumer Choice between Hedonic and Utilitarian Options, she persued an entreprenerual career to build products that increase happiness and bring joy to people's lives, as a cofounder of MalangStudio, she is responsible for Marketing and Business Development. 
+                </p>
+            </div>  
+        </div> 
+
+        <div class="row"  style="text-align:justify;text-justify:inter-word; ">  
+			<div class="grid span2 bio">
+				<h3>Marc Lampe<span> Germany</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Marc-Lampe.png"></a>
+                <h5><a href="http://www.merisier.de" target="_blank">Merisier</a></h5>  
+				</figure>
+                <p class="read_more">
+                	Cofounder & COO of Merisier, Marc founded his first company at the age of 17 and has been a serial founder since. He's got a degree in Economics and worked as a Banker at Deutsche Bank for two years.
+                </p>
+            </div>  
+
+			<div class="grid span2 bio">
+				<h3>Anna Bojic<span> Germany</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Anna-Bojic.png"></a>
+                <h5><a href="http://www.merisier.de" target="_blank">Merisier</a></h5>  
+				</figure>
+                <p class="read_more">
+                	Cofounder & CEO of Merisier, Anna was born and raised in Berlin, Germany. She graduaded in cultural studies and got her MA in Fine Arts before she founded merisier with Marc.
+                </p>
+            </div> 
+        </div> 
+
+        <div class="row"  style="text-align:justify;text-justify:inter-word; ">  
+			
+
+			<div class="grid span2 bio">
+					<h3>Chloe Julien<span> France</span></h3>
+					<figure>
+						<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Chloe-Julien.png"></a>
+	                <h5><a href="http://www.bandsquare.fr/" target="_blank">BandSquare</a></h5>  
+					</figure>
+	                <p class="read_more">
+	                Cofounder & CEO at BandSquare. Chloé grew up in the music environment and after being a strategy consultant, specialized in Digital Marketing at Universal Music, she decided to found BandSquare, a unique tool to organize artists' tours wherever there's a demand for it. Chloé completed an MBA in Strategy from Essec Business School Paris and an MS from Business School in Singapore.
+	                </p>
+            </div> 
+           		
+			<div class="grid span2 bio">
+				<h3>Antoine Labbe<span> France</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Antoine-Labbe.png"></a>
+                <h5><a href="http://www.bandsquare.fr/" target="_blank">BandSquare</a></h5>  
+				</figure>
+                <p class="read_more">
+                	Cofounder & CTO at BandSquare, a passionate web developer attracted to ethically meaningful and impact based projects. After being a software developer and consultant for various firms, he met Chloé and cofounded BandSquare with a mission to help musicians to make a living from their art.
+                </p>
+      	  </div>  
+        </div> 
+
+
+        <div class="row"  style="text-align:justify;text-justify:inter-word; ">  
+			<div class="grid span2 bio">
+				<h3>Abhishek Chatterjee<span> India</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Abhishek-Chatterjee.png"></a>
+                <h5><a href="http://www.tookitaki.com" target="_blank">TookiTaki</a></h5>  
+				</figure>
+                <p class="read_more">Cofounder & CEO of TookiTaki. Abhishek has a BE degree in Computer Engineering and MS in Computational Biology (Applied Math) from University of Southern California. With a solid work experience in algorithms helps him to take charge of product development and other engineering aspects. Previously, Abhishek was working with JP Morgan New York as a quantitative analyst and Double Click (Google) New York as software engineer. 
+                </p>
+            </div>  
+
+			<div class="grid span2 bio">
+				<h3>Jeeta Bandopadhyay<span> India</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/jeeta-Bandopadhyay.png"></a>
+                <h5><a href="http://www.tookitaki.com" target="_blank">TookiTaki</a></h5>  
+				</figure>
+                <p class="read_more">
+                	Cofounder & COO of TookiTaki. Jeeta has an MA in English with post graduate degree in Integrated Marketing & Communications from St. Xavier’s College, Kolkata. Jeeta has worked in various marketing and publishing roles and was The Times Group as senior correspondent at a B2B magazines of media conglomerate.
+                </p>
+            </div> 
+        </div> 
+
+        <div class="row"  style="text-align:justify;text-justify:inter-word; ">  
+			<div class="grid span2 bio">
+				<h3>Amr Saleh<span> Egypt</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Amr-Salem.png"></a>
+                <h5><a href="http:/www.integreight.com" target="_blank">Integreight</a></h5>  
+				</figure>
+                <p class="read_more">
+                	Cofounder & CEO of Integreight. Amr is a young passionate entrepreneur, he has a B.Sc. in electronics and communications engineering from Helwan University. Amr participated in a lot of activities, he is a member of the IET Egypt board committee. He also won the IET PATW global competition in the UK, November 2012. 
+                </p>
+            </div>  
+
+			<div class="grid span2 bio">
+				<h3>Islam Mustafa<span> Egypt</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Islam-Mutafa.png"></a>
+                <h5><a href="http://www.integreight.com" target="_blank">Integreight</a></h5>  
+				</figure>
+                <p class="read_more">
+                	Cofounder & CTO of Integreight, Islam has a B.Sc. in computer engineering from Helwan University. Islam and his graduation project team won a lot of competitions in Egypt, Sweden, France, and England, an Egyptian company that produce innovative products in the electronics education sector. Islam’s main expertise are in developing embedded systems and controlling them using either web, mobile or desktop applications.
+                </p>
+            </div> 
+        </div> 
+
+        <div class="row"  style="text-align:justify;text-justify:inter-word; ">  
+			<div class="grid span2 bio">
+				<h3>Andrew Lynch<span> South Africa</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Andres-Lynch.png"></a>
+                <h5><a href="http://www.joinweaver.co.za" target="_blank">Weaver</a></h5>  
+				</figure>
+                <p class="read_more">
+                	Cofounder & CEO of Weaver. Andrew is a graduate of Rhodes University, with an MA in International Relations, and a self taught programmer. Andrew was Yuppiechef’s first intern, where he designed an issue tracking, visualization and gamification package to enable better insight and control, using php and javascript. He has been an active entrepreneur all his student life, starting from student tuckshops, to computer reselling agencies, and more recently running an online publishing arm of a student newspaper.
+                </p>
+            </div>  
+
+			<div class="grid span2 bio">
+				<h3>Kiril Dobrev<span> South Africa</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Kiril-Weaver.png"></a>
+                <h5><a href="http://www.joinweaver.co.za" target="_blank">Weaver</a></h5>  
+				</figure>
+                <p class="read_more">
+                	Cofounder & COO of Weaver. Kiril is a graduate of UCT, with a MComm in Information Systems (First Class) and BComm Honours from Rhodes University. While pursuing his masters, Kiril co-founded a startup called Frayme, a niche social network focused entirely on private video sharing. Although Kiril and the team were able to succesfully develop their product for Android, they were unable to monetize or get funding to grow the business. 
+                </p>
+            </div> 
+        </div> 
+
+        <div class="row"  style="text-align:justify;text-justify:inter-word; ">  
+			<div class="grid span2 bio">
+				<h3>Paola Marinone<span> Italy/UK</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Paola-Marinone.png"></a>
+                <h5><a href="http://www.buzzmyvideos.com" target="_blank">Buzz My Videos</a></h5>  
+				</figure>
+                <p class="read_more">
+                	Cofounder & CEO of BuzzMyVideos. Paola is annovative strateigist in the digital media space and an expert in the online video world, an Account Strategist and then EMEA Business Development Manager at YouTube, she worked closely with leading international content partners of the Google’s. 
+                </p>
+            </div>  
+
+			<div class="grid span2 bio">
+				<h3>Bengu Atamer<span> Turkey/UK</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Bengu-atamer.png"></a>
+                <h5><a href="http://www.buzzmyvideos.com" target="_blank">Buzz My Videos</a></h5>  
+				</figure>
+                <p class="read_more">
+                	Cofounder & Director of Business Operations & Audience Development of BuzzMyVideos. Bengu has over 6 years career in multiple progrsssing international roles at Google. Bengu has led the YouTube Online Partnership programme launches across Europe, Middle East & Africa. Bengu also launched and was the head of YouTube Next Lab EMEA Audience Development. Bengu's vision is to have each BuzzMyVideos creator take their YouTube presence to the next level by re-shaping the creator community tools, systems, infrastructure, and programms.
+                </p>
+            </div> 
+        </div> 
+
+        <div class="row"  style="text-align:justify;text-justify:inter-word; ">  
+			<div class="grid span2 bio">
+				<h3>Mika Kayt<span> Israel</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Mika-Kayt.png"></a>
+                <h5><a href="http://takeandmake.co" target="_blank">Take&Make</a></h5>  
+				</figure>
+                <p class="read_more">
+                	Cofounder & CEO of Take&Make. Mika is a Zell Entrepreneurship Program Fellow. Founded and directed the first Elderly Debate Workshop in Israel, and directed International Business Development in the realm of aquaculture.
+                </p>
+            </div>  
+
+			<div class="grid span2 bio">
+				<h3>Liri Halperin<span> Israel</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Liri-Halperin.png"></a>
+                <h5><a href="http://takeandmake.co" target="_blank">Take&Make</a></h5>  
+				</figure>
+                <p class="read_more">
+                	Cofounder & CMO of Take&Make. Liri founded Dealiri, one of the leading DIY site in Israel and 1 of the top 3 consumer websites (by Mako), Worked as a reporter for 6 years and covered the start-up life at Tel-Aviv.
+                </p>
+            </div> 
+        </div> 
+
+        <div class="row"  style="text-align:justify;text-justify:inter-word; ">  			
+
+			<div class="grid span2 bio">
+				<h3>Jordan Succar<span> France</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Jordan-Succar.png"></a>
+                <h5><a href="http://www.sponseasy.com/" target="_blank">Sponseasy</a></h5>  
+				</figure>
+                <p class="read_more">
+                Cofounder & CEO of Sponseasy. Jordan is creative thinker, failed many time but for sure enjoyed it and will never stop trying. A natural leader and team builder who decided to drop out his Master degree in economics, management and entrepreneurship to focus on Sponseasy and does not regret it.
+                </p>
+            </div> 
+
+            <div class="grid span2 bio">
+				<h3>Miguel Labranche<span> France</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Miguel-Labranche.png"></a>
+                <h5><a href="http://www.sponseasy.com/" target="_blank">Sponseasy</a></h5>  
+				</figure>
+                <p class="read_more">
+                 Cofounder & COO of Sponseasy. Miguel is a pro boxing champion and trainer, love creating crazy and innovative stuffs. Passionate about the human experience between the idea and the product, bringing the best of his team and a "Breakfast Addict". 
+                </p>
+            </div> 
+        </div> 
+
+
+        <div class="row"  style="text-align:justify;text-justify:inter-word; ">  
+    		<div class="grid span2 bio">
+				<h3>Tanya Damm Bokobza<span> Israel</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Tanya-Damm.png"></a>
+                <h5><a href="http://www.morphe.us.com" target="_blank">Morpheus</a></h5>  
+				</figure>
+                <p class="read_more">
+                	Founder & CEO of Morpheus. Tanya is a serial entrepreneur and an Industrial Designer with experience along the entire product life cycle in multiple industires and technologies. Tanya been recognized and has won the Felissimo excellence design award and the Kobe Japan invitational greeting project. She's also the IDSA managing magazine editor for the Silicon Valley. Holds a BFA from RISD MA Studies from The academy of art Bezalel - Jerusalem.
+                </p>
+            </div>  
+
+            <div class="grid span2 bio">
+				<h3>Hafiz Muhammad Idrees Butt<span> Pakistan</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Idrees.png"></a>
+                <h5><a href="http://www.smsall.pk" target="_blank">SMSAll</a></h5>  
+				</figure>
+                <p class="read_more">
+                	Cofounder & COO of SMSall. Idrees has helped SMSall to grow from just over 100,000 users SMS chat service to cross 7.5 million users, making SMSall Pakistan's leading mobile social network. Idrees was recently named as one of the 2013's most inspiring entreprenuers in Pakistan. Idrees has worked as a software developer and started and lead a small software services company that built a large scale Project Portfolio Management solution for a U.S based clients. A public speaker on topics related to mobile social networking and monetization strategies at national & international conferences. Idrees holds a BSCS degree from FAST-NU Lahore and MBA specializing in Marketing from the University of Punjab. He is also a student of Indian classical music and enjoys being a vocalist. 
+                </p>
+            </div>  
+			
+        </div> 
+
+
+           <div class="row"  style="text-align:justify;text-justify:inter-word; ">  
+    		<div class="grid span2 bio">
+				<h3>Talal Jarabi<span> Palestine</span></h3>
+				<figure>
+					<a target="_blank" href=""><img src="/img/participants/connect-spring-14/Talal-Jarabi.png"></a>
+                <h5><a href="http://www.fariqak.com" target="_blank">Fariqak</a></h5>  
+				</figure>
+                <p class="read_more">
+                	 Founder & CEO of Fariqak. Tala is a strong believer in the entrepreneurial spirit. In 2004, Talal co-founded Capture Productions, a company specialized in the production of factual programming, that in the past 9 years has successfully completed hundreds of hours of documentaries around the world and won several awards. It is with that success at heart, and the desire to provide factual entertainment, that Talal launched Fariqak.com
+                </p>
+            </div> 
+         </div>  
+
+
+
+                 
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	  <h4>6th class, October 2013 (16 participants)</h4>
+	  
+	  
+	  
+	  
+	  
+	  
+				
+			<div class="row"  style="text-align:justify;text-justify:inter-word; ">  
+			   
+                <div class="grid span2 bio">
+                    <h3>Ricardo Dorado<span> Chile</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://www.linkedin.com/in/ricardodorado"><img src="/img/participants/connect-october-13/benchbanking-ricard.png"></a>
+                <h5><a href="http://www.benchbanking.com/" target="_blank">Benchbanking</a></h5>  
+				</figure>
+                    <p>Co-founder of Benchbanking. Executive with a strong track record of international business leadership in telecom-internet-media and retail companies. 
+					CXOs contact across them in Latin America and Europe.
+					More than 10 years of experience building and leading cross-functional teams in product marketing & management, business development, sales and technology, in both, start-up and corporate companies.
+</p>
+                </div>  
+
+     <div class="grid span2 bio">
+                    <h3>Matías Fontecilla<span> Chile</span></h3>
+                   <figure>
+                        <a target="_blank" href="http://www.linkedin.com/profile/view?id=32238492&authType=NAME_SEARCH&authToken=Ee9c&locale=en_US&srchid=431326141379610666036&srchindex=1&srchtotal=5&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A431326141379610666036%2CVSRPtargetId%3A32238492%2CVSRPcmpt%3Aprimary"><img src="/img/participants/connect-october-13/bench-banking-mathias.png"></a>
+                   <h5><a href="http://www.benchbanking.com/" target="_blank">Benchbanking</a></h5>                                               
+                    </figure> 			
+                    <p>Co-Founder and Chief Commercial Officer in BenchBanking leading every aspect of sales, account management and user experience. At age 18, he created a marketplace for exotic animal exchange between zoos. 
+He studied Business, then worked in Chilean Central Bank, The Nielsen Company and FASA before returning to his entrepreneurial roots by founding a Marketing and Strategy Consulting firm.
+
+</p>
+                </div>  
+
+				
+            </div>   
+			
+			<div class="row"  style="text-align:justify;text-justify:inter-word; ">           
+                 
+                <div class="grid span2 bio">
+                    <h3>Alex Bartzis<span> Australia</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://www.linkedin.com/profile/view?id=195085919&authType=NAME_SEARCH&authToken=KGLs&locale=en_US&srchid=431326141379454575484&srchindex=2&srchtotal=2&trk=vsrp_people_res_photo&trkInfo=VSRPsearchId%3A431326141379454575484%2CVSRPtargetId%3A195085919%2CVSRPcmpt%3Aprimary"><img src="/img/participants/connect-october-13/cookoo-alex.png"></a>
+                     <h5><a href="http://www.cookoo.co" target="_blank">Cookoo</a></h5>                                       
+                    </figure> 
+                    <!--<h5></h5> -->
+                    <p>Alex is the co-founder of Cookoo with a dynamic and enthusiastic passion to design innovative solutions for the everyday person.  
+					He is a lover of food, protein and staying very active which has provided him with the vision for Cookoo. 
+					He believes in success through the user interface and has been responsible for the development of the look and feel of Cookoo. 
+</p>
+                </div>            
+                <div class="grid span2 bio">
+                    <h3>Raj Prasad<span> Australia</span></h3>
+                   <figure>
+                        <a target="_blank" href="http://www.linkedin.com/profile/view?id=138413198&authType=OUT_OF_NETWORK&authToken=mrXq&locale=en_US&srchid=431326141379454593616&srchindex=1&srchtotal=21&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A431326141379454593616%2CVSRPtargetId%3A138413198%2CVSRPcmpt%3Aprimary"><img src="/img/participants/connect-october-13/cookoo-raj.png"></a>
+                     <h5><a href="http://www.cookoo.co" target="_blank">Cookoo</a></h5>                                             
+                    </figure> 			
+                    <p>Raj Prasad is the co-founder of Cookoo, an entrepreneur with a passion for food and innovation; 
+					Raj’s career spans from expertise in M&A transactions to restructuring advice.
+MBA holder, his skills in business model innovation and strategy coupled with a creative business mind has made him a valuable member of the Cookoo team.
+</p>
+                </div>           
+            </div>   
+		
+			
+			
+				<div class="row"  style="text-align:justify;text-justify:inter-word; ">           
+               
+                <div class="grid span2 bio">
+                    <h3>Chalermyuth Boonma<span> Thailand</span></h3>
+                    <figure>
+                        <a target="_blank" href=""><img src="/img/participants/connect-october-13/fastinflow-chalermyuth.png"></a>
+                           <h5><a href="http://www.fastinflow.com/" target="_blank">Fastinflow</a></h5>  	                           
+                    </figure>  
+                    <!--<h5></h5> -->
+                    <p>Co-founder of Fastinflow. A visionary digital marketer! Keen on digital marketing, social media marketing, 
+					and also passionate about building something that could influence the way people live. 
+					He experienced working with successful brands, advertising companies and tech startups including Ensogo (Livingsocial) and Zalora (Rocket Internet).
+					He had also been heavily involved building the Thailand tech startup ecosystem.</p>
+                </div>            
+                <div class="grid span2 bio">
+                    <h3>Jakkarin Pipopkullaporn<span> Thailand</span></h3>
+                    <figure>
+                        <a target="_blank" href=""><img src="/img/participants/connect-october-13/fastinflow-jakkarin.png"></a>
+                     
+					<h5><a href="http://www.fastinflow.com/" target="_blank">Fastinflow</a></h5>  						
+                    </figure> 
+                    <!--<h5></h5>-->                   
+                    <p>Co-founder of Fastinflow. A strategic thinker who loves numbers! Passionate about startups and new business opportunities. Currently, 
+					he is especially interested in digital products as they make people live a better life. He led Polymer R team and won first runner up in MAI business plan competition. He got his first degree with honours in BBA Finance.</p>
+                </div>            
+            </div>   
+		
+			
+		
+			
+			
+				<div class="row"  style="text-align:justify;text-justify:inter-word; ">           
+               
+                <div class="grid span2 bio">
+                    <h3>Santiago Fossatti<span> Argentina</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://www.linkedin.com/profile/view?id=88379005&locale=es_ES&trk=tyah2&trkInfo=tas%3ASantiago%20Fossatti"><img src="/img/participants/connect-october-13/kaszek-santiago.png"></a>
+                    <h5><a href="http://kaszek.com" target="_blank">Kaszek Ventures</a></h5>                                        
+                    </figure>
+                    <!--<h5></h5> -->
+                    <p>Associate at Kaszek Ventures, Latin America’s leading Venture Capital firm.
+As Kaszek’s first employee, focused on sourcing new deals for the fund, Santiago has participated in 40 investments rounds for over $400M.
+Santiago was previously an associate at Value Partners where he worked in several engagements for leading telco industries. 
+Santiago got an Industrial Engineering degree.
+</p>
+                </div>            
+                <div class="grid span2 bio">
+                    <h3>Daniel Scandian<span> Brazil</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://www.linkedin.com/profile/view?id=132522042&authType=NAME_SEARCH&authToken=FKkW&locale=pt_BR&srchid=431326141379454520629&srchindex=1&srchtotal=2&trk=vsrp_people_res_photo&trkInfo=VSRPsearchId%3A431326141379454520629%2CVSRPtargetId%3A132522042%2CVSRPcmpt%3Aprimary"><img src="/img/participants/connect-october-13/MadeiraMadeira-daniel.png"></a>
+                       <h5><a href="http://madeiramadeira.com.br" target="_blank">Madeiramadeira</a></h5>                                                      
+                    </figure>  
+                    <!--<h5></h5>-->                   
+                    <p>Co-founder and CEO of MadeiraMadeira, Brazil’s leading home improvement online retailer backed by Kaszek Ventures, Monashees and Flybridge. 
+Before founding MadeiraMadeira, Daniel was the R&D director for Novopiso, a leading flooring company in Brazil. 
+Daniel holds a B.S. in Production Engineering and also was a professional Racing Driver.
+</p>
+                </div>            
+            </div>   
+		
+			
+			
+				<div class="row"  style="text-align:justify;text-justify:inter-word; ">           
+               
+                <div class="grid span2 bio">
+                    <h3>Philippe Lebeau<span> France</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://www.linkedin.com/in/philippelebeau"><img src="/img/participants/connect-october-13/mobisysteme-philippe.png"></a>
+                        <h5><a href="http://www.mobisysteme.com" target="_blank">Mobisysteme</a></h5>                                    
+                    </figure>  
+                    <!--<h5></h5> -->
+                    <p>Co-founder of Mobisystème. He brings nearly 25 years of experience in designing marketing campaigns with impact. 
+					Philippe combined his penchant for outdoor sports and entrepreneurial spirit to create Aerocom, 
+					an advertising agency for the best suppliers of mountaineering and outdoor sports gear in Europe.
+					He also managed the adoption of Annecy on the shortlist of cities to host the 2018 Winter Olympics. 
+
+</p>
+                </div>            
+                <div class="grid span2 bio">
+                    <h3>Richard Phan<span> France</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://linkedin.com/in/richardphan"><img src="/img/participants/connect-october-13/mobisysteme-richard.png"></a>
+                         <h5><a href="http://www.mobisysteme.com" target="_blank">Mobisysteme</a></h5>                                        
+                    </figure>  
+                    <!--<h5></h5>-->                   
+                    <p>Co-founder of Mobisystème. Richard Phan was Program Director at Palm, where he lead worldwide 3G smartphone R&D programs.
+Prior to this, Richard spent 7 years in Silicon Valley, working for HP and Handspring in R&D, manufacturing, and operations.
+Richard holds an Engineering degree in Computer Science, Electrical Engineering, and has a very rich multicultural background.
+</p>
+                </div>            
+            </div>   
+		
+			
+			
+				<div class="row"  style="text-align:justify;text-justify:inter-word; ">           
+               
+                <div class="grid span2 bio">
+                    <h3>Cosmin Ciobanu<span> Romania</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://www.linkedin.com/profile/view?id=43156647&authType=NAME_SEARCH&authToken=4B5_&locale=en_US&srchid=431326141379454661128&srchindex=1&srchtotal=38&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A431326141379454661128%2CVSRPtargetId%3A43156647%2CVSRPcmpt%3Aprimary"><img src="/img/participants/connect-october-13/octonius-cosmin.jpg"></a>
+                                                    
+                   <h5><a href="http://octoni.us" target="_blank">Octonius</a></h5>  
+				   </figure> 
+                    <!--<h5></h5> -->
+                    <p>CEO & Founder of Octonius, enthusiast entrepreneur and UX creator. With a background of mobile UX & UI design, data privacy & security, he specialized in GTDs, productivity systems and workflows. Very focused on simplicity design.
+He is a renaissance man, with a passion for history of arts, hiking and climbing.
+</p>
+                </div>            
+                <div class="grid span2 bio">
+                    <h3>Cristian Ivan<span> Romania</span></h3>
+                   <figure>
+                         <a target="_blank" href="http://www.linkedin.com/in/crisivan"><img src="/img/participants/connect-october-13/Octonius-cristi.jpg"></a>
+                                                        
+                  <h5><a href="http://octoni.us" target="_blank">Octonius</a></h5>  
+				   </figure> 
+                    <!--<h5></h5>-->                   
+                    <p>CTO & Co-founder of Octonius, iOS developer and UX expert. Pixel perfect enthusiast. An IT polymath with a background from the humble beginnings of the UNIX to the core of the iOS platform.</p>
+                </div>            
+            </div>   
+		
+			
+			
+				<div class="row"  style="text-align:justify;text-justify:inter-word; ">           
+             	
+                <div class="grid span2 bio">
+                    <h3>Arjun Pillai<span> India</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://www.linkedin.com/profile/view?id=79711386&authType=NAME_SEARCH&authToken=t8k6&locale=en_US&srchid=431326141379454732116&srchindex=1&srchtotal=22&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A431326141379454732116%2CVSRPtargetId%3A79711386%2CVSRPcmpt%3Aprimary"><img src="/img/participants/connect-october-13/Profoundis-arjun.jpg"></a>
+                      <h5><a href="http://vibeapp.co" target="_blank">Vibe</a></h5>                                     
+                    </figure>
+                    <!--<h5></h5> -->
+                    <p>Co-founder, CEO & Hustler @Vibe, Undergraduate in Electronics and Communication. He's been Systems Engineer for 2 years as an SAP Developer.
+Arjun is a management aspirant. He is proactive, loves to build teams and sustain them. His role is to drive the business operations of Vibe. 
+Good communication, presentation and oratory skills add up his relevance to the team.
+</p>
+                </div>            
+          
+                <div class="grid span2 bio">
+                    <h3>Jofin Joseph<span> India</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://www.linkedin.com/profile/view?id=47086933&authType=NAME_SEARCH&authToken=zUjm&locale=en_US&srchid=431326141379454761384&srchindex=1&srchtotal=11&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A431326141379454761384%2CVSRPtargetId%3A47086933%2CVSRPcmpt%3Aprimary"><img src="/img/participants/connect-october-13/Profoundis-Jofin.jpg"></a>
+                     <h5><a href="http://vibeapp.co" target="_blank">Vibe</a></h5>                                           
+                    </figure> 
+                    <!--<h5></h5> -->
+                    <p>Co-founder, COO @Vibe, Jofin is an undergraduate in Computer Science and Engineering. 
+His areas of experience include enterprise systems, business analytics software and business process management systems.
+He founded a startup called Openode Labs along with his college mates .
+He is an enthusiastic team player and a blend of technical and functional skills. 
+</p>
+                </div>            
+                       
+            </div>   
+		
+	
+			
+			
+				<div class="row"  style="text-align:justify;text-justify:inter-word; ">           
+             	
+                <div class="grid span2 bio">
+                    <h3>Ivana Gadjanski<span> Serbia</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://www.linkedin.com/profile/view?id=21118810&authType=NAME_SEARCH&authToken=upvv&locale=en_US&srchid=431326141379454776000&srchindex=1&srchtotal=1&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A431326141379454776000%2CVSRPtargetId%3A21118810%2CVSRPcmpt%3Aprimary"><img src="/img/participants/connect-october-13/pubsonic-ivana.jpg"></a>
+                      <h5><a href="http://pubsonic.com" target="_blank">Pubsonic</a></h5>                                     
+                    </figure>
+                    <!--<h5></h5> -->
+                    <p>Ivana is co-founder and Chief Scientific Officer of Pubsonic, a stem cell
+research scientist with a PhD in Biology - Max Planck Institute & LMU, Germany;
+Fulbright fellow – Columbia University; TED Global Fellow 2012 and TEDMED
+Front Line Scholar 2013.
+</p>
+                </div>            
+          
+                <div class="grid span2 bio">
+                    <h3>Vladan Petrovic<span> Serbia</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://www.linkedin.com/profile/view?id=40500555&locale=en_US&trk=tyah2&trkInfo=tas%3AVladan%20Petrovic"><img src="/img/participants/connect-october-13/pubsonic-vladan.jpg"></a>
+                    <h5><a href="http://pubsonic.com" target="_blank">Pubsonic</a></h5>                                      
+                    </figure> 
+                    <!--<h5></h5> -->
+                    <p>Vladan is co-founder and CTO of Pubsonic managing product development. As
+a senior web and mobile developer he has worked on projects from enterprise
+Portal/ERP solutions to E-Banking systems for Swiss banks. In last few years he
+was helping startups from Serbia, Japan, Australia and Germany to build their
+products. 
+</p>
+                </div>            
+                       
+            </div>   
+	  
+	  
+	  
+	  
+
+      <h4>5th class, July 2013 (14 participants)</h4>
+
+
+				<div class="row"  style="text-align:justify;text-justify:inter-word; ">  
+			   
+                <div class="grid span2 bio">
+                    <h3>Conno Christou<span> UK</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://uk.linkedin.com/in/connochristou"><img src="/img/participants/connect_summer_13/ConnoChristou.jpg"></a>
+                        <!--<small>
+                            <a href="http://www.poikos.com/" target="_blank"> poikos.com</a>
+                        </small>                                        -->
+                   
+                <h5><a href="http://avocarrot.com" target="_blank">Avocarrot</a></h5>  
+				</figure>
+                    <!--<h5></h5> -->
+                    <p>Conno is a graduate from Imperial College London where he studied Electrical and Electronic Engineering. He founded and managed 2 companies for the last 5 years. Passionate about front-end development and mobile marketing.</p>
+                </div>            
+                <div class="grid span2 bio">
+                    <h3>George Eracleous<span> UK</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://uk.linkedin.com/in/geracleous"><img src="/img/participants/connect_summer_13/GeorgeEracleous.jpg"></a>
+                     
+                <h5><a href="http://avocarrot.com" target="_blank">Avocarrot</a></h5>                                     
+                    </figure> 
+                    <!--<h5></h5>-->                   
+                    <p>George is a graduate from Imperial College London where he studied Information System Engineering and awarded as a top student in his class. He is an expert in machine learning and data mining. Also worked at Bloomberg and Duedil in the past.</p>
+                </div>            
+            </div>   
+			
+			
+			<div class="row"  style="text-align:justify;text-justify:inter-word; ">           
+                 
+                <div class="grid span2 bio">
+                    <h3>Michal Mikulski<span> Poland</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://pl.linkedin.com/pub/micha%C5%82-mikulski/4b/4b3/a69"><img src="/img/participants/connect_summer_13/egzotechMMikulskiPhoto.jpg"></a>
+                     <h5><a href="http://egzotech.pl/" target="_blank">EgzoTech</a></h5>                                       
+                    </figure> 
+                    <!--<h5></h5> -->
+                    <p>CEO at EgzoTech Sp. z o.o., Owner at EgzoTech Michal Mikulski, Project Manager at Silesian University of Technology</p>
+                </div>            
+                <div class="grid span2 bio">
+                    <h3>Lukasz Korga <span>Poland</span></h3>
+                   <figure>
+                        <a target="_blank" href="http://www.linkedin.com/pub/lukasz-korga/3/7a9/16a"><img src="/img/participants/connect_summer_13/Lukasz1e80aa7.jpg"></a>
+                     <h5><a href="http://egzotech.pl/" target="_blank">EgzoTech</a></h5>                                        
+                    </figure> 			
+                    <p>EgzoTech and Owner of IPCON Patent and Legal Office.</p>
+                </div>           
+            </div>   
+		
+			
+			
+				<div class="row"  style="text-align:justify;text-justify:inter-word; ">           
+               
+                <div class="grid span2 bio">
+                    <h3>Ali Rehan<span> Pakistan</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://pk.linkedin.com/pub/ali-rehan/8/18b/7b4"><img src="/img/participants/connect_summer_13/Ali_Rehan.jpg"></a>
+                            <h5><a href="http://eyedeus.com" target="_blank">Eyedeus/Groopic</a></h5>                             
+                    </figure>  
+                    <!--<h5></h5> -->
+                    <p>Ali, an MS graduate in Computer Science, Lahore (Pakistan) has been involved in multiple startups including chOpaal, the largest SMS based social network in Pakistan. He has also worked on a number of research and industrial projects in the field of Computer Vision. Most prominently, he has been a part of Computer Vision Lab, LUMS, where he worked on 3D reconstruction of deforming objects from a single video. At Eyedeus, he works as CEO and has been actively involved in the prototyping of new technologies.</p>
+                </div>            
+                <div class="grid span2 bio">
+                    <h3>Murtaza Taj<span> Pakistan</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://pk.linkedin.com/in/murtazataj"><img src="/img/participants/connect_summer_13/eyedeus-MurtazaTaj.png"></a>
+                        <!--<small>
+                            <a href="http://uxpin.com/" target="_blank">uxpin.com</a>
+                        </small>   -->      
+ <h5><a href="http://eyedeus.com" target="_blank">Eyedeus/Groopic</a></h5>  						
+                    </figure> 
+                    <!--<h5></h5>-->                   
+                    <p>Murtaza, Assistant Professor in Computer Science (CS) department at LUMS School of Science and Engineering has done his PhD in Computer Science and Electronics Engineering in 2009. His research interests are in Computer Vision, Pattern Recognition and Computer Graphics. He has produced 23 publications including 3 book chapters, 5 journals and 15 conference and workshop papers. He brings a combination of research experience in Digital Image Processing and proposal writing skills. At Eyedeus, he shares the role of prototyping key technologies and new product ideas.</p>
+                </div>            
+            </div>   
+		
+			
+		
+			
+			
+				<div class="row"  style="text-align:justify;text-justify:inter-word; ">           
+               
+                <div class="grid span2 bio">
+                    <h3>Omar Gabr<span> Egypt</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://eg.linkedin.com/in/okgabr"><img src="/img/participants/connect_summer_13/instabug_gabr.png"></a>
+                    <h5><a href="http://instabug.io/" target="_blank">Instabug</a></h5>                                        
+                    </figure>
+                    <!--<h5></h5> -->
+                    <p>Communications Engineering graduate in 2012. Founded EFS; an online store for soccer equipment in 2011. Omar is the Co-founder & CEO of Instabug managing the business, marketing, and operations.</p>
+                </div>            
+                <div class="grid span2 bio">
+                    <h3>Moataz Soliman<span> Egypt</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://eg.linkedin.com/pub/moataz-soliman/53/42/289"><img src="/img/participants/connect_summer_13/instabug_moataz.png"></a>
+                      <h5><a href="http://instabug.io/" target="_blank">Instabug</a></h5>                                            
+                    </figure>  
+                    <!--<h5></h5>-->                   
+                    <p>Computer Engineering graduate in 2012. Worked at Microsoft's HQ as a Software Testing Engineer. Moataz is the Co-founder & CTO of Instabug managing the development team and working on the iOS development</p>
+                </div>            
+            </div>   
+		
+			
+			
+				<div class="row"  style="text-align:justify;text-justify:inter-word; ">           
+               
+                <div class="grid span2 bio">
+                    <h3>Noemie Prin<span> France</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://fr.linkedin.com/in/noemieprin/en"><img src="/img/participants/connect_summer_13/Melusyn_Noemie.jpg"></a>
+                        <h5><a href="http://www.melusyn.com" target="_blank">Melusyn</a></h5>                                    
+                    </figure>  
+                    <!--<h5></h5> -->
+                    <p>Neomie is a UX and service designer. With an industrial design and mobile UX background, she specialized in collaborative systems with a thesis in Collective Intelligence. She use her skill in innovation process by service design, and is passionate about emerging technology.</p>
+                </div>            
+                <div class="grid span2 bio">
+                    <h3>Octave Bory-Bert<span> France</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://fr.linkedin.com/in/octaveborybert"><img src="/img/participants/connect_summer_13/Melusyn_Octave.jpg"></a>
+                        <h5><a href="http://www.melusyn.com" target="_blank">Melusyn</a></h5>                                       
+                    </figure>  
+                    <!--<h5></h5>-->                   
+                    <p>Octave is CEO of Melusyn. He has business and media background. He has a passion for the filmi/Tv industry. He has worked for major IT and Telco companies, designing and selling B2B and B2C software. He is actively involved in several associations promoting entrepreneurship in Europe.</p>
+                </div>            
+            </div>   
+		
+			
+			
+				<div class="row"  style="text-align:justify;text-justify:inter-word; ">           
+               
+                <div class="grid span2 bio">
+                    <h3>Steven Ellis<span> South Africa</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://za.linkedin.com/pub/steven-ellis/26/833/294"><img src="/img/participants/connect_summer_13/StevenEllis.jpg"></a>
+                        <!--<small>
+                            <a href="http://www.poikos.com/" target="_blank"> poikos.com</a>
+                        </small>  -->                                       
+                   <h5><a href="http://mydoorhandle.com/" target="_blank">MyDoorHandle</a></h5>  
+				   </figure> 
+                    <!--<h5></h5> -->
+                    <p>Steven is a web and back-end developer from Cape Town, South Africa. He has over 12 years' experience in business-application development for the web and mobile. He is an Honours graduate from the University of Cape Town, and has worked in London prior to settling in Cape Town. Steven's interests include music, films and travelling. MyDoorHandle is Steven's third startup venture.</p>
+                </div>            
+                <div class="grid span2 bio">
+                    <h3>Dylan Kohlst&auml;dt<span> South Africa</span></h3>
+                   <figure>
+                         <a target="_blank" href="http://za.linkedin.com/pub/dylan-kohlst%C3%A4dt/5/952/910"><img src="/img/participants/connect_summer_13/DylanKohlstadt.jpg"></a>
+                        <!--<small>
+                            <a href="http://uxpin.com/" target="_blank">uxpin.com</a>
+                        </small>   -->                                       
+                   <h5><a href="http://mydoorhandle.com/" target="_blank">MyDoorHandle</a></h5>  
+				   </figure> 
+                    <!--<h5></h5>-->                   
+                    <p>Dylan Kohlst&auml;dt is a subject-matter expert on digital marketing, whose articles are regularly featured in entrepreneur and business magazines, TV and radio. She has an IMM Marketing Diploma and an MBA, and has over 20 years online marketing experience. In 2011 Dylan went on to establish a successful digital marketing agency, Shift ONE, that provides marketing services for entrepreneurs in Cape Town, South Africa.</p>
+                </div>            
+            </div>   
+		
+			
+			
+				<div class="row"  style="text-align:justify;text-justify:inter-word; ">           
+             	
+                <div class="grid span2 bio">
+                    <h3>Nissan Yaron<span> Israel</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://www.linkedin.com/in/nissany"><img src="/img/participants/connect_summer_13/nissanpic.jpg"></a>
+                      <h5><a href="http://www.inprisltd.com/" target="_blank">Inpris</a></h5>                                     
+                    </figure>
+                    <!--<h5></h5> -->
+                    <p>CEO and cofounder of Inpris.Film maker and graduated studies at the Sam Spiegel film and television school in Jerusalem. Former chairman of ASLI - the Jerusalem Art Student Association. Former technological team leader at the army. Believe in creative approach in technology, the same as in art.</p>
+                </div>            
+          
+                <div class="grid span2 bio">
+                    <h3>Salman Ul Haq<span> Pakistan</span></h3>
+                    <figure>
+                        <a target="_blank" href="http://pk.linkedin.com/in/salmanulhaq"><img src="/img/participants/connect_summer_13/SalmanUlHaqheadshot.jpg"></a>
+                     <h5><a href="http://tunacode.com/" target="_blank">TunaCode</a></h5>                                           
+                    </figure> 
+                    <!--<h5></h5> -->
+                    <p>Salman is a techpreneur, founder and CEO of TunaCode Inc. which delivers accelerated computing solutions in data security and video/image application verticals. He holds a degree in computer systems engineering. He started programming Java when he was 13 and hasn't looked back since then. Salman is passionate about how technology can solve some of the world's biggest problems. He also loves to trek.</p>
+                </div>            
+                       
+            </div>   
+		
+
+
+
+
+
+
+
+		
+        <h4>4th class, February 2013 (14 participants)</h4>
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3>Marcin Kowalski <span>Poland</span></h3>
+                <figure>
+                    <img src="/img/participants/marcink.png">
+                    <small>
+                        <a href="http://uxpin.com/">uxpin.com</a>
+                    </small>                    
+                </figure>
+                <p>UXPin provides digital and analog design tools, that helps teams focus on User Experience and achieve great design in a collaborative way.</p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Marcin Treder <span>Poland</span></h3>
+                <figure>
+                    <img src="/img/participants/marcint.jpg">
+                    <small>
+                        <a href="http://uxpin.com/">uxpin.com</a>
+                    </small>                    
+                </figure>
+                <p>UXPin provides digital and analog design tools, that helps teams focus on User Experience and achieve great design in a collaborative way.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3>Federico Treu <span>Italy</span></h3>
+                <figure>
+                    <img src="/img/participants/federico.jpg">
+                    <small>
+                        <a href="http://www.cubeyou.com/">cubeyou.com</a>
+                    </small>                    
+                </figure>
+                <p>Cubeyou is the "google analytics for Facebook Apps". A robust platform that gives businesses the ability to unlock and harness the power of facebook Apps data.</p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Eleanor Watson <span>UK/The Netherlands</span></h3>
+                <figure>
+                    <img src="/img/participants/nell.png">
+                    <small>
+                        <a href="http://www.poikos.com/">poikos.com</a>
+                    </small>                    
+                </figure>
+                <p>Poikos solves the issue of getting fast, easy and affordable body measurements into any system. The technology is licensed to impact research and commerce in various industries such as life science and consumers e-commerce. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3>Jakub Rož <span>Czech Republic</span></h3>
+                <figure>
+                    <img src="/img/participants/jakub.png">
+                    <small>
+                        <a href="http://www.myschoolnotebook.com/">myschoolnotebook.com</a>
+                    </small>                    
+                </figure>
+                <p>mySchoolNotebook is a mobile application for taking school notes online. Students easily create notebooks where they can write their notes and then share them with their Facebook friends.</p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Jan Kuča <span>Czech Republic</span></h3>
+                <figure>
+                    <img src="/img/participants/jan.png">
+                    <small>
+                        <a href="http://www.myschoolnotebook.com/">myschoolnotebook.com</a>
+                    </small>                    
+                </figure>
+                <p>mySchoolNotebook is a mobile application for taking school notes online. Students easily create notebooks where they can write their notes and then share them with their Facebook friends.</p>
+            </div>
+        </div><div class="row">
+            <div class="grid span2 bio">
+                <h3>Kim Løwert <span>Denmark</span></h3>
+                <figure>
+                    <img src="/img/participants/kim.png">
+                    <small>
+                        <a href="http://www.appstract.dk/us-en/frontpage.aspx">appstract.dk</a>
+                    </small>                    
+                </figure>
+                <p>Appstract is building a universal platform allowing users to access all their information on any screen/device at the click of a button. Users will have their own customized interface to access their productivity tools, social media and file storage services from any device.</p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Martin Ebbesen <span>Denmark</span></h3>
+                <figure>
+					<img src="/img/participants/martin.jpg">
+                    <small>
+                        <a href="http://www.appstract.dk/us-en/frontpage.aspx">appstract.dk</a>
+                    </small>                    
+                </figure>
+                <p>Appstract is building a universal platform allowing users to access all their information on any screen/device at the click of a button. Users will have their own customized interface to access their productivity tools, social media and file storage services from any device.</p>
+            </div>
+        </div><div class="row">
+            <div class="grid span2 bio">
+                <h3>Maxime Lamure <span>France</span></h3>
+                <figure>
+                    <img src="/img/participants/maxime.jpg">
+                    <small>
+                        <a href="http://www.planmeup.com/events">planmeup.com</a>
+                    </small>                    
+                </figure>
+                <p>PlanMeUp is a social activity discovery engine helping users explore and participate in real world activities based on their social profiles, location and their specific interests.</p>
+            </div>
+            
+        <div class="grid span2 bio">
+                <h3>Marine Tranquard <span>France</span></h3>
+                <figure>
+                    <img src="/img/participants/marine.png">
+                    <small>
+                        <a href="http://www.planmeup.com/events">planmeup.com</a>
+                    </small>
+                </figure>
+                <p>PlanMeUp is a social activity discovery engine helping users explore and participate in real world activities based on their social profiles, location and their specific interests.</p>
+                
+            </div>
+        </div><div class="row">
+            <div class="grid span2 bio">
+                <h3>Steffen Reitz <span>Germany</span></h3>
+                <figure>
+                    <img src="/img/participants/steffen.png">
+                    <small>
+                        <a href="https://www.gini.net/?lang=en">Gini.net</a>
+                    </small>                    
+                </figure>
+                <p>Gini makes paper invoices paid in seconds. You take a photo, Gini does the rest.</p>
+            </div>
+            
+        <div class="grid span2 bio">
+                <h3>Rafah Alkhatib <span>Saudi Arabia</span></h3>
+                <figure>
+                    <img src="/img/participants/rafah.png">
+                    <small>
+                        <a href="http://www.3eesho.com/">3eesho.com</a>
+                    </small>
+                </figure>
+                <p>3eesho is the largest online Arabic food nutrition social network for the Arabic speaking countries. With 5+ Million users, 3eesho aims to provide online and on the grounds events and activities to improve health awareness for obesity, diabetes and lack of activity problems in the youth and in the population in general.</p>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3>Pinyi Zhou <span>Canada</span></h3>
+                <figure>
+                    <img src="/img/participants/pinyi.png">
+                    <small>
+                        <a href="http://www.gamecall.me/">gamecall.me</a>
+                    </small>                    
+                </figure>
+                <p>GameCall makes organizing sports easy. Whether you want to get friends together for a quick game of soccer, join a football league, or find another player for your hockey team, GameCall Social Sports connects you to the people who love being active as much as you do.</p>
+            </div>
+            
+        <div class="grid span2 bio">
+                <h3>Nik Macintosh <span>Canada</span></h3>
+                <figure>
+                    <img src="/img/participants/nik.png">
+                    <small>
+                        <a href="http://www.gamecall.me/">gamecall.me</a>
+                    </small>
+                </figure>
+                <p>GameCall makes organizing sports easy. Whether you want to get friends together for a quick game of soccer, join a football league, or find another player for your hockey team, GameCall Social Sports connects you to the people who love being active as much as you do.</p>
+                
+            </div>
+        </div>
+
+
+
+
+
+
+        <h4>3rd class, August 2012 (12 participants)</h4>
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3>Anne-Aymone Ferreira <span>France</span></h3>
+                <figure>
+                    <img src="/img/participants/anne.jpg">
+                    <small>
+                        <a href="http://www.advertory.com/">Advertory.com</a>
+                    </small>                    
+                </figure>
+                <p>Advertory is a one-stop-shop platform that enables local businesses to increase revenue and to build customer loyalty online and on mobile.</p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Vincent Naigeon <span>France</span></h3>
+                <figure>
+                    <img src="/img/participants/vincent.jpg">
+                    <small>
+                        <a href="http://www.advertory.com/">Advertory.com</a>
+                    </small>                    
+                </figure>
+                <p>Advertory is a one-stop-shop platform that enables local businesses to increase revenue and to build customer loyalty online and on mobile.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3>Ernest Shakarov <span>Russia</span></h3>
+                <figure>
+                    <img src="/img/participants/ernest.jpg">
+                    <small>
+                        <a href="http://viatun.com/">Viatun.com</a>
+                    </small>                    
+                </figure>
+                <p>Viatun is a mobile application that saves up 80% of your mobile web expenses by data compression. Viatun is the fastest VPN on the market that helps people all over the world to have non restricted web access. Viatun works in all mobile and WiFi networks and is compatible with iOS, Android, Symbian and
+Windows Mobile OS based devices.</p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Edouard de La Jonquière <span>France</span></h3>
+                <figure>
+                    <img src="/img/participants/edouard.jpg">
+                    <small>
+                        <a href="https://en.mention.net/">Mention.net</a>
+                    </small>                    
+                </figure>
+                <p>Mention is a media monitoring application that allows anyone to be notified in real-time about any mention of a keyword on the web and social web, whether that be his name, his brand, his competitors or his industry.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3>Bertrand Besse <span>France</span></h3>
+                <figure>
+                    <img src="/img/participants/bertrand.jpg">
+                    <small>
+                        <a href="http://fr.linkedin.com/in/bertrandbesse">Muxi.com</a>
+                    </small>                    
+                </figure>
+                <p>The first professional social network. Composed of 40 fraternities, Muxi offers its users a platform where they can share their experience, ask questions, find colleagues and more generally connect with
+people doing the same job.</p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Sergey Moliavko <span>Ukraine</span></h3>
+                <figure>
+                    <img src="/img/participants/sergey.jpg">
+                    <small>
+                        <a href="http://dressup.ua/">DressUp.ua</a>
+                    </small>                    
+                </figure>
+                <p>Local social marketplace for emerging fashion labels operating on the Russian and Ukrainian markets.</p>
+            </div>
+        </div><div class="row">
+
+            <div class="grid span2 bio">
+                <h3>Jurgen Koehler <span>Germany</span></h3>
+                <figure>
+                    <img src="/img/participants/jurgen.jpg">
+                     <small>
+                        <a href="http://wappwolf.com/dropboxautomator/">Wappwolf</a>
+                    </small>   
+                </figure>
+                <p>Designing User Experiences for the Internet of Things; Product designer; Hobby Pastry Chef.</p>
+            </div>
+           
+            <div class="grid span2 bio">
+                <h3>Michael Eisler <span>Austria</span></h3>
+                <figure>
+                    <img src="/img/participants/michael.jpg">
+                    <small>
+                        <a href="http://wappwolf.com/dropboxautomator/">Wappwolf</a>
+                    </small>                    
+                </figure>
+                <p>Wappwolf is focused on deconstructing the barriers of the Cloud. By connecting your Evernote, Facebook, Flickr, and other web services / apps to Dropbox. Drag & drop files into a predefined folder on Dropbox and automatically convert and sync to your favorite places.</p>
+            </div>
+        </div><div class="row">
+            <div class="grid span2 bio">
+                <h3>Onno Faber <span>the Netherlands</span></h3>
+                <figure>
+                    <img src="/img/participants/onno.jpg">
+                    <small>
+                        <a href="https://www.dingdongapp.com/">DingDong</a>
+                    </small>                    
+                </figure>
+                <p>Ding Dong is a gesture-based messaging app that lowers communication barriers. In just one gesture you send both your location at a time, and the why of the message. It abstracts out the need to be specific in
+terms of text. Instead, it leverages the power of interpretation.</p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Leonardo Grijó <span>Brazil</span></h3>
+                <figure>
+                    <img src="/img/participants/leo.jpg">
+                    <small>
+                        <a href="http://cadastro.startupolis.com.br/">Startupolis</a>
+                    </small>                    
+                </figure>
+                <p>Startupolis is an initiative to boost the Brazilian startup ecosystem and entrepreneurs by building bridges with developed ecosystems, starting with Silicon Valley.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3>Sergiy Chekalsky <span>Russia</span></h3>
+                <figure>
+                    <img src="/img/participants/sergey2.jpg">
+                    <small>
+                        <a href="http://reactor-pro.ru/">Reactor-pro.ru</a>
+                    </small>                    
+                </figure>
+                <p>Reactor is an online marketplace for clubs and DJs, operating on the Ukrainian and Russian markets. </p>
+            </div> 
+             <div class="grid span2 bio">
+                <h3>Lars Tackmann <span>Denmark</span></h3>
+                <figure>
+                    <img src="/img/participants/lars.jpg">
+                    <small>
+                        <a href="http://Solvr.io">Solvr</a>
+                    </small>                    
+                </figure>
+                <p>Solvr is a HTML5 based computer algebra system that runs on the web and tablets. Our vision is to make science interactive, collaborative and computable. We have not launched yet but have been in development for almost a year and recently demoed our app at Google's IO conference. Solvr is the first product on the market fully developed in Dart programming language.
+</p>
+            </div> 
+        </div>      
+
+        <h4>2nd class, April 2012 (12 participants)</h4>
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3>Krating Poonpol <span>Thailand</span></h3>
+                <figure>
+                    <img src="/img/participants/ptcpnt_krating.png">
+                    <small>
+                        <a href="http://disruptuniversity.com/">Disrupt University</a>
+                    </small>                    
+                </figure>
+                <p>Disrupt University is a hybrid between Startup Accelerator and Virtual University with the goal of bridging Silicon Valley and Thailand by providing cutting-edge tools, frameworks, and methodology to next generation Thai entrepreneurs.</p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Agustin Badano <span>Argentina</span></h3>
+                <figure>
+                    <img src="/img/participants/ptcpnt_agustin.png">
+                    <small>
+                        <a href="http://www.empreware.com/">Empreware.com</a>
+                    </small>                    
+                </figure>
+                <p>Empreware offers a suite of web-based apps that help SMEs and entrepreneurs to manage their businesses.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3>Yuri Chikhalov <span>Russia</span></h3>
+                <figure>
+                    <img src="/img/participants/ptcpnt_yuri.png">
+                    <small>
+                        <a href="http://tutorion.com/">Tutorion</a>
+                    </small>                    
+                </figure>
+                <p>Online web-conferencing platform for tutoring via internet, provides video, audio, shared whiteboard, dictionaries, screen-sharing to accommodate lessons with private tutors.</p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Martins Kalnins <span>Latvia</span></h3>
+                <figure>
+                    <img src="/img/participants/ptcpnt_martins.png">
+                    <small>
+                        <a href="https://www.mykoob.com/">Mykoob.com</a>
+                    </small>                    
+                </figure>
+                <p>With MyKoob, Schools (K-12) get easy to use tools to optimize and manage their operations as well as automating the communication regarding the daily school work between students, parents and teachers.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3>Girts Laudaks <span>Latvia</span></h3>
+                <figure>
+                    <img src="/img/participants/ptcpnt_girts.png">
+                    <small>
+                        <a href="https://www.mykoob.com/">Mykoob.com</a>
+                    </small>                    
+                </figure>
+                <p>With MyKoob, Schools (K-12) get easy to use tools to optimize and manage their operations as well as automating the communication regarding the daily school work between students, parents and teachers.</p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Sara Naseri <span>Denmark</span></h3>
+                <figure>
+                    <img src="/img/participants/ptcpnt_sara.png">
+                    <small>
+                        <a href="http://dk.linkedin.com/in/naseri">Bucky'O'Zun</a>
+                    </small>                    
+                </figure>
+                <p>BUCKY'o'ZUN is a new platform technology which, as the first in the world, can protect 99,99% against all UV-radiation making it able to prevent skincancer and extend the lifespan of various materials.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3>Barbara Nowacka <span>United Kingdom</span></h3>
+                <figure>
+                    <img src="/img/participants/ptcpnt_barbara.png">
+                    <small>
+                        <a href="http://yoomoot.com/">Yoomoot.com</a>
+                    </small>                    
+                </figure>
+                <p>Yoomoot revolutionizes the way people collaborate, solve problems & make decisions. It's a place to participate in structured debates and share opinions that matter to you.</p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Ismael Nzouetom <span>France</span></h3>
+                <figure>
+                    <img src="/img/participants/ptcpnt_ismael.png">
+                    <small>
+                        <a href="http://sara.i-dispo.com/">I-Dispo</a>
+                    </small>                    
+                </figure>
+                <p>I-DISPO provides people with a personal virtual assistant, named Sara, that helps them get things done by just asking.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3>Michael Overell <span>Australia</span></h3>
+                <figure>
+                    <img src="/img/participants/ptcpnt_michael.png">
+                    <small>
+                        <a href="http://recruitloop.com/">RecruitLoop</a>
+                    </small>                    
+                </figure>
+                <p>RecruitLoop gives employers a smarter way to hire, with automated video interviews and a network of recruiters at an hourly rate.</p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Roman Siderenko <span>Russia</span></h3>
+                <figure>
+                    <img src="/img/participants/ptcpnt_roman.png">
+                    <small>
+                        <a href="http://www.linkedin.com/in/sidorenkor">TheUntitled</a>
+                    </small>                    
+                </figure>
+                <p>Boutique venture capital company headquartered in Moscow, Russia, providing mentorship and pre-seed/seed and series A funding for CEE startups.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3>Viktor Strelbitskyy <span>Ukraine</span></h3>
+                <figure>
+                    <img src="/img/participants/ptcpnt_viktor.png">
+                    <small>
+                        <a href="http://endorphin.me/">Endorphin.me</a>
+                    </small>                    
+                </figure>
+                <p>Endorphin is an analytical tool that processes all digital footprints of your 1st and 2nd degree connections in order to provide you with various people ratings and a comprehensive summary on each person.</p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Artem Zavyalov <span>Ukraine</span></h3>
+                <figure>
+                    <img src="/img/participants/ptcpnt_artem.png">
+                    <small>
+                        <a href="http://endorphin.me/">Endorphin.me</a>
+                    </small>                    
+                </figure>
+                <p>Endorphin is an analytical tool that processes all digital footprints of your 1st and 2nd degree connections in order to provide you with various people ratings and a comprehensive summary on each person.</p>
+            </div>
+        </div>
+		
+		
+		
+		
+		
+        <h4>1st class, November 2011 (9 participants)</h4>
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3>Lisandro Bril <span>Argentina</span></h3>
+                <figure>
+                    <img src="/img/participants/lisandro.jpg">
+                    <small>
+                        <a href="http://www.endeavor.org/">Endeavor</a>
+                    </small>                    
+                </figure>
+                <p>Non-profit organization that pioneered the concept of High-Impact Entrepreneurship in emerging markets. Its mission is to lead the global movement to catalyze long-term economic growth by selecting, mentoring, and accelerating the best High-Impact Entrepreneurs around the world.</p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Eugene Barulin <span>Russia</span></h3>
+                <figure>
+                    <img src="/img/participants/eugene.jpg">
+                    <small>
+                        <a href="http://resumup.com/">ResumUp</a>
+                    </small>                    
+                </figure>
+                <p>ResumUP generates a step by step career path based on your professional aspirations, network and experience to help you achieve your career goals.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3>Thorsten Luettger <span>Germany</span></h3>
+                <figure>
+                    <img src="/img/participants/thorsten.jpg">
+                    <small>
+                        <a href="http://musicplayr.com/">Musicplayr</a>
+                    </small>                    
+                </figure>
+                <p>The musicplayr is for free web music. It's a simple & fun tool which enables you to play and share your music links. </p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Vassili Gatov <span>Russia</span></h3>
+                <figure>
+                    <img src="/img/participants/vasily.jpg">
+                    <small>
+                        <a href="http://www.ria.ru/">RIA Novosti</a>
+                    </small>                    
+                </figure>
+                <p>R&D lab for the biggest Russian news media.</p>
+            </div>
+        </div><div class="row">
+            <div class="grid span2 bio">
+                <h3>Andriy Khavryuchenko <span>Ukraine</span></h3>
+                <figure>
+                    <img src="/img/participants/andriy.jpg">
+                    <small>
+                        <a href="http://42coffeecups.com/">42 Coffe Cups</a>
+                    </small>                    
+                </figure>
+                <p>Python development and IT consulting.</p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Alessandro Vannucci <span>Italy</span></h3>
+                <figure>
+                    <img src="/img/participants/alessandro.jpg">
+                    <small>
+                        <a href="http://idooo.it/">iDooo</a>
+                    </small>                    
+                </figure>
+                <p>iDooo realizes investments in ICT companies, using a high-level network and relying on professionals and experts for the selection of investment proposals.
+</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3>Michał Wroczyński <span>Poland</span></h3>
+                <figure>
+                    <img src="/img/participants/michal.jpg">
+                    <small>
+                        <a href="http://fidointelligence.com/">Fido Intelligence</a>
+                    </small>                    
+                </figure>
+                <p>Specialized in language Decoder which is a technology that structures any text into a sequence of verb-related functions with parameters containing syntactic and semantic information. This Decoder gives you information about the roles that all words play in a given sentence.</p>
+            </div>
+            <div class="grid span2 bio">
+                <h3>Aynur Abdulnasyrov <span>Russia</span></h3>
+                <figure>
+                    <img src="/img/participants/aynur.jpg">
+                    <small>
+                        <a href="http://lingualeo.ru/">LinguaLeo</a>
+                    </small>                    
+                </figure>
+                <p>Convenient web-service for learning foreign languages.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid span2 bio">
+                <h3>Ruben Timmerman <span>the Netherlands</span></h3>
+                <figure>
+                    <img src="/img/participants/ruben.jpg">
+                    <small>
+                        <a href="http://www.springest.co.uk/">Springest</a>
+                    </small>                    
+                </figure>
+                <p>Springest.com lets people grow by helping them find learning opportunities like training courses, educational programs, tests and q&a's.</p>
+            </div>
+        </div>
+  
+    </div>
+	</div>
+</section>    
+
+
+
+    <style>
+    	.readmore-js-toggle, .readmore-js-section {
+			display: block;
+			width: 68%;
+		}
+    </style>
+
+
+    <script src="/js/readmore.js"></script>
+        <script>
+          $(document).ready(function() 
+              { 
+                 $('.read_more').readmore({
+					  speed: 75,
+					  maxHeight: 165
+					});
+
+              } 
+          ); 
+        </script> 

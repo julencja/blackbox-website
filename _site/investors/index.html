@@ -19,127 +19,41 @@
 
     <title>Blackbox Investor Retreat | Blackbox.vc</title>
     <link rel="icon" type="image/png" href="/img/fav.png?foo=892012">
-    
+    <link href="/css/menu.css" rel="stylesheet" type="text/css">
     <link href="/css/style.css?foo=15042013" rel="stylesheet" type="text/css">
     <!--jQuery-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    
-    <script>
-$(document).ready(function () {
-    $(window).scroll(function () { 
-        $("#subwelcome").css("position", "static"); 
-        });
-    $('#mailing-list-form').click(function() {
-        $('#overlay').fadeIn('fast');
-        });
-    $('#close-modal').click(function() { 
-        $('#overlay').fadeOut('fast');
-        });
-    /*General scroll down on landing page*/
-    $('#scroll-down-1').click(function(){
-         $('html, body').animate({                     
-                    scrollTop: $("#how-we-work-title").offset().top
-                     }, 1000);                     
-        });
-    $('#scroll-down-2').click(function(){
-         $('html, body').animate({                     
-                    scrollTop: $("#who-we-work-with-title").offset().top
-                     }, 1000);                     
-        });        
-    $('#scroll-down-3').click(function(){
-         $('html, body').animate({                     
-                    scrollTop: $("#why-are-we-doing-this-title").offset().top
-                     }, 1000);                     
-        });        
-    $('#scroll-down-4').click(function(){
-         $('html, body').animate({                     
-                    scrollTop: $("#last").offset().top
-                     }, 1000);                     
-        });      
-    /*Mobile scroll-down*/          
-    $('#q1').click(function(){
-         $('html, body').animate({                     
-                    scrollTop: $("#how-we-work-title").offset().top
-                     }, 1000);                     
-        });
-    $('#q2').click(function(){
-         $('html, body').animate({                     
-                    scrollTop: $("#who-we-work-with-title").offset().top
-                     }, 1000);                     
-        });
-    $('#q3').click(function(){
-         $('html, body').animate({                     
-                    scrollTop: $("#why-are-we-doing-this-title").offset().top
-                     }, 1000);                     
-        });                    
-    
-    /*Tabs on People Section*/
+	<!--Custom scripts-->
+	<script src="/js/main.js"></script>
+	<!-- tiptip 
+	<link href="/css/tiptip.css" rel="stylesheet" type="text/css">
+	<script src="/js/jquery.tipTip.minified.js"></script>-->
+	<!--GA-->
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-28505239-1']);
+	  _gaq.push(['_trackPageview']);
 
-    $('#tab-accelerate').click(function(){
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-        $('#accelerate-participants').siblings().fadeOut('fast');
-        $('#accelerate-participants').fadeIn('500');
-    })
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
 
-    $('#tab-connect').click(function(){
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-        $('#connect-graduates').siblings().fadeOut('fast');
-        $('#connect-graduates').fadeIn('500');
-    });
-
-    $('#tab-residents').click(function(){
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-        $('#residents').siblings().fadeOut('fast');
-        $('#residents').fadeIn('500');
-    })
-
-    /*Gallery on Residence*/
-    $('.gallery figure').click(function (){
-        $('#active-photo-container').empty();
-        $(this).children().clone().removeClass('blurred').appendTo('#active-photo-container');
-        $('.gallery .thumb img').addClass('blurred');        
-        $('#active-photo-container').click(function(){
-            $(this).empty();            
-            $('.gallery .thumb img').removeClass('blurred');            
-            });
-        });
-    $('.player').click(function (){
-        $('#active-video-holder').fadeOut('fast');
-        $('#ytplayer').fadeIn('fast');
-        });
-    $('.video-thumb').click(function(){
-        var picture = $(this).find('img').attr('src');
-        var speaker = $(this).find('figcaption h6').text();
-        var title = $(this).find('figcaption h5').text();
-        var description = $(this).find('.video-content').text();
-        var videoUrl = $(this).find('.yt-url').text();
-        $('#ytplayer').fadeOut('fast');
-        $('#active-video-holder').fadeIn('fast');
-        $('#active-video-holder img').attr('src', picture);
-        $('#active-video-holder h2').text(speaker);
-        $('#active-video-holder h3').text(title);
-        $('#active-video-holder p').text(description);        
-        $('#ytplayer').attr('src', videoUrl);
-        });
-});
-    </script>
-<!--GA-->
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-28505239-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+	</script>
+	<script type="text/javascript">var _kmq = _kmq || [];
+	var _kmk = _kmk || '045ef3810d35bc33865917cc32603ae50238a0be';
+	function _kms(u){
+	  setTimeout(function(){
+		var d = document, f = d.getElementsByTagName('script')[0],
+		s = d.createElement('script');
+		s.type = 'text/javascript'; s.async = true; s.src = u;
+		f.parentNode.insertBefore(s, f);
+	  }, 1);
+	}
+	_kms('//i.kissmetrics.com/i.js');
+	_kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+	</script>
     
 </head>
 
@@ -156,30 +70,58 @@ $(document).ready(function () {
     <!--/FBML-->
     
 <nav id="main-nav" >
-    <a class="logo desktop-only" href="/"><img src="../img/logos/logo_blackbox.png" alt="Blackbox.vc"></a>
-    <div class="inner">     
-        <a href="/"  id="home">Home</a> 
-        <a href="/about/" >About Us</a>        
-        <a href="/people"/ >Portfolio</a>            
-        <a href="/network/" >Global Network</a>            
-        <a href="/about/videos.html" >Videos</a>                    
-        <a class="divider desktop-only">|</a>                
-        <a href="/connect/"  class="programs">Blackbox Connect</a>
-        <a href="/mansion/"  class="programs">Residence</a>          
-        <a href="/accelerate/"  class="programs">Accelerator</a>        
+  
+    <div class="inner" id="cssmenu" style="padding-left:47px; border:0px solid black;" >  
+	<ul style="margin-left:-30px;">
+        <!--<a href="/" >Home</a> -->
+		<li>
+		<a class="logo desktop-only" style="padding-top:15px;padding-right:8px;" href="/"><img  src="/img/logos/logo_blackbox.png" alt="Blackbox.vc" style="width:70px;"></a>
+		</li>
+        <li class='has-sub' id="shiftmenu4">
+			<a style="margin-left:20px;"  onClick="return true" class="programs">About us</a>
+			 <ul id="shiftsubmenu4">
+				 <li><a href="/about/team"><span class="submenuitem">Team</span></a>    </li>
+				 <li><a href='/about/ambassadors'><span class="submenuitem">Ambassadors</span></a></li>
+			 </ul>
+			
+		</li>		
+        <li>
+		<a style="margin-left:20px;" href="/press" >Press</a>         
+        </li><!--<a href="/network/" >Global Network</a>            -->
+        <!--<a href="/about/videos.html" >Videos</a>         -->           
+        <!--<a class="divider desktop-only">|</a>   -->             
+        <li class='has-sub' id="shiftmenu1">
+			<a style="margin-left:20px;"  onClick="return true" class="programs">Blackbox Connect</a>
+			
+			 <ul id="shiftsubmenu1">
+				 <li><a href='/blackbox-connect-spring-2014'><span class="submenuitem">Spring 2014</span></a></li>
+                 <li><a href='/connect'><span class="submenuitem" >Learn More</span></a></li>
+				 <li><a href='/testimonials'><span class="submenuitem">Testimonials</span></a></li>
+				 <li><a href='/connect-graduates'><span class="submenuitem">Graduates</span></a></li>
+
+			 </ul>
+        </li>
+		<li class='has-sub' id="shiftmenu3">
+			<a style="margin-left:20px;"  onClick="return true" class="programs">Accelerator</a>
+			
+			 <ul id="shiftsubmenu3">
+				 <li><a href='/accelerate'><span class="submenuitem" >Learn More</span></a></li>
+				 <li><a href='/accelerated-companies/'><span class="submenuitem">Companies</span></a></li>
+			 </ul>
+        </li>
+		
+		    
         <!--a href="/investors/" class='active' class="programs">Investors</a-->
+	</ul>
     </div>
     
     <!-- Begin MailChimp Signup Form -->
-    <div id="mc_embed_signup" class="desktop-only">
+    <div  id="mc_embed_signup" class="desktop-only" style=" margin-top:15px; ">
         <form action="http://blackbox.us4.list-manage.com/subscribe/post?u=fa0ed72f081ca7da2eb954e9e&amp;id=f916dfaa95" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <label>Join the Network</label>
-            <div class="mc-field-group">
-                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email">
-                <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn-small">Join!</button>
-            </div>
-            <div class="">
-
+            <!--<label>Join the Network</label>-->
+            <div class="mc-field-group" >
+                <input style="margin-left:70px; width:150px;  -moz-box-sizing: border-box;" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email">
+                <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn-small">Subscribe now!</button>
             </div>
             <div id="mce-responses" class="">
                 <div class="response" id="mce-error-response" style="display:none"></div>
@@ -326,45 +268,44 @@ $(document).ready(function () {
 
 
 
-    <footer>
+    <footer id="footer">
         <div class="inner">
         <div class="row">
             <div class="grid span3">
                 <h4>Blackbox</h4>
-                <ul>
-                    <li><a href="/about/">About us</a></li>
-                    <li><a href="/about/team.html">Team</a></li>
-                    <li><a href="/people/">Portfolio</a></li>                    
-                    <li><a href="/network/">Global Network</a></li>    
-                    <li><a href="/about/videos.html">Videos</a></li>                                    
+                <ul><!-- put <li><a href="/about/team.html">Team</a></li>    inside "about us" TODO -->                     
+                    <li><a href="/contact">Contact us</a></li>
+					<!--<li><a href="/info">General info</a></li> renamed anyway-->
+					<!--<li><a href="/network">Global Network</a></li>-->
+					<li><a href="/about/videos.html">Videos</a></li>
+					<li><a href="/jobs">Jobs</a></li>					
                 </ul>
             </div>
             <div class="grid span3">
-                <h4>Programs</h4>
-                <ul>
-                    <li><a href="/accelerate/">Blackbox Accelerator</a></li>                    
-                    <li><a href="/connect/">Blackbox Connect Training</a></li>
-                    <li><a href="/mansion/">Blackbox Residence</a></li>
-                    <!--li><a href="/investors/">Investors Retreat</a></li-->
-                </ul>
-            </div>
-            <div class="grid span3">
-                <h4>Follow us!</h4>
+			  <h4>Follow us!</h4>
                 <ul class="icons">
                     <li><a href="https://www.youtube.com/user/blackboxvc?feature=mhee"><img src="/img/icons/yt.png" alt="YouTube Channel"></a></li>
                     <li><a href="https://twitter.com/blackboxvc"><img src="/img/icons/twitter.png" alt="Twitter"></a></li>
                     <li><a href="https://facebook.com/blackbox.vc"><img src="/img/icons/fb.png" alt="Facebook"></a></li>
                     <li><a href="https://angel.co/blackboxvc"><img src="/img/icons/angel.png" alt="Angel List"></a></li>
+					<li><a href="https://plus.google.com/118228581005963737824/"><img src="/img/icons/gplus.png" alt="Google plus"></a></li>
+					
                 </ul>
-                <div class="fb-like" data-href="https://facebook.com/blackbox.vc" data-send="false" data-width="100%" data-show-faces="true" data-colorscheme="dark"></div>
+                <div class="fb-like" data-href="https://facebook.com/blackbox.vc" data-send="false" data-width="250px" data-show-faces="true" data-colorscheme="dark"></div>
+            </div>
+            <div class="grid span3" style="height:220px;">
+                 <div class="box twitterbox">
+<a class="twitter-timeline"  href="https://twitter.com/blackboxvc"  data-widget-id="342437025670103040">Tweets by @blackboxvc</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+                </div>
             </div>
        </div>
-       <p>&copy; Blackbox Accelerator 2011-2012</p>                
+       <p>&copy; Blackbox Accelerator 2011-2014</p>                
        </div>
     </footer>
     
 </div> <!--#container-->
-
 
 </body>
 </html>
